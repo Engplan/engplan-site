@@ -1,2 +1,7 @@
 @use 'variaveis' as *;
-body { font-family: $fonte-principal; background: #f4f4f4; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $cor-primaria;
+  color: white;
+}
