@@ -1,12 +1,2 @@
 @use 'variaveis' as *;
-@use 'reset';
-@use 'layout';
-@use 'header';
-@use 'footer';
-@use 'servicos';
-@use 'galeria';
-@use 'avaliacao';
-@use 'obra';
-@use 'equipe';
-@use 'contato';
-@use 'responsivo';
+body { font-family: $fonte; background-color: $cor-principal; }
