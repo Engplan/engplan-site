@@ -1,123 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Engplan Engenharia - Projetos e Reformas RJ</title>
-  <meta name="description" content="Engplan Engenharia - Projetos, construções e reformas no Rio de Janeiro com qualidade e transparência." />
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Engplan Engenharia</title>
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <img src="images/logo.png" alt="Engplan Logo" class="logo" />
-      <nav class="nav">
-        <a href="index.html" class="nav-link">Início</a>
-        <a href="#services" class="nav-link">Serviços</a>
-        <a href="#gallery" class="nav-link">Galeria</a>
-        <a href="#contact" class="nav-link">Contato</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1 class="fade-in">Bem-vindo à Engplan</h1>
-        <p class="fade-in delay-1">Oferecemos soluções de engenharia com eficiência, profissionalismo e design moderno.</p>
-      </div>
-    </section>
+<!-- Outras seções do site... -->
 
-    <section class="services" id="services">
-      <div class="container">
-        <h2 class="slide-in">Nossos Serviços</h2>
-        <ul>
-          <li>Projetos residenciais e comerciais</li>
-          <li>Reformas e gerenciamento de obras</li>
-          <li>Consultoria técnica especializada</li>
-        </ul>
-      </div>
-    </section>
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="slide-in">Contato</h2>
+    <form id="contactForm" class="fade-in delay-3" novalidate>
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" required minlength="3" />
 
-    <section class="gallery" id="gallery">
-      <div class="container">
-        <h2 class="slide-in">Galeria de Projetos</h2>
-        <!-- Galeria simples, imagens futuras -->
-        <div class="gallery-grid fade-in delay-2">
-          <img src="images/projeto1.jpg" alt="Projeto 1" />
-          <img src="images/projeto2.jpg" alt="Projeto 2" />
-          <img src="images/projeto3.jpg" alt="Projeto 3" />
-        </div>
-      </div>
-    </section>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
 
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2 class="slide-in">Contato</h2>
-        <form id="contactForm" class="fade-in delay-3" novalidate>
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="name" required minlength="3" />
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+      <button type="submit">Enviar</button>
+      <p id="formMessage" role="alert" aria-live="polite"></p>
+    </form>
 
-          <label for="message">Mensagem</label>
-          <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+    <div id="map" aria-label="Mapa da localização da Engplan" role="region" tabindex="0"></div>
+  </div>
+</section>
 
-          <button type="submit">Enviar</button>
-          <p id="formMessage" role="alert" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Engplan Engenharia • <a href="https://instagram.com/engplanbrasil" target="_blank" rel="noopener">Instagram</a> • <a href="https://wa.me/5521972083284" target="_blank" rel="noopener">WhatsApp</a></p>
-    </div>
-  </footer>
+    const formMessage = document.getElementById('formMessage');
+    const name = this.name.value.trim();
+    const email = this.email.value.trim();
+    const message = this.message.value.trim();
 
-  <script>
-    // Validação simples do formulário e feedback
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault();
+    if (name.length < 3) {
+      formMessage.textContent = 'Por favor, insira um nome válido com pelo menos 3 caracteres.';
+      formMessage.style.color = 'red';
+      this.name.focus();
+      return;
+    }
 
-      const formMessage = document.getElementById('formMessage');
-      const name = this.name.value.trim();
-      const email = this.email.value.trim();
-      const message = this.message.value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      formMessage.textContent = 'Por favor, insira um email válido.';
+      formMessage.style.color = 'red';
+      this.email.focus();
+      return;
+    }
 
-      if (name.length < 3) {
-        formMessage.textContent = 'Por favor, insira um nome válido com pelo menos 3 caracteres.';
-        formMessage.style.color = 'red';
-        this.name.focus();
-        return;
-      }
+    if (message.length < 10) {
+      formMessage.textContent = 'Por favor, insira uma mensagem com pelo menos 10 caracteres.';
+      formMessage.style.color = 'red';
+      this.message.focus();
+      return;
+    }
 
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailPattern.test(email)) {
-        formMessage.textContent = 'Por favor, insira um email válido.';
-        formMessage.style.color = 'red';
-        this.email.focus();
-        return;
-      }
+    formMessage.textContent = 'Enviando...';
+    formMessage.style.color = 'green';
 
-      if (message.length < 10) {
-        formMessage.textContent = 'Por favor, insira uma mensagem com pelo menos 10 caracteres.';
-        formMessage.style.color = 'red';
-        this.message.focus();
-        return;
-      }
+    setTimeout(() => {
+      formMessage.textContent = 'Mensagem enviada com sucesso! Obrigado pelo contato.';
+      this.reset();
+    }, 1500);
+  });
+</script>
 
-      // Simula envio - substituir por integração real no backend
-      formMessage.textContent = 'Enviando...';
-      formMessage.style.color = 'green';
-
-      setTimeout(() => {
-        formMessage.textContent = 'Mensagem enviada com sucesso! Obrigado pelo contato.';
-        this.reset();
-      }, 1500);
+<script>
+  function initMap() {
+    const engplanLocation = { lat: -22.9083, lng: -43.1964 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 14,
+      center: engplanLocation,
+      disableDefaultUI: true,
+      zoomControl: true,
+      gestureHandling: "cooperative",
     });
-  </script>
+    new google.maps.Marker({
+      position: engplanLocation,
+      map: map,
+      title: "Engplan Engenharia",
+    });
+  }
+</script>
+
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+
 </body>
 </html>
