@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engplan Engenharia</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/logo.png" type="image/png" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
@@ -25,7 +26,7 @@
   <section id="sobre" data-aos="fade-up">
     <h2>Sobre Nós</h2>
     <p>A Engplan é referência em engenharia e soluções construtivas...</p>
-    <video controls src="videos/institucional.mp4"></video>
+    <video controls src="videos/institucional.mp4" class="video-institucional"></video>
   </section>
 
   <section id="servicos" data-aos="fade-right">
@@ -39,9 +40,11 @@
 
   <section id="galeria" data-aos="fade-left">
     <h2>Galeria</h2>
-    <div class="grid">
-      <img src="img/obra1.png" alt="Obra 1" />
-      <img src="img/obra2.png" alt="Obra 2" />
+    <div class="galeria-grid">
+      <img src="img/obra1.png" alt="Obra 1" class="galeria-img" />
+      <img src="img/obra2.png" alt="Obra 2" class="galeria-img" />
+      <img src="img/obra3.png" alt="Obra 3" class="galeria-img" />
+      <img src="img/obra4.png" alt="Obra 4" class="galeria-img" />
     </div>
   </section>
 
@@ -65,8 +68,6 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
