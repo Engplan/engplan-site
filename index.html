@@ -2,13 +2,13 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Engplan Engenharia - Projetos e acompanhamento de obras civis com tecnologia, transparência e excelência."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engplan Engenharia</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="imagens/logo.png" />
 </head>
 <body>
-  <header>
+  <header class="cabecalho">
     <div class="logo">
       <img src="imagens/logo.png" alt="Logo Engplan" />
     </div>
@@ -16,47 +16,46 @@
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
       <a href="#galeria">Galeria</a>
-      <a href="#avaliacoes">Avaliações</a>
-      <a href="#acompanhamento">Acompanhamento</a>
       <a href="#contato">Contato</a>
+      <a href="login.html" class="btn-login">Área do Cliente</a>
     </nav>
   </header>
 
-  <section class="banner">
-    <video autoplay muted loop>
+  <section class="hero">
+    <video autoplay muted loop class="video-bg">
       <source src="institucional.mp4" type="video/mp4" />
       Seu navegador não suporta vídeo.
     </video>
-    <div class="texto-banner">
-      <h1>Engenharia com Excelência</h1>
-      <p>Projetos, reformas e acompanhamento de obras com confiança e tecnologia.</p>
+    <div class="hero-texto">
+      <h1>Engplan Engenharia</h1>
+      <p>Excelência em projetos, execução e acompanhamento de obras.</p>
     </div>
   </section>
 
-  <section id="sobre">
-    <h2>Sobre a Engplan</h2>
-    <p>Somos uma empresa especializada em soluções de engenharia civil, oferecendo acompanhamento completo de obras, reformas e consultoria técnica. Trabalhamos com transparência, compromisso e inovação.</p>
+  <section id="sobre" class="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A Engplan oferece soluções completas em engenharia, atuando com profissionalismo, tecnologia e transparência. Do projeto ao acabamento, cuidamos de cada detalhe para entregar obras com segurança e qualidade.</p>
   </section>
 
-  <section id="servicos">
+  <section id="servicos" class="servicos">
     <h2>Nossos Serviços</h2>
     <div class="grid">
-      <div class="servico">
+      <div class="card">
         <img src="imagens/servico1.png" alt="Serviço 1" />
         <h3>Projetos Residenciais</h3>
       </div>
-      <div class="servico">
+      <div class="card">
         <img src="imagens/servico2.png" alt="Serviço 2" />
-        <h3>Reformas e Execução</h3>
+        <h3>Execução de Obras</h3>
       </div>
-      <div class="servico">
+      <div class="card">
         <img src="imagens/servico3.png" alt="Serviço 3" />
-        <h3>Acompanhamento de Obra</h3>
+        <h3>Acompanhamento Técnico</h3>
       </div>
     </div>
   </section>
 
-  <section id="galeria">
+  <section id="galeria" class="galeria">
     <h2>Galeria de Obras</h2>
     <div class="grid">
       <img src="imagens/obra1.png" alt="Obra 1" />
@@ -66,38 +65,15 @@
     </div>
   </section>
 
-  <section id="avaliacoes">
-    <h2>Avaliações de Clientes</h2>
-    <div class="avaliacoes">
-      <div class="card">
-        <img src="imagens/cliente1.png" alt="Cliente 1" />
-        <p>“Serviço impecável do início ao fim. A Engplan superou nossas expectativas.”</p>
-      </div>
-      <div class="card">
-        <img src="imagens/cliente2.png" alt="Cliente 2" />
-        <p>“Acompanhamento transparente e equipe altamente qualificada. Recomendo.”</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="acompanhamento">
-    <h2>Acompanhamento de Obra</h2>
-    <p>Acesse seu painel exclusivo para acompanhar o progresso da sua obra em tempo real:</p>
-    <a href="admin.html" class="botao">Acessar Painel do Cliente</a>
-  </section>
-
-  <section id="contato">
-    <h2>Fale Conosco</h2>
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
     <form action="mailto:contato@engplanbrasil.com.br" method="POST" enctype="text/plain">
       <input type="text" name="nome" placeholder="Seu nome" required />
       <input type="email" name="email" placeholder="Seu e-mail" required />
       <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
       <button type="submit">Enviar</button>
     </form>
-  </section>
-
-  <footer>
-    <div class="social">
+    <div class="redes">
       <a href="https://wa.me/5521972083284" target="_blank">
         <img src="imagens/whatsapp.png" alt="WhatsApp" />
       </a>
@@ -105,6 +81,9 @@
         <img src="imagens/logo.png" alt="Instagram" />
       </a>
     </div>
+  </section>
+
+  <footer class="rodape">
     <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
   </footer>
 </body>
