@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Engplan - Engenharia Moderna</title>
-<link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Engplan - Engenharia com inovação, qualidade e confiança. Conheça nossos serviços e acompanhe seu projeto online.">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Engplan Engenharia</title>
 </head>
 <body>
-<header>
-  <h1>Engplan Engenharia</h1>
-  <nav>
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#galeria">Galeria</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <div class="container header-content">
+      <img src="imagens/logo.png" alt="Logo Engplan" class="logo" />
+      <nav id="menu">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="admin.html" class="btn-login">Área do Cliente</a></li>
+        </ul>
+      </nav>
+      <div id="menu-toggle">&#9776;</div>
+    </div>
+  </header>
 
-<main>
-  <section id="sobre">
-    <h2>Sobre a Engplan</h2>
-    <p>Empresa de engenharia focada em soluções modernas e sustentáveis.</p>
+  <section id="apresentacao" class="container">
+    <video src="institucional.mp4" autoplay muted loop></video>
+    <h1>Inovação e Qualidade em Engenharia</h1>
+    <p>Engenharia de confiança para obras que transformam.</p>
   </section>
 
-  <section id="servicos">
+  <section id="sobre" class="container">
+    <h2>Quem Somos</h2>
+    <p>Somos a Engplan, referência em soluções de engenharia civil e elétrica. Nosso compromisso é com a excelência, transparência e inovação nos serviços prestados.</p>
+  </section>
+
+  <section id="servicos" class="container">
     <h2>Serviços</h2>
-    <p>Projetos, consultoria, acompanhamento de obras e mais.</p>
+    <div class="grid">
+      <div class="card"><img src="imagens/servico1.png" alt=""><h3>Projetos</h3></div>
+      <div class="card"><img src="imagens/servico2.png" alt=""><h3>Execução</h3></div>
+      <div class="card"><img src="imagens/servico3.png" alt=""><h3>Manutenção</h3></div>
+    </div>
   </section>
 
-  <section id="galeria">
+  <section id="galeria" class="container">
     <h2>Galeria de Obras</h2>
-    <img src="imagens/obra1.png" alt="Obra 1" />
-    <img src="imagens/obra2.png" alt="Obra 2" />
-    <img src="imagens/obra3.png" alt="Obra 3" />
-    <img src="imagens/obra4.png" alt="Obra 4" />
+    <div class="grid">
+      <img src="imagens/obra1.png" alt="">
+      <img src="imagens/obra2.png" alt="">
+      <img src="imagens/obra3.png" alt="">
+      <img src="imagens/obra4.png" alt="">
+    </div>
   </section>
 
-  <section id="contato">
+  <section id="contato" class="container">
     <h2>Contato</h2>
-    <p>Email: contato@engplan.com.br</p>
-    <p>Telefone: (21) 97208-3284</p>
+    <form action="mailto:contato@engplan.com.br" method="post" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu email" required />
+      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="icones-contato">
+      <a href="https://wa.me/5521972083284" target="_blank"><img src="imagens/whatsapp.png" alt="WhatsApp"></a>
+      <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="imagens/logo.png" alt="Instagram"></a>
+    </div>
   </section>
-</main>
 
-<footer>
-  <p>© 2025 Engplan Engenharia - Todos os direitos reservados.</p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
+  </footer>
 
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    toggle.onclick = () => menu.classList.toggle("ativo");
+  </script>
 </body>
 </html>
