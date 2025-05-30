@@ -1,6 +1,6 @@
 @use 'variaveis' as *;
 
 body {
-  background-color: $bg-color;
-  font-family: $font-stack;
+  font-family: $fonte-padrao;
+  background-color: $cor-fundo;
 }
