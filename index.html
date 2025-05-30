@@ -2,111 +2,122 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engplan Engenharia | Projetos e Reformas no RJ</title>
-  <meta name="description" content="Engplan Engenharia - Projetos, obras e reformas residenciais e comerciais no RJ com qualidade e transparência." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Engplan Engenharia - Projetos e Reformas RJ</title>
+  <meta name="description" content="Engplan Engenharia - Projetos, construções e reformas no Rio de Janeiro com qualidade e transparência." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="container">
-      <h1 class="fade-in">Engplan Engenharia</h1>
-      <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#avaliacoes">Avaliações</a>
-        <a href="#contato">Contato</a>
-        <a href="admin.html">Admin</a>
-        <a href="en.html">EN</a>
+      <img src="images/logo.png" alt="Engplan Logo" class="logo" />
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="#services" class="nav-link">Serviços</a>
+        <a href="#gallery" class="nav-link">Galeria</a>
+        <a href="#contact" class="nav-link">Contato</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="sobre" class="fade-in">
+    <section class="hero">
       <div class="container">
-        <h2>Sobre a Engplan</h2>
-        <p>A Engplan Engenharia é referência em projetos, obras e reformas no estado do Rio de Janeiro. Atuamos com transparência, comprometimento e excelência técnica para entregar soluções sob medida para clientes residenciais, comerciais e industriais.</p>
+        <h1 class="fade-in">Bem-vindo à Engplan</h1>
+        <p class="fade-in delay-1">Oferecemos soluções de engenharia com eficiência, profissionalismo e design moderno.</p>
       </div>
     </section>
 
-    <section id="servicos" class="fade-in">
+    <section class="services" id="services">
       <div class="container">
-        <h2>Serviços</h2>
+        <h2 class="slide-in">Nossos Serviços</h2>
         <ul>
-          <li>Projetos Arquitetônicos e Estruturais</li>
-          <li>Gerenciamento de Obras</li>
-          <li>Execução de Reformas e Construções</li>
-          <li>Consultoria Técnica</li>
-          <li>Regularização de Imóveis</li>
+          <li>Projetos residenciais e comerciais</li>
+          <li>Reformas e gerenciamento de obras</li>
+          <li>Consultoria técnica especializada</li>
         </ul>
-        <a href="servicos-modelo.pdf" target="_blank" class="botao">Baixar PDF de Serviços</a>
       </div>
     </section>
 
-    <section id="galeria" class="fade-in">
+    <section class="gallery" id="gallery">
       <div class="container">
-        <h2>Galeria por Categoria</h2>
-        <div class="filter-buttons">
-          <button onclick="filterGallery('todos')">Todos</button>
-          <button onclick="filterGallery('residencial')">Residencial</button>
-          <button onclick="filterGallery('comercial')">Comercial</button>
-          <button onclick="filterGallery('industrial')">Industrial</button>
-        </div>
-        <div class="galeria-grid">
-          <img src="imagens/projeto1.webp" alt="Residencial Copacabana" class="galeria-item residencial" loading="lazy" />
-          <img src="imagens/projeto2.webp" alt="Comercial Botafogo" class="galeria-item comercial" loading="lazy" />
-          <img src="imagens/projeto3.webp" alt="Industrial Caxias" class="galeria-item industrial" loading="lazy" />
+        <h2 class="slide-in">Galeria de Projetos</h2>
+        <!-- Galeria simples, imagens futuras -->
+        <div class="gallery-grid fade-in delay-2">
+          <img src="images/projeto1.jpg" alt="Projeto 1" />
+          <img src="images/projeto2.jpg" alt="Projeto 2" />
+          <img src="images/projeto3.jpg" alt="Projeto 3" />
         </div>
       </div>
     </section>
 
-    <section id="avaliacoes" class="fade-in">
+    <section class="contact" id="contact">
       <div class="container">
-        <h2>Avaliações de Clientes</h2>
-        <div class="avaliacoes">
-          <blockquote>
-            “Profissionais incríveis! A reforma do nosso escritório ficou impecável.”<br />
-            <strong>– Mariana A.</strong>
-          </blockquote>
-          <blockquote>
-            “Serviço de qualidade, prazo cumprido e excelente atendimento.”<br />
-            <strong>– Carlos M.</strong>
-          </blockquote>
-        </div>
-      </div>
-    </section>
+        <h2 class="slide-in">Contato</h2>
+        <form id="contactForm" class="fade-in delay-3" novalidate>
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required minlength="3" />
 
-    <section id="contato" class="fade-in">
-      <div class="container">
-        <h2>Fale Conosco</h2>
-        <form action="https://formspree.io/f/mwkgeoor" method="POST">
-          <input type="text" name="nome" placeholder="Seu nome" required />
-          <input type="email" name="email" placeholder="Seu e-mail" required />
-          <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+
           <button type="submit">Enviar</button>
+          <p id="formMessage" role="alert" aria-live="polite"></p>
         </form>
-        <div id="mapa">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
-        </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <p>© 2025 Engplan Engenharia • <a href="https://instagram.com/engplanbrasil" target="_blank">Instagram</a> • <a href="https://wa.me/5521972083284" target="_blank">WhatsApp</a></p>
+      <p>© 2025 Engplan Engenharia • <a href="https://instagram.com/engplanbrasil" target="_blank" rel="noopener">Instagram</a> • <a href="https://wa.me/5521972083284" target="_blank" rel="noopener">WhatsApp</a></p>
     </div>
   </footer>
 
   <script>
-    function filterGallery(categoria) {
-      const itens = document.querySelectorAll(".galeria-item");
-      itens.forEach(el => {
-        el.style.display = categoria === 'todos' || el.classList.contains(categoria) ? 'block' : 'none';
-      });
-    }
+    // Validação simples do formulário e feedback
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const formMessage = document.getElementById('formMessage');
+      const name = this.name.value.trim();
+      const email = this.email.value.trim();
+      const message = this.message.value.trim();
+
+      if (name.length < 3) {
+        formMessage.textContent = 'Por favor, insira um nome válido com pelo menos 3 caracteres.';
+        formMessage.style.color = 'red';
+        this.name.focus();
+        return;
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        formMessage.textContent = 'Por favor, insira um email válido.';
+        formMessage.style.color = 'red';
+        this.email.focus();
+        return;
+      }
+
+      if (message.length < 10) {
+        formMessage.textContent = 'Por favor, insira uma mensagem com pelo menos 10 caracteres.';
+        formMessage.style.color = 'red';
+        this.message.focus();
+        return;
+      }
+
+      // Simula envio - substituir por integração real no backend
+      formMessage.textContent = 'Enviando...';
+      formMessage.style.color = 'green';
+
+      setTimeout(() => {
+        formMessage.textContent = 'Mensagem enviada com sucesso! Obrigado pelo contato.';
+        this.reset();
+      }, 1500);
+    });
   </script>
 </body>
 </html>
