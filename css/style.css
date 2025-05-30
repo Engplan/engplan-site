@@ -1,1 +1,13 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+
+body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
+h1.fade-in { animation: fadeIn 2s ease-in; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+nav a { margin: 0 10px; transition: color 0.3s; }
+nav a:hover { color: #26a69a; }
+form input, form textarea { width: 100%; margin-bottom: 10px; padding: 10px; }
+form button { padding: 10px 20px; background: #26a69a; border: none; color: #fff; cursor: pointer; transition: background 0.3s; }
+form button:hover { background: #00796b; }
+.galeria-grid { display: flex; gap: 10px; flex-wrap: wrap; }
+.galeria-item { width: 48%; height: auto; transition: transform 0.3s ease; }
+.galeria-item:hover { transform: scale(1.05); }
+.filter-buttons button { margin: 5px; padding: 5px 15px; cursor: pointer; }
