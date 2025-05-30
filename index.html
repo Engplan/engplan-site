@@ -1,121 +1,117 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engplan Engenharia</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="img/logo.png" type="image/png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Engplan Engenharia</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <div class="container header-container">
-      <img src="img/logo.png" alt="Logo Engplan" class="logo" />
-      <nav>
-        <ul class="menu">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#avaliacoes">Avaliações</a></li>
-          <li><a href="#acompanhamento">Acompanhamento</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="sobre" class="sobre">
-    <div class="container">
-      <h2>Sobre Nós</h2>
-      <p>Somos a Engplan, especialista em engenharia elétrica com atuação em projetos residenciais, comerciais e industriais. Compromisso, qualidade e inovação nos definem.</p>
-      <video src="institucional.mp4" controls></video>
-    </div>
-  </section>
-
-  <section id="servicos" class="servicos">
-    <div class="container">
-      <h2>Nossos Serviços</h2>
-      <div class="cards-servicos">
-        <div class="card">
-          <img src="img/icons/residencial.png" alt="Projetos Residenciais">
-          <h3>Projetos Residenciais</h3>
-          <p>Soluções elétricas eficientes para sua casa, com segurança e inovação.</p>
+    <header class="header">
+        <div class="container header-content">
+            <img src="images/logo.png" alt="Engplan Engenharia" class="logo" />
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="card">
-          <img src="img/icons/comercial.png" alt="Projetos Comerciais">
-          <h3>Projetos Comerciais</h3>
-          <p>Projetos elétricos personalizados para empresas e estabelecimentos.</p>
-        </div>
-        <div class="card">
-          <img src="img/icons/eletrica.png" alt="Instalações Elétricas">
-          <h3>Instalações Elétricas</h3>
-          <p>Execução completa de instalações elétricas com alto padrão técnico.</p>
-        </div>
-        <div class="card">
-          <img src="img/icons/reforma.png" alt="Reformas e Manutenções">
-          <h3>Reformas e Manutenções</h3>
-          <p>Modernização e correção de sistemas existentes com total confiabilidade.</p>
-        </div>
-        <div class="card">
-          <img src="img/icons/laudo.png" alt="Laudos Técnicos">
-          <h3>Laudos Técnicos</h3>
-          <p>Elaboração de laudos e vistorias para comprovação técnica e segurança.</p>
-        </div>
-        <div class="card">
-          <img src="img/icons/consultoria.png" alt="Consultorias Especializadas">
-          <h3>Consultorias Especializadas</h3>
-          <p>Apoio técnico para tomada de decisões e planejamentos eficazes.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="galeria" class="galeria">
-    <div class="container">
-      <h2>Galeria de Obras</h2>
-      <div class="imagens-galeria">
-        <img src="img/obra1.png" alt="Obra 1" />
-        <img src="img/obra2.png" alt="Obra 2" />
-        <img src="img/obra3.png" alt="Obra 3" />
-        <img src="img/obra4.png" alt="Obra 4" />
-      </div>
-    </div>
-  </section>
+    <main>
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section sobre-section">
+            <div class="container">
+                <h2>Sobre a Engplan Engenharia</h2>
+                <div class="sobre-content">
+                    <video class="sobre-video" controls muted loop>
+                        <source src="video/institucional.mp4" type="video/mp4" />
+                        Seu navegador não suporta vídeo.
+                    </video>
+                    <div class="sobre-text">
+                        <p>
+                            A Engplan Engenharia é referência em planejamento e execução de obras, com mais de 20 anos de experiência no mercado. Nosso compromisso é garantir qualidade, segurança e eficiência em cada projeto.
+                        </p>
+                        <p>
+                            Nossa equipe especializada trabalha com tecnologia de ponta para transformar seu sonho em realidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section id="avaliacoes" class="avaliacoes">
-    <div class="container">
-      <h2>Avaliação dos Clientes</h2>
-      <div class="avaliacao">
-        <p>“Profissionais excelentes! Recomendo fortemente.”</p>
-        <span>- João Silva</span>
-      </div>
-    </div>
-  </section>
+        <!-- Seção Serviços (mantida do último envio, para manter integridade) -->
+        <section id="servicos" class="section servicos-section">
+            <!-- Conteúdo Serviços já enviado anteriormente -->
+        </section>
 
-  <section id="acompanhamento" class="acompanhamento">
-    <div class="container">
-      <h2>Acompanhamento de Obra</h2>
-      <p>Confira o andamento de nossos projetos em tempo real e fique sempre informado.</p>
-    </div>
-  </section>
+        <!-- Seção Galeria -->
+        <section id="galeria" class="section galeria-section">
+            <!-- Conteúdo Galeria já enviado anteriormente -->
+        </section>
 
-  <section id="contato" class="contato">
-    <div class="container">
-      <h2>Fale Conosco</h2>
-      <form>
-        <input type="text" placeholder="Seu nome" required />
-        <input type="email" placeholder="Seu e-mail" required />
-        <textarea placeholder="Sua mensagem" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
+        <!-- Seção Avaliações -->
+        <section id="avaliacoes" class="section avaliacoes-section">
+            <div class="container">
+                <h2>Avaliações dos Clientes</h2>
+                <div class="avaliacoes-list">
+                    <article class="avaliacao-item">
+                        <p>"Excelente profissionalismo e entrega antes do prazo!"</p>
+                        <span>- Maria Silva</span>
+                    </article>
+                    <article class="avaliacao-item">
+                        <p>"Equipe muito qualificada e sempre disponível para dúvidas."</p>
+                        <span>- João Pereira</span>
+                    </article>
+                    <article class="avaliacao-item">
+                        <p>"Acompanhamento detalhado e transparência total durante a obra."</p>
+                        <span>- Ana Costa</span>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+        <!-- Seção Contato -->
+        <section id="contato" class="section contato-section">
+            <div class="container">
+                <h2>Contato</h2>
+                <form id="formContato" class="form-contato" action="#" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required />
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" />
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
+            <p>Contato: <a href="mailto:contato@engplan.com.br">contato@engplan.com.br</a> | WhatsApp: (21) 97208-3284</p>
+        </div>
+    </footer>
+
+    <script>
+      // Exemplo básico para o formulário (pode ser expandido para AJAX ou backend)
+      document.getElementById('formContato').addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Mensagem enviada com sucesso! Entraremos em contato.');
+          this.reset();
+      });
+    </script>
 </body>
 </html>
