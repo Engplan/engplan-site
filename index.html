@@ -3,79 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Engplan - Engenharia com inovação, qualidade e confiança. Conheça nossos serviços e acompanhe seu projeto online.">
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Engplan Engenharia - Projetos, execuções e acompanhamentos de obras com tecnologia, precisão e qualidade.">
   <title>Engplan Engenharia</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="imagens/logo.png" />
 </head>
 <body>
   <header>
-    <div class="container header-content">
+    <div class="container">
       <img src="imagens/logo.png" alt="Logo Engplan" class="logo" />
-      <nav id="menu">
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="admin.html" class="btn-login">Área do Cliente</a></li>
-        </ul>
+      <nav class="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+        <a href="admin.html" class="btn-login">Área do Cliente</a>
       </nav>
-      <div id="menu-toggle">&#9776;</div>
     </div>
   </header>
 
-  <section id="apresentacao" class="container">
-    <video src="institucional.mp4" autoplay muted loop></video>
-    <h1>Inovação e Qualidade em Engenharia</h1>
-    <p>Engenharia de confiança para obras que transformam.</p>
+  <section class="hero">
+    <div class="texto-hero">
+      <h1>Engplan Engenharia</h1>
+      <p>Excelência em obras, projetos e inovação.</p>
+      <a href="#contato" class="btn">Fale Conosco</a>
+    </div>
+    <video autoplay muted loop class="video-bg">
+      <source src="institucional.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos.
+    </video>
   </section>
 
-  <section id="sobre" class="container">
-    <h2>Quem Somos</h2>
-    <p>Somos a Engplan, referência em soluções de engenharia civil e elétrica. Nosso compromisso é com a excelência, transparência e inovação nos serviços prestados.</p>
-  </section>
-
-  <section id="servicos" class="container">
-    <h2>Serviços</h2>
-    <div class="grid">
-      <div class="card"><img src="imagens/servico1.png" alt=""><h3>Projetos</h3></div>
-      <div class="card"><img src="imagens/servico2.png" alt=""><h3>Execução</h3></div>
-      <div class="card"><img src="imagens/servico3.png" alt=""><h3>Manutenção</h3></div>
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Sobre a Engplan</h2>
+      <p>Somos uma empresa especializada em projetos e execução de obras residenciais, comerciais e industriais. Utilizamos tecnologia e compromisso para entregar sempre o melhor aos nossos clientes.</p>
     </div>
   </section>
 
-  <section id="galeria" class="container">
-    <h2>Galeria de Obras</h2>
-    <div class="grid">
-      <img src="imagens/obra1.png" alt="">
-      <img src="imagens/obra2.png" alt="">
-      <img src="imagens/obra3.png" alt="">
-      <img src="imagens/obra4.png" alt="">
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="grid">
+        <div class="card"><img src="imagens/servico1.png" alt=""><h3>Projetos</h3></div>
+        <div class="card"><img src="imagens/servico2.png" alt=""><h3>Execuções</h3></div>
+        <div class="card"><img src="imagens/servico3.png" alt=""><h3>Acompanhamento</h3></div>
+      </div>
     </div>
   </section>
 
-  <section id="contato" class="container">
-    <h2>Contato</h2>
-    <form action="mailto:contato@engplan.com.br" method="post" enctype="text/plain">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu email" required />
-      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <div class="icones-contato">
-      <a href="https://wa.me/5521972083284" target="_blank"><img src="imagens/whatsapp.png" alt="WhatsApp"></a>
-      <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="imagens/logo.png" alt="Instagram"></a>
+  <section id="galeria" class="galeria">
+    <div class="container">
+      <h2>Galeria de Obras</h2>
+      <div class="grid">
+        <img src="imagens/obra1.png" alt="Obra 1">
+        <img src="imagens/obra2.png" alt="Obra 2">
+        <img src="imagens/obra3.png" alt="Obra 3">
+        <img src="imagens/obra4.png" alt="Obra 4">
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <form action="mailto:contato@engplan.com.br" method="POST" enctype="text/plain">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="redes">
+        <a href="https://wa.me/5521972083284" target="_blank"><img src="imagens/whatsapp.png" alt="WhatsApp" /></a>
+        <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="imagens/logo.png" alt="Instagram" /></a>
+      </div>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
   </footer>
-
-  <script>
-    const toggle = document.getElementById("menu-toggle");
-    const menu = document.getElementById("menu");
-    toggle.onclick = () => menu.classList.toggle("ativo");
-  </script>
 </body>
 </html>
