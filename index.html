@@ -5,145 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Engplan Engenharia</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" href="images/logo.png" type="image/png" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="header-container">
-      <a href="#home" class="logo slide-in">Engplan Engenharia</a>
-      <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
-      <nav>
-        <ul id="nav-menu">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#avaliacoes">Avaliações</a></li>
-          <li><a href="#acompanhamento">Acompanhamento</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header>
+  <div class="container header-container">
+    <img src="images/logo.png" alt="Logo Engplan" class="logo" />
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav>
+      <ul class="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#acompanhamento">Acompanhamento</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <!-- Home / Banner -->
-  <section id="home" class="section-home">
-    <div class="home-content">
-      <h1>Engplan Engenharia</h1>
-      <p>Projetos e acompanhamento de obras com qualidade e tecnologia.</p>
-      <a href="#contato" class="btn-primary">Solicite um Orçamento</a>
-    </div>
-  </section>
-
-  <!-- Sobre -->
-  <section id="sobre" class="section-about">
-    <h2>Sobre Nós</h2>
-    <p>A Engplan é referência em engenharia civil, oferecendo soluções inovadoras e seguras para cada etapa da obra.</p>
-    <p>Nosso time é formado por profissionais experientes, comprometidos com a excelência e sustentabilidade.</p>
-  </section>
-
-  <!-- Serviços -->
-  <section id="servicos" class="section-services">
-    <h2>Serviços</h2>
-    <div class="services-grid">
-      <article class="service-card">
-        <h3>Projetos Arquitetônicos</h3>
-        <p>Desenvolvemos projetos personalizados, alinhados às necessidades do cliente.</p>
-      </article>
-      <article class="service-card">
-        <h3>Gerenciamento de Obras</h3>
-        <p>Controle total do cronograma, custos e qualidade durante a execução.</p>
-      </article>
-      <article class="service-card">
-        <h3>Consultoria Técnica</h3>
-        <p>Suporte especializado para resolver desafios técnicos complexos.</p>
-      </article>
+<main>
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>
+        A Engplan Engenharia é uma empresa comprometida com a qualidade e a
+        inovação na execução de projetos de construção civil, sempre visando
+        a satisfação total dos nossos clientes.
+      </p>
+      <video controls width="100%" style="max-width:700px; border-radius:8px; margin-top:1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+        <source src="videos/video-institucional.mp4" type="video/mp4" />
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
     </div>
   </section>
 
-  <!-- Galeria -->
-  <section id="galeria" class="section-gallery">
-    <h2>Galeria de Projetos</h2>
-    <div class="gallery-grid">
-      <img src="images/projeto1.jpg" alt="Projeto 1" />
-      <img src="images/projeto2.jpg" alt="Projeto 2" />
-      <img src="images/projeto3.jpg" alt="Projeto 3" />
-      <img src="images/projeto4.jpg" alt="Projeto 4" />
+  <!-- Outras seções seguem o mesmo padrão -->
+
+  <section id="servicos" class="section">
+    <div class="container">
+      <h2>Serviços</h2>
+      <!-- Conteúdo dos serviços -->
     </div>
   </section>
 
-  <!-- Avaliações -->
-  <section id="avaliacoes" class="section-reviews">
-    <h2>Avaliação dos Clientes</h2>
-    <div class="reviews-grid">
-      <blockquote class="review-card">
-        <p>"A Engplan entregou o projeto antes do prazo e com altíssima qualidade."</p>
-        <footer>- Maria Souza</footer>
-      </blockquote>
-      <blockquote class="review-card">
-        <p>"O acompanhamento da obra foi impecável, super recomendo."</p>
-        <footer>- João Pereira</footer>
-      </blockquote>
+  <section id="galeria" class="section">
+    <div class="container">
+      <h2>Galeria</h2>
+      <!-- Conteúdo da galeria -->
     </div>
   </section>
 
-  <!-- Acompanhamento -->
-  <section id="acompanhamento" class="section-tracking">
-    <h2>Acompanhamento de Obras</h2>
-    <p>Acesse nosso painel exclusivo para acompanhar o progresso de sua obra em tempo real.</p>
-    <a href="admin.html" class="btn-secondary">Painel de Acompanhamento</a>
+  <section id="avaliacoes" class="section">
+    <div class="container">
+      <h2>Avaliações</h2>
+      <!-- Conteúdo das avaliações -->
+    </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="section-contact">
-    <h2>Contato</h2>
-    <form id="contact-form" action="#" method="POST">
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="mensagem">Mensagem</label>
-      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-      <button type="submit" class="btn-primary">Enviar</button>
-    </form>
+  <section id="acompanhamento" class="section">
+    <div class="container">
+      <h2>Acompanhamento</h2>
+      <!-- Conteúdo do acompanhamento -->
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p class="fade-in">© 2025 Engplan Engenharia. Todos os direitos reservados.</p>
-    <p class="fade-in delay-1">
-      Contato:
-      <a href="mailto:contato@engplanbrasil.com.br">contato@engplanbrasil.com.br</a> |
-      WhatsApp:
-      <a href="https://wa.me/5521972083284" target="_blank">(21) 97208-3284</a>
-    </p>
-    <p class="fade-in delay-2">
-      Siga-nos nas redes sociais:
-      <a href="https://instagram.com/engplanbrasil" target="_blank" rel="noopener">Instagram</a> |
-      <a href="#" target="_blank" rel="noopener">Facebook</a>
-    </p>
-  </footer>
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <!-- Conteúdo do contato -->
+    </div>
+  </section>
+</main>
 
-  <script>
-    // Menu mobile toggle
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-
-    navMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-      });
-    });
-  </script>
+<footer>
+  <div class="container">
+    <p>© 2025 Engplan Engenharia - Todos os direitos reservados</p>
+  </div>
+</footer>
 
 </body>
 </html>
