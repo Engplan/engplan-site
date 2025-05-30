@@ -3,80 +3,221 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Engplan Engenharia – Projetos e Acompanhamento</title>
-  <meta name="description" content="Engplan Engenharia oferece soluções completas em engenharia, projetos e acompanhamento de obras." />
+  <meta name="description" content="Engplan Engenharia - Projetos, Obras e Acompanhamento de Obras" />
+  <title>Engplan Engenharia</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="imagens/logo.png" type="image/png" />
 </head>
 <body>
+  <header>
+    <div class="container header-container">
+      <a href="#home" class="logo-link" aria-label="Ir para o topo">
+        <img src="imagens/logo.png" alt="Logo Engplan Engenharia" class="logo" />
+      </a>
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#acompanhamento">Acompanhamento</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="nav-menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
 
-<header class="header">
-  <div class="container header-container">
-    <a href="#" class="logo">Engplan</a>
-    <nav class="nav" id="nav-menu" aria-label="Menu principal">
-      <ul class="nav-list">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#avaliacoes">Avaliações</a></li>
-        <li><a href="#acompanhamento">Acompanhamento</a></li>
-        <li><a href="#contato">Contato</a></li>
+  <main id="home">
+    <section id="sobre" class="section container">
+      <h1>Engplan Engenharia</h1>
+      <p>Especialistas em projetos, execução e acompanhamento de obras residenciais e comerciais.</p>
+    </section>
+
+    <section id="servicos" class="section container">
+      <h2>Serviços</h2>
+      <ul class="servicos-list">
+        <li>Projetos arquitetônicos e estruturais</li>
+        <li>Gerenciamento e execução de obras</li>
+        <li>Acompanhamento técnico detalhado</li>
+        <li>Consultoria e planejamento</li>
       </ul>
-    </nav>
-    <button aria-label="Abrir menu" class="nav-toggle" id="nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-</header>
+    </section>
 
-<main class="main-content container">
+    <section id="galeria" class="section container">
+      <h2>Galeria</h2>
+      <div class="gallery-grid">
+        <img src="imagens/obra1.jpg" alt="Obra 1" tabindex="0" class="gallery-item" />
+        <img src="imagens/obra2.jpg" alt="Obra 2" tabindex="0" class="gallery-item" />
+        <img src="imagens/obra3.jpg" alt="Obra 3" tabindex="0" class="gallery-item" />
+        <img src="imagens/obra4.jpg" alt="Obra 4" tabindex="0" class="gallery-item" />
+      </div>
 
-  <section id="sobre" class="section">
-    <h1>Engplan Engenharia</h1>
-    <p>Excelência em projetos, consultoria e acompanhamento de obras com responsabilidade técnica.</p>
-  </section>
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <button class="lightbox-close" aria-label="Fechar galeria">&times;</button>
+        <button class="lightbox-prev" aria-label="Imagem anterior">&#10094;</button>
+        <img src="" alt="" class="lightbox-img" />
+        <button class="lightbox-next" aria-label="Próxima imagem">&#10095;</button>
+      </div>
+    </section>
 
-  <section id="servicos" class="section">
-    <h2>Serviços</h2>
-    <div class="services-grid">
-      <article class="service-card">
-        <h3>Projetos Estruturais</h3>
-        <p>Desenvolvimento completo com segurança e eficiência.</p>
-      </article>
-      <article class="service-card">
-        <h3>Acompanhamento de Obras</h3>
-        <p>Monitoramento detalhado para garantir qualidade e prazo.</p>
-      </article>
-      <article class="service-card">
-        <h3>Consultoria Técnica</h3>
-        <p>Assessoria especializada para decisões seguras.</p>
-      </article>
-    </div>
-  </section>
+    <section id="avaliacoes" class="section container">
+      <h2>Avaliações dos Clientes</h2>
+      <div class="avaliacoes-list">
+        <blockquote>
+          "Excelente atendimento e execução precisa." - João Silva
+        </blockquote>
+        <blockquote>
+          "Profissionalismo e qualidade do começo ao fim." - Maria Oliveira
+        </blockquote>
+        <blockquote>
+          "Recomendo para quem quer tranquilidade e transparência." - Carlos Souza
+        </blockquote>
+      </div>
+    </section>
 
-  <section id="galeria" class="section">
-    <h2>Galeria</h2>
-    <div class="gallery-grid">
-      <img src="imagens/obra1.jpg" alt="Obra 1" />
-      <img src="imagens/obra2.jpg" alt="Obra 2" />
-      <img src="imagens/obra3.jpg" alt="Obra 3" />
-      <img src="imagens/obra4.jpg" alt="Obra 4" />
-    </div>
-  </section>
+    <section id="acompanhamento" class="section container">
+      <h2>Acompanhamento de Obras</h2>
+      <div class="acompanhamento-cards">
+        <div class="card">
+          <h3>Obra Residencial - Bairro Jardim</h3>
+          <p>Status: <strong>Em andamento</strong></p>
+          <p>Última atualização: 25/05/2025</p>
+        </div>
+        <div class="card">
+          <h3>Reforma Comercial - Centro</h3>
+          <p>Status: <strong>Concluída</strong></p>
+          <p>Finalizada em: 10/05/2025</p>
+        </div>
+        <div class="card">
+          <h3>Projeto Estrutural - Zona Sul</h3>
+          <p>Status: <strong>Planejamento</strong></p>
+          <p>Previsão início: 10/06/2025</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="avaliacoes" class="section">
-    <h2>Avaliações dos Clientes</h2>
-    <blockquote class="review">
-      <p>“Equipe muito profissional e dedicada, entregaram tudo no prazo!”</p>
-      <footer>- João Silva</footer>
-    </blockquote>
-    <blockquote class="review">
-      <p>“O acompanhamento da obra foi impecável, recomendo.”</p>
-      <footer>- Maria Souza</footer>
-    </blockquote>
-  </section>
+    <section id="contato" class="section container">
+      <h2>Contato</h2>
+      <form action="#" method="POST" class="contato-form" aria-label="Formulário de contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </section>
+  </main>
 
-  <section id="acompanhamento" class="section">
-    <h2>A
+  <footer class="footer container">
+    <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
+    <p>Contato WhatsApp: <a href="https://wa.me/5521972083284" target="_blank" rel="noopener noreferrer">(21) 97208-3284</a></p>
+  </footer>
+
+  <script>
+    // Menu Mobile Toggle
+    const btnMobile = document.getElementById('btn-mobile');
+    const navMenu = document.getElementById('nav-menu');
+
+    btnMobile.addEventListener('click', () => {
+      const expanded = btnMobile.getAttribute('aria-expanded') === 'true' || false;
+      btnMobile.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('active');
+    });
+
+    // Fechar menu ao clicar em link
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        btnMobile.setAttribute('aria-expanded', false);
+      });
+    });
+  </script>
+
+  <script>
+    // Galeria Lightbox
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.querySelector('.lightbox-img');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+
+    let currentIndex = 0;
+
+    function showLightbox(index) {
+      currentIndex = index;
+      const img = galleryItems[index];
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    }
+
+    function hideLightbox() {
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    function showNext() {
+      currentIndex = (currentIndex + 1) % galleryItems.length;
+      showLightbox(currentIndex);
+    }
+
+    function showPrev() {
+      currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+      showLightbox(currentIndex);
+    }
+
+    galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => showLightbox(index));
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          showLightbox(index);
+        }
+      });
+    });
+
+    closeBtn.addEventListener('click', hideLightbox);
+    nextBtn.addEventListener('click', showNext);
+    prevBtn.addEventListener('click', showPrev);
+
+    // Fechar lightbox com ESC e navegar com setas
+    document.addEventListener('keydown', (e) => {
+      if (lightbox.getAttribute('aria-hidden') === 'false') {
+        if (e.key === 'Escape') {
+          hideLightbox();
+        } else if (e.key === 'ArrowRight') {
+          showNext();
+        } else if (e.key === 'ArrowLeft') {
+          showPrev();
+        }
+      }
+    });
+  </script>
+
+  <script>
+    // Fade-in nas seções ao scroll
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
