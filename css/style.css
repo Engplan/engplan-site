@@ -24,6 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .logo {
@@ -48,6 +49,24 @@ body {
 .nav-list li a:hover {
     color: #b0c4b1;
 }
+
+/* Ícones sociais no cabeçalho */
+.social-icons-header {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons-header a {
+    color: #fff;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons-header a:hover {
+    color: #b0c4b1;
+}
+
+/* Seções */
 
 .section {
     padding: 3rem 0;
@@ -176,15 +195,52 @@ h2 {
     font-size: 0.9rem;
 }
 
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+.footer-link {
+    color: #b0c4b1;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Ícones sociais no rodapé */
+.social-icons-footer {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.social-icons-footer a {
+    color: #fff;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons-footer a:hover {
+    color: #b0c4b1;
+}
+
 /* Responsividade */
 
 @media (max-width: 768px) {
-    .sobre-section .sobre-content {
-        flex-direction: column;
+    .header-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sobre-section .sobre-content {
         flex-direction: column;
-        gap: 1rem;
     }
 }
