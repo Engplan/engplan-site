@@ -2,56 +2,81 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engplan Engenharia – Projetos, Obras e Consultoria Técnica</title>
-  <meta name="description" content="Engplan Engenharia oferece soluções completas em projetos e acompanhamento de obras com excelência e responsabilidade técnica." />
-  <meta name="keywords" content="Engenharia, Projetos, Acompanhamento de Obra, Consultoria Técnica, Engplan" />
-  <meta property="og:title" content="Engplan Engenharia" />
-  <meta property="og:description" content="Soluções completas em projetos e acompanhamento de obras." />
-  <meta property="og:image" content="https://engplanbrasil.com.br/imagens/logo.png" />
-  <meta property="og:url" content="https://engplanbrasil.com.br" />
-  <meta name="author" content="Engplan Engenharia" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Engplan Engenharia – Projetos e Acompanhamento</title>
+  <meta name="description" content="Engplan Engenharia oferece soluções completas em engenharia, projetos e acompanhamento de obras." />
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header role="banner">
-    <nav aria-label="Menu principal">
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#avaliacoes">Avaliações</a>
-      <a href="#acompanhamento">Acompanhamento</a>
-      <a href="#contato">Contato</a>
+
+<header class="header">
+  <div class="container header-container">
+    <a href="#" class="logo">Engplan</a>
+    <nav class="nav" id="nav-menu" aria-label="Menu principal">
+      <ul class="nav-list">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#acompanhamento">Acompanhamento</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
-  </header>
+    <button aria-label="Abrir menu" class="nav-toggle" id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
 
-  <main id="conteudo-principal">
-    <section id="sobre">
-      <h1>Bem-vindo à Engplan</h1>
-      <p>Projetos e soluções de engenharia com responsabilidade técnica e excelência.</p>
-    </section>
+<main class="main-content container">
 
-    <!-- Outras seções: Serviços, Galeria, Avaliações, Acompanhamento -->
+  <section id="sobre" class="section">
+    <h1>Engplan Engenharia</h1>
+    <p>Excelência em projetos, consultoria e acompanhamento de obras com responsabilidade técnica.</p>
+  </section>
 
-    <section id="contato">
-      <h2>Fale Conosco</h2>
-      <p>Estamos localizados no Rio de Janeiro – RJ</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.226457123546!2d-43.209372684433244!3d-22.90244954307627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e8e31c87727%3A0x6f0fcdf9b768e36!2sRio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1589984565411"
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" title="Mapa da Engplan"
-      ></iframe>
-    </section>
-  </main>
+  <section id="servicos" class="section">
+    <h2>Serviços</h2>
+    <div class="services-grid">
+      <article class="service-card">
+        <h3>Projetos Estruturais</h3>
+        <p>Desenvolvimento completo com segurança e eficiência.</p>
+      </article>
+      <article class="service-card">
+        <h3>Acompanhamento de Obras</h3>
+        <p>Monitoramento detalhado para garantir qualidade e prazo.</p>
+      </article>
+      <article class="service-card">
+        <h3>Consultoria Técnica</h3>
+        <p>Assessoria especializada para decisões seguras.</p>
+      </article>
+    </div>
+  </section>
 
-  <footer role="contentinfo">
-    <p>© 2025 Engplan Engenharia – Todos os direitos reservados</p>
-    <a href="https://instagram.com/engplanbrasil" target="_blank" aria-label="Instagram da Engplan">
-      <img src="imagens/instagram.png" alt="Instagram Engplan" class="icon-instagram" />
-    </a>
-  </footer>
+  <section id="galeria" class="section">
+    <h2>Galeria</h2>
+    <div class="gallery-grid">
+      <img src="imagens/obra1.jpg" alt="Obra 1" />
+      <img src="imagens/obra2.jpg" alt="Obra 2" />
+      <img src="imagens/obra3.jpg" alt="Obra 3" />
+      <img src="imagens/obra4.jpg" alt="Obra 4" />
+    </div>
+  </section>
 
-  <a href="https://instagram.com/engplanbrasil" class="instagram-float" target="_blank" aria-label="Abrir Instagram">
-    <img src="imagens/instagram.png" alt="Instagram" />
-  </a>
-</body>
-</html>
+  <section id="avaliacoes" class="section">
+    <h2>Avaliações dos Clientes</h2>
+    <blockquote class="review">
+      <p>“Equipe muito profissional e dedicada, entregaram tudo no prazo!”</p>
+      <footer>- João Silva</footer>
+    </blockquote>
+    <blockquote class="review">
+      <p>“O acompanhamento da obra foi impecável, recomendo.”</p>
+      <footer>- Maria Souza</footer>
+    </blockquote>
+  </section>
+
+  <section id="acompanhamento" class="section">
+    <h2>A
