@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -5,29 +6,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engplan Engenharia</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
 </head>
 <body>
-  <header>
-    <img src="img/logo.png" alt="Logo Engplan" />
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#avaliacoes">Avaliações</a></li>
-        <li><a href="#acompanhamento">Acompanhamento</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <img src="img/logo.png" alt="Logo Engplan" class="logo" />
+      <nav class="menu">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#acompanhamento">Acompanhamento</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <section id="sobre"><h2>Sobre a Engplan</h2><p>Empresa especializada em engenharia e consultoria técnica.</p></section>
-    <section id="servicos"><h2>Serviços</h2><p>Confira nosso portfólio de serviços no PDF abaixo.</p><a href="docs/servicos-modelo.pdf" download>Download PDF</a></section>
-    <section id="galeria"><h2>Galeria</h2><p>Imagens ilustrativas de projetos.</p></section>
-    <section id="avaliacoes"><h2>Avaliações</h2><p>Feedback de clientes satisfeitos.</p></section>
-    <section id="acompanhamento"><h2>Acompanhamento</h2><p>Acompanhe suas obras em tempo real.</p></section>
-    <section id="contato"><h2>Contato</h2><p>Fale conosco pelo WhatsApp (21) 97208-3284 ou Instagram @engplanbrasil.</p></section>
+    <section class="hero">
+      <div class="container">
+        <h1>Engenharia com excelência</h1>
+        <p>Projetos, obras e reformas com qualidade e compromisso.</p>
+        <a href="#contato" class="btn">Fale conosco</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre a Engplan</h2>
+        <p>Somos uma empresa especializada em engenharia civil, atuando com projetos, execução de obras e reformas, sempre priorizando qualidade, transparência e segurança.</p>
+      </div>
+    </section>
+
+    <section id="servicos" class="section dark">
+      <div class="container">
+        <h2>Nossos Serviços</h2>
+        <ul class="servicos-lista">
+          <li>Projetos Arquitetônicos e Estruturais</li>
+          <li>Execução de Obras Residenciais e Comerciais</li>
+          <li>Reformas e Regularizações</li>
+          <li>Consultoria Técnica e Vistorias</li>
+        </ul>
+        <a href="servicos-modelo.pdf" target="_blank" class="btn">Baixar PDF</a>
+      </div>
+    </section>
+
+    <section id="galeria" class="section">
+      <div class="container">
+        <h2>Galeria de Projetos</h2>
+        <div class="galeria-grid">
+          <img src="img/obra1.jpg" alt="Projeto 1" />
+          <img src="img/obra2.jpg" alt="Projeto 2" />
+          <img src="img/obra3.jpg" alt="Projeto 3" />
+          <img src="img/obra4.jpg" alt="Projeto 4" />
+        </div>
+      </div>
+    </section>
+
+    <section id="avaliacoes" class="section dark">
+      <div class="container">
+        <h2>Avaliação dos Clientes</h2>
+        <div class="avaliacoes">
+          <blockquote>"Excelente atendimento e obra entregue no prazo!" — João M.</blockquote>
+          <blockquote>"Qualidade e confiança definem a Engplan." — Carla S.</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="acompanhamento" class="section">
+      <div class="container">
+        <h2>Acompanhamento de Obras</h2>
+        <p>Acesse nosso painel e acompanhe o progresso da sua obra em tempo real.</p>
+        <a href="acompanhamento.html" class="btn">Acompanhar Obras</a>
+      </div>
+    </section>
+
+    <section id="contato" class="section dark">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Fale com a gente pelo WhatsApp ou nos envie uma mensagem:</p>
+        <a href="https://wa.me/5521972083284" class="btn whatsapp" target="_blank">
+          <img src="img/whatsapp.png" alt="WhatsApp" /> (21) 97208-3284
+        </a>
+        <p>Siga-nos no Instagram: <a href="https://instagram.com/engplanbrasil" target="_blank">@engplanbrasil</a></p>
+      </div>
+    </section>
   </main>
-  <footer><p>&copy; 2025 Engplan Engenharia</p></footer>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
