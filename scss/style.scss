@@ -1,6 +1,1 @@
-@use 'variaveis' as *;
-
-body {
-  font-family: $fonte-padrao;
-  background-color: $cor-fundo;
-}
+@use 'variaveis' as *; body { font-family: Arial; }
