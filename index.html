@@ -2,14 +2,14 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Engplan Engenharia - Projetos, Obras e Consultoria Técnica"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engplan Engenharia</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <div class="logo">Engplan Engenharia</div>
+    <div class="logo">Engplan</div>
     <nav>
       <ul>
         <li><a href="#sobre">Sobre</a></li>
@@ -22,68 +22,51 @@
     </nav>
   </header>
 
-  <main>
-    <section id="sobre" class="section">
-      <h2>Sobre Nós</h2>
-      <p>Somos uma empresa especializada em projetos, obras e consultoria técnica com foco em qualidade e inovação.</p>
-      <div class="video-container">
-        <video controls>
-          <source src="videos/institucional.mp4" type="video/mp4">
-          Seu navegador não suporta a reprodução de vídeo.
-        </video>
-      </div>
-    </section>
+  <section id="sobre" data-aos="fade-up">
+    <h2>Sobre Nós</h2>
+    <p>A Engplan é referência em engenharia e soluções construtivas...</p>
+    <video controls src="videos/institucional.mp4"></video>
+  </section>
 
-    <section id="servicos" class="section">
-      <h2>Serviços</h2>
-      <div class="servicos-grid">
-        <div class="servico">Projetos Estruturais</div>
-        <div class="servico">Consultoria Técnica</div>
-        <div class="servico">Execução de Obras</div>
-        <div class="servico">Laudos Técnicos</div>
-      </div>
-    </section>
+  <section id="servicos" data-aos="fade-right">
+    <h2>Serviços</h2>
+    <div class="grid">
+      <div class="card">Residenciais</div>
+      <div class="card">Comerciais</div>
+      <div class="card">Projetos Elétricos</div>
+    </div>
+  </section>
 
-    <section id="galeria" class="section">
-      <h2>Galeria de Projetos</h2>
-      <div class="galeria-grid">
-        <img src="imagens/obra1.jpg" alt="Projeto 1" />
-        <img src="imagens/obra2.jpg" alt="Projeto 2" />
-        <img src="imagens/obra3.jpg" alt="Projeto 3" />
-        <img src="imagens/obra4.jpg" alt="Projeto 4" />
-      </div>
-    </section>
+  <section id="galeria" data-aos="fade-left">
+    <h2>Galeria</h2>
+    <div class="grid">
+      <img src="img/obra1.png" alt="Obra 1" />
+      <img src="img/obra2.png" alt="Obra 2" />
+    </div>
+  </section>
 
-    <section id="avaliacoes" class="section">
-      <h2>Avaliações dos Clientes</h2>
-      <div class="avaliacoes-grid">
-        <blockquote>"Excelente atendimento e execução impecável!"</blockquote>
-        <blockquote>"Profissionais muito qualificados."</blockquote>
-        <blockquote>"Recomendo sem dúvidas. Ótimo custo-benefício."</blockquote>
-      </div>
-    </section>
+  <section id="avaliacoes" data-aos="zoom-in">
+    <h2>Avaliações</h2>
+    <div class="avaliacao">"Serviço impecável!" - João</div>
+  </section>
 
-    <section id="acompanhamento" class="section">
-      <h2>Acompanhamento de Obras</h2>
-      <p>Acompanhe o andamento das nossas obras em tempo real através de nosso painel exclusivo.</p>
-      <a href="painel.html" class="botao">Acessar Painel</a>
-    </section>
+  <section id="acompanhamento" data-aos="fade-up">
+    <h2>Acompanhamento de Obras</h2>
+    <p>Veja o andamento de cada obra em tempo real.</p>
+  </section>
 
-    <section id="contato" class="section">
-      <h2>Contato</h2>
-      <p>Fale conosco pelo WhatsApp: <a href="https://wa.me/5521972083284" target="_blank">(21) 97208-3284</a></p>
-      <p>Siga no Instagram: <a href="https://instagram.com/engplanbrasil" target="_blank">@engplanbrasil</a></p>
-      <form>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea placeholder="Sua mensagem" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+  <section id="contato" data-aos="fade-up">
+    <h2>Contato</h2>
+    <p>WhatsApp: (21) 97208-3284</p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Engplan Engenharia</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
