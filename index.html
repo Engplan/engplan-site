@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,44 +9,95 @@
 </head>
 <body>
   <header>
-    <h1 class="fade-in">Engplan Engenharia</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <div class="container">
+      <h1 class="fade-in">Engplan Engenharia</h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+        <a href="admin.html">Admin</a>
+        <a href="en.html">EN</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="galeria">
-      <h2>Galeria por Categoria</h2>
-      <div class="filter-buttons">
-        <button onclick="filterGallery('todos')">Todos</button>
-        <button onclick="filterGallery('residencial')">Residencial</button>
-        <button onclick="filterGallery('comercial')">Comercial</button>
-      </div>
-      <div class="galeria-grid">
-        <img src="imagens/projeto1.webp" alt="Residencial Copacabana" class="galeria-item residencial" loading="lazy" />
-        <img src="imagens/projeto2.webp" alt="Comercial Botafogo" class="galeria-item comercial" loading="lazy" />
+    <section id="sobre" class="fade-in">
+      <div class="container">
+        <h2>Sobre a Engplan</h2>
+        <p>A Engplan Engenharia é referência em projetos, obras e reformas no estado do Rio de Janeiro. Atuamos com transparência, comprometimento e excelência técnica para entregar soluções sob medida para clientes residenciais, comerciais e industriais.</p>
       </div>
     </section>
 
-    <section id="contato">
-      <h2>Fale Conosco</h2>
-      <form action="https://formspree.io/f/mwkgeoor" method="POST">
-        <input type="text" name="nome" placeholder="Seu nome" required />
-        <input type="email" name="email" placeholder="Seu e-mail" required />
-        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-      <div id="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section id="servicos" class="fade-in">
+      <div class="container">
+        <h2>Serviços</h2>
+        <ul>
+          <li>Projetos Arquitetônicos e Estruturais</li>
+          <li>Gerenciamento de Obras</li>
+          <li>Execução de Reformas e Construções</li>
+          <li>Consultoria Técnica</li>
+          <li>Regularização de Imóveis</li>
+        </ul>
+        <a href="servicos-modelo.pdf" target="_blank" class="botao">Baixar PDF de Serviços</a>
+      </div>
+    </section>
+
+    <section id="galeria" class="fade-in">
+      <div class="container">
+        <h2>Galeria por Categoria</h2>
+        <div class="filter-buttons">
+          <button onclick="filterGallery('todos')">Todos</button>
+          <button onclick="filterGallery('residencial')">Residencial</button>
+          <button onclick="filterGallery('comercial')">Comercial</button>
+          <button onclick="filterGallery('industrial')">Industrial</button>
+        </div>
+        <div class="galeria-grid">
+          <img src="imagens/projeto1.webp" alt="Residencial Copacabana" class="galeria-item residencial" loading="lazy" />
+          <img src="imagens/projeto2.webp" alt="Comercial Botafogo" class="galeria-item comercial" loading="lazy" />
+          <img src="imagens/projeto3.webp" alt="Industrial Caxias" class="galeria-item industrial" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="avaliacoes" class="fade-in">
+      <div class="container">
+        <h2>Avaliações de Clientes</h2>
+        <div class="avaliacoes">
+          <blockquote>
+            “Profissionais incríveis! A reforma do nosso escritório ficou impecável.”<br />
+            <strong>– Mariana A.</strong>
+          </blockquote>
+          <blockquote>
+            “Serviço de qualidade, prazo cumprido e excelente atendimento.”<br />
+            <strong>– Carlos M.</strong>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="fade-in">
+      <div class="container">
+        <h2>Fale Conosco</h2>
+        <form action="https://formspree.io/f/mwkgeoor" method="POST">
+          <input type="text" name="nome" placeholder="Seu nome" required />
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+          <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Engplan Engenharia</p>
+    <div class="container">
+      <p>© 2025 Engplan Engenharia • <a href="https://instagram.com/engplanbrasil" target="_blank">Instagram</a> • <a href="https://wa.me/5521972083284" target="_blank">WhatsApp</a></p>
+    </div>
   </footer>
 
   <script>
