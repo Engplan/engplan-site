@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,68 +7,115 @@
   <title>Engplan Engenharia</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="img/logo.png" type="image/png" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <div class="logo">Engplan</div>
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#avaliacoes">Avaliações</a></li>
-        <li><a href="#acompanhamento">Acompanhamento</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <img src="img/logo.png" alt="Logo Engplan" class="logo" />
+      <nav>
+        <ul class="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#acompanhamento">Acompanhamento</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="sobre" data-aos="fade-up">
-    <h2>Sobre Nós</h2>
-    <p>A Engplan é referência em engenharia e soluções construtivas...</p>
-    <video controls src="videos/institucional.mp4" class="video-institucional"></video>
-  </section>
-
-  <section id="servicos" data-aos="fade-right">
-    <h2>Serviços</h2>
-    <div class="grid">
-      <div class="card">Residenciais</div>
-      <div class="card">Comerciais</div>
-      <div class="card">Projetos Elétricos</div>
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>Somos a Engplan, especialista em engenharia elétrica com atuação em projetos residenciais, comerciais e industriais. Compromisso, qualidade e inovação nos definem.</p>
+      <video src="institucional.mp4" controls></video>
     </div>
   </section>
 
-  <section id="galeria" data-aos="fade-left">
-    <h2>Galeria</h2>
-    <div class="galeria-grid">
-      <img src="img/obra1.png" alt="Obra 1" class="galeria-img" />
-      <img src="img/obra2.png" alt="Obra 2" class="galeria-img" />
-      <img src="img/obra3.png" alt="Obra 3" class="galeria-img" />
-      <img src="img/obra4.png" alt="Obra 4" class="galeria-img" />
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="cards-servicos">
+        <div class="card">
+          <img src="img/icons/residencial.png" alt="Projetos Residenciais">
+          <h3>Projetos Residenciais</h3>
+          <p>Soluções elétricas eficientes para sua casa, com segurança e inovação.</p>
+        </div>
+        <div class="card">
+          <img src="img/icons/comercial.png" alt="Projetos Comerciais">
+          <h3>Projetos Comerciais</h3>
+          <p>Projetos elétricos personalizados para empresas e estabelecimentos.</p>
+        </div>
+        <div class="card">
+          <img src="img/icons/eletrica.png" alt="Instalações Elétricas">
+          <h3>Instalações Elétricas</h3>
+          <p>Execução completa de instalações elétricas com alto padrão técnico.</p>
+        </div>
+        <div class="card">
+          <img src="img/icons/reforma.png" alt="Reformas e Manutenções">
+          <h3>Reformas e Manutenções</h3>
+          <p>Modernização e correção de sistemas existentes com total confiabilidade.</p>
+        </div>
+        <div class="card">
+          <img src="img/icons/laudo.png" alt="Laudos Técnicos">
+          <h3>Laudos Técnicos</h3>
+          <p>Elaboração de laudos e vistorias para comprovação técnica e segurança.</p>
+        </div>
+        <div class="card">
+          <img src="img/icons/consultoria.png" alt="Consultorias Especializadas">
+          <h3>Consultorias Especializadas</h3>
+          <p>Apoio técnico para tomada de decisões e planejamentos eficazes.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="avaliacoes" data-aos="zoom-in">
-    <h2>Avaliações</h2>
-    <div class="avaliacao">"Serviço impecável!" - João</div>
+  <section id="galeria" class="galeria">
+    <div class="container">
+      <h2>Galeria de Obras</h2>
+      <div class="imagens-galeria">
+        <img src="img/obra1.png" alt="Obra 1" />
+        <img src="img/obra2.png" alt="Obra 2" />
+        <img src="img/obra3.png" alt="Obra 3" />
+        <img src="img/obra4.png" alt="Obra 4" />
+      </div>
+    </div>
   </section>
 
-  <section id="acompanhamento" data-aos="fade-up">
-    <h2>Acompanhamento de Obras</h2>
-    <p>Veja o andamento de cada obra em tempo real.</p>
+  <section id="avaliacoes" class="avaliacoes">
+    <div class="container">
+      <h2>Avaliação dos Clientes</h2>
+      <div class="avaliacao">
+        <p>“Profissionais excelentes! Recomendo fortemente.”</p>
+        <span>- João Silva</span>
+      </div>
+    </div>
   </section>
 
-  <section id="contato" data-aos="fade-up">
-    <h2>Contato</h2>
-    <p>WhatsApp: (21) 97208-3284</p>
+  <section id="acompanhamento" class="acompanhamento">
+    <div class="container">
+      <h2>Acompanhamento de Obra</h2>
+      <p>Confira o andamento de nossos projetos em tempo real e fique sempre informado.</p>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Engplan Engenharia</p>
+    <div class="container">
+      <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
+    </div>
   </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
 </body>
 </html>
