@@ -1,1 +1,21 @@
-body { background: #fff; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #2F4F4F;
+}
+a, button {
+  outline: none;
+}
+a:focus, button:focus {
+  outline: 3px solid #FFD700;
+  outline-offset: 2px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+[aria-label] {
+  cursor: pointer;
+}
