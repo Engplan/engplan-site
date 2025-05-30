@@ -1,2 +1,13 @@
 @use 'variaveis' as *;
-body { background-color: $cor-fundo; }
+
+body {
+  font-family: $fonte-principal;
+  background-color: $cor-secundaria;
+  margin: 0;
+}
+
+header, footer {
+  background-color: $cor-primaria;
+  color: $cor-secundaria;
+  padding: 1em;
+}
