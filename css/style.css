@@ -21,9 +21,14 @@ body {
 }
 
 .logo img {
-  width: 250px;
+  width: 25px;
   height: auto;
   max-width: 100%;
+}
+
+.logo-reduzida {
+  width: 25px;
+  height: auto;
 }
 
 .menu {
@@ -155,4 +160,8 @@ h2 {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+}
+
+.rodape img {
+  margin-bottom: 0.5rem;
 }
