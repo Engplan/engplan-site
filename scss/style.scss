@@ -1,13 +1,2 @@
-
-@use 'variaveis' as *;
-
-body {
-  background-color: $cor-secundaria;
-  color: #333;
-  font-family: $fonte;
-}
-
-header {
-  background-color: $cor-primaria;
-  color: white;
-}
+@import "variaveis";
+body { background-color: var(--cor-principal); }
