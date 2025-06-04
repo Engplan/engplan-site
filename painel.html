@@ -2,53 +2,68 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Painel do Cliente - Engplan Engenharia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel de Obras | Engplan</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <!-- Cabeçalho -->
-  <header>
-    <img src="img/logo.png" alt="Logo Engplan" class="logo" />
-    <nav>
+  <header class="header">
+    <img src="images/logo.png" alt="Engplan Logo" class="logo" />
+    <nav class="menu">
       <a href="index.html">Início</a>
-      <a href="#contato">Contato</a>
-      <a href="login.html">Sair</a>
+      <a href="index-en.html">EN</a>
+      <a href="login.html">Área do Cliente</a>
     </nav>
   </header>
 
-  <!-- Conteúdo do Painel -->
-  <main class="container">
-    <section class="section">
-      <h2>Bem-vindo ao seu Painel</h2>
-      <p>Acompanhe o andamento da sua obra, visualize documentos e atualizações da Engplan.</p>
-
-      <div class="grid">
-        <div class="card">
-          <h3>📊 Progresso da Obra</h3>
-          <p>Veja as etapas concluídas e as próximas fases do seu projeto.</p>
-          <a href="#">Ver detalhes</a>
-        </div>
-        <div class="card">
-          <h3>📁 Documentos</h3>
-          <p>Acesse plantas, relatórios e cronogramas atualizados.</p>
-          <a href="#">Acessar</a>
-        </div>
-        <div class="card">
-          <h3>🖼️ Fotos Recentes</h3>
-          <p>Imagens atualizadas do canteiro de obras.</p>
-          <a href="#">Visualizar</a>
-        </div>
-      </div>
-    </section>
+  <main class="painel-obras">
+    <h1>Acompanhamento de Obras</h1>
+    <p>Aqui você pode acompanhar o andamento das obras em execução.</p>
+    
+    <div class="tabela-obras">
+      <table>
+        <thead>
+          <tr>
+            <th>Obra</th>
+            <th>Cliente</th>
+            <th>Status</th>
+            <th>Última Atualização</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Residência Costa</td>
+            <td>João Costa</td>
+            <td><span class="status andamento">Em andamento</span></td>
+            <td>02/06/2025</td>
+          </tr>
+          <tr>
+            <td>Prédio Comercial RJ</td>
+            <td>Construtora Ideal</td>
+            <td><span class="status concluido">Concluída</span></td>
+            <td>15/05/2025</td>
+          </tr>
+          <tr>
+            <td>Casa em Petrópolis</td>
+            <td>Maria Lima</td>
+            <td><span class="status aguardando">Aguardando início</span></td>
+            <td>--</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
 
-  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Engplan Engenharia</p>
-    <a href="index.html">Voltar ao site</a>
+    <p>© 2025 Engplan Engenharia</p>
+    <div class="social">
+      <a href="https://wa.me/5521972083284" target="_blank">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+      </a>
+      <a href="https://instagram.com/engplanbrasil" target="_blank">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+    </div>
   </footer>
-
 </body>
 </html>
