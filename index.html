@@ -2,114 +2,104 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Engplan Engenharia</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="preload" as="image" href="img/logo.png" />
 </head>
 <body>
-
-  <!-- Cabeçalho -->
   <header>
-    <img src="img/logo.png" alt="Logo Engplan" class="logo" />
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#avaliacoes">Avaliações</a>
-      <a href="#acompanhamento">Acompanhamento</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <div class="container">
+      <img src="imagens/logo.png" alt="Logo Engplan" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#videos">Vídeos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="painel.html">Painel</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
+  <section id="sobre">
+    <div class="container">
+      <h1>Sobre a Engplan</h1>
+      <p>Somos especialistas em soluções de engenharia com excelência técnica e compromisso com resultados sustentáveis e inovadores.</p>
+    </div>
+  </section>
 
-    <!-- Sobre -->
-    <section id="sobre" class="section">
-      <h2>Sobre a Engplan</h2>
-      <p>A Engplan é uma empresa especializada em soluções de engenharia com foco em qualidade, inovação e excelência técnica.</p>
-    </section>
-
-    <!-- Serviços -->
-    <section id="servicos" class="section">
-      <h2>Nossos Serviços</h2>
-      <div class="grid">
-        <div class="card">Projetos Estruturais</div>
-        <div class="card">Gerenciamento de Obras</div>
-        <div class="card">Laudos Técnicos</div>
-        <div class="card">Consultoria Técnica</div>
+  <section id="servicos">
+    <div class="container">
+      <h2>Serviços</h2>
+      <div class="grid-servicos">
+        <div class="servico">Projetos Estruturais</div>
+        <div class="servico">Gerenciamento de Obras</div>
+        <div class="servico">Consultoria Técnica</div>
+        <div class="servico">Laudos e Vistorias</div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Galeria -->
-    <section id="galeria" class="section">
-      <h2>Galeria de Projetos</h2>
-      <div class="grid">
-        <img src="img/obra1.png" alt="Obra 1" loading="lazy" />
-        <img src="img/obra2.png" alt="Obra 2" loading="lazy" />
-        <img src="img/obra3.png" alt="Obra 3" loading="lazy" />
-        <img src="img/obra4.png" alt="Obra 4" loading="lazy" />
-      </div>
-    </section>
+  <section id="galeria">
+    <h2>📷 Nossa Galeria de Projetos</h2>
+    <div class="galeria-grid">
+      <img src="imagens/obra1.png" alt="Obra 1" />
+      <img src="imagens/obra2.png" alt="Obra 2" />
+      <img src="imagens/obra3.png" alt="Obra 3" />
+      <img src="imagens/obra4.png" alt="Obra 4" />
+    </div>
+  </section>
 
-    <!-- Avaliações -->
-    <section id="avaliacoes" class="section">
-      <h2>Avaliações dos Clientes</h2>
-      <div class="grid">
-        <div class="card">⭐⭐⭐⭐⭐ Serviço excelente!</div>
-        <div class="card">⭐⭐⭐⭐ Profissionais capacitados!</div>
-        <div class="card">⭐⭐⭐⭐⭐ Entrega no prazo!</div>
-      </div>
-    </section>
+  <section id="avaliacoes">
+    <div class="container">
+      <h2>O que nossos clientes dizem</h2>
+      <blockquote>"Equipe excelente, entregaram muito antes do prazo!"</blockquote>
+      <blockquote>"Profissionais qualificados e ótimo atendimento."</blockquote>
+    </div>
+  </section>
 
-    <!-- Acompanhamento -->
-    <section id="acompanhamento" class="section">
-      <h2>Acompanhamento de Obras</h2>
-      <a href="painel.html" class="btn">Acessar Painel</a>
-    </section>
+  <section id="videos">
+    <h2>Vídeos Institucionais</h2>
+    <div class="videos">
+      <video controls>
+        <source src="videos/institucional.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo.
+      </video>
+      <video controls>
+        <source src="videos/engenharia.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+  </section>
 
-    <!-- Vídeo institucional -->
-    <section class="section">
-      <h2>Vídeo Institucional</h2>
-      <div class="video-container">
-        <video controls poster="img/thumb-institucional.jpg" loading="lazy">
-          <source src="video/institucional.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeo.
-        </video>
-      </div>
-    </section>
-
-    <!-- Vídeo Engenharia -->
-    <section class="section">
-      <h2>Engenharia em Ação</h2>
-      <div class="video-container">
-        <video controls poster="img/thumb-engenharia.jpg" loading="lazy">
-          <source src="video/engenharia.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeo.
-        </video>
-      </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contato" class="section">
+  <section id="contato">
+    <div class="container">
       <h2>Contato</h2>
-      <form class="contato-form">
-        <input type="text" placeholder="Seu nome" required />
-        <input type="email" placeholder="Seu email" required />
-        <textarea placeholder="Sua mensagem" required></textarea>
-        <button class="btn" type="submit">Enviar</button>
+      <form action="mailto:contato@engplanbrasil.com.br" method="POST" enctype="text/plain">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu email" required />
+        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
       </form>
-    </section>
+    </div>
+  </section>
 
-  </main>
-
-  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Engplan Engenharia</p>
-    <a href="https://wa.me/5521972083284" target="_blank">WhatsApp</a> |
-    <a href="https://instagram.com/engplanbrasil" target="_blank">Instagram</a> |
-    <a href="login.html">Área do Cliente</a>
+    <div class="container">
+      <p>&copy; 2025 Engplan Engenharia</p>
+      <div class="redes">
+        <a href="https://wa.me/5521972083284" target="_blank">
+          <img src="imagens/whatsapp.png" alt="WhatsApp" />
+        </a>
+        <a href="https://instagram.com/engplanbrasil" target="_blank">
+          <img src="imagens/instagram.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
   </footer>
-
 </body>
 </html>
