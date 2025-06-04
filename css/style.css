@@ -108,3 +108,35 @@ footer .social img {
 footer .social img:hover {
   transform: scale(1.1);
 }
+.painel-obras {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.painel-obras table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.painel-obras th, .painel-obras td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+.status {
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.status.andamento {
+  background: #ffc107;
+  color: #000;
+}
+.status.concluido {
+  background: #28a745;
+  color: white;
+}
+.status.aguardando {
+  background: #6c757d;
+  color: white;
+}
