@@ -3,118 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engplan Engineering - Excellence in Projects and Construction</title>
+  <title>Engplan Engineering</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <img src="images/logo.png" alt="Engplan Logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#tracking">Tracking</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="header">
+    <img src="images/logo.png" alt="Engplan Logo" class="logo" />
+    <nav class="menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="login.html" class="login-btn">Client Area</a>
+    </nav>
   </header>
 
-  <!-- About -->
   <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Engplan is a civil engineering company dedicated to excellence, innovation, and commitment. With a highly qualified team, we offer solutions in construction, renovation, inspection, and consulting.</p>
-    </div>
+    <h2>About Engplan</h2>
+    <p>We are a Brazilian engineering company specialized in construction, supervision, and real estate solutions.</p>
+    <video src="videos/institucional.mp4" controls></video>
   </section>
 
-  <!-- Services -->
   <section id="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="services-grid">
-        <div class="service-card">Structural Projects</div>
-        <div class="service-card">Electrical and Hydraulic Projects</div>
-        <div class="service-card">Renovations and Maintenance</div>
-        <div class="service-card">Technical Reports</div>
-        <div class="service-card">Inspections and Approvals</div>
-        <div class="service-card">Consulting and Monitoring</div>
-      </div>
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">🏗️ Construction</div>
+      <div class="card">📐 Design</div>
+      <div class="card">📊 Supervision</div>
+      <div class="card">🏢 Real Estate</div>
     </div>
   </section>
 
-  <!-- Gallery -->
   <section id="gallery">
-    <div class="container">
-      <h2>Project Gallery</h2>
-      <div class="gallery-grid">
-        <img src="images/obra1.png" alt="Project 1" />
-        <img src="images/obra2.png" alt="Project 2" />
-        <img src="images/obra3.png" alt="Project 3" />
-        <img src="images/obra4.png" alt="Project 4" />
-      </div>
+    <h2>Project Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/obra1.png" alt="Work 1" />
+      <img src="images/obra2.png" alt="Work 2" />
+      <img src="images/obra3.png" alt="Work 3" />
+      <img src="images/obra4.png" alt="Work 4" />
     </div>
   </section>
 
-  <!-- Reviews -->
-  <section id="reviews">
-    <div class="container">
-      <h2>Client Reviews</h2>
-      <div class="review-card">"Reliable and professional service!"</div>
-      <div class="review-card">"We loved the final result. Thank you!"</div>
-    </div>
-  </section>
-
-  <!-- Tracking -->
-  <section id="tracking">
-    <div class="container">
-      <h2>Project Tracking</h2>
-      <p>Access progress updates, photos, and reports of your project in real time through our client portal.</p>
-      <a href="painel.html" class="btn">Access the Panel</a>
-    </div>
-  </section>
-
-  <!-- Videos -->
-  <section id="videos">
-    <div class="container">
-      <h2>Institutional Videos</h2>
-      <video src="videos/institucional.mp4" controls></video>
-      <video src="videos/engenharia.mp4" controls></video>
-    </div>
-  </section>
-
-  <!-- Contact -->
   <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form action="enviar.php" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
-        <button type="submit">Send</button>
-      </form>
-    </div>
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/{SEU_CÓDIGO}" method="POST">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="_replyto" placeholder="Email" required />
+      <textarea name="message" placeholder="Message" required></textarea>
+      <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Engplan Engineering. All rights reserved.</p>
-      <div class="social">
-        <a href="https://wa.me/5521972083284" target="_blank">
-          <img src="images/whatsapp.png" alt="WhatsApp" />
-        </a>
-        <a href="https://instagram.com/engplanbrasil" target="_blank">
-          <img src="images/instagram.png" alt="Instagram" />
-        </a>
-      </div>
+    <p>© 2025 Engplan Engineering</p>
+    <div class="social">
+      <a href="https://wa.me/5521972083284" target="_blank">
+        <img src="images/whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="https://instagram.com/engplanbrasil" target="_blank">
+        <img src="images/instagram.png" alt="Instagram" />
+      </a>
     </div>
   </footer>
 </body>
