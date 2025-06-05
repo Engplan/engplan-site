@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engplan Brasil</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -11,86 +11,104 @@
     <div class="container">
       <h1>Engplan Brasil</h1>
       <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#avaliacoes">Avaliações</a>
-        <a href="#contato">Contato</a>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#acompanhamento">Acompanhamento</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <section class="banner-video">
-    <video autoplay muted loop>
-      <source src="videos/institucional.mp4" type="video/mp4" />
-      Seu navegador não suporta vídeo.
+  <!-- Hero com vídeo institucional -->
+  <section class="hero-video">
+    <video autoplay muted loop playsinline>
+      <source src="video/institucional.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos em HTML5.
     </video>
-    <div class="overlay">
-      <h2>Engenharia com eficiência, inovação e confiança</h2>
+    <div class="hero-texto">
+      <h2>Soluções em Engenharia, Projetos e Execução</h2>
+      <p>Steel Frame, Gestão de Obras, Reformas, Projetos e Laudos Técnicos</p>
     </div>
   </section>
 
-  <section id="sobre" class="sobre">
+  <!-- Sobre -->
+  <section id="sobre">
     <div class="container">
       <h2>Sobre a Engplan Brasil</h2>
-      <p>A Engplan Brasil atua com excelência no ramo de engenharia oferecendo soluções completas em <strong>steel frame</strong>, <strong>gestão de obras</strong>, <strong>reformas</strong>, <strong>projetos técnicos</strong> e <strong>laudos especializados</strong>. Com uma equipe altamente capacitada, entregamos qualidade e inovação em cada etapa do processo construtivo.</p>
+      <p>Atuamos com excelência em projetos e execução de obras em Steel Frame, reformas residenciais e comerciais, gestão de obras, desenvolvimento de projetos técnicos e emissão de laudos. Nossa missão é entregar soluções modernas com precisão técnica e alto padrão de qualidade.</p>
     </div>
   </section>
 
-  <section id="servicos" class="servicos">
+  <!-- Serviços -->
+  <section id="servicos">
     <div class="container">
       <h2>Nossos Serviços</h2>
-      <div class="grid-servicos">
-        <div class="servico-item">Projetos</div>
-        <div class="servico-item">Reformas</div>
-        <div class="servico-item">Obras em Steel Frame</div>
-        <div class="servico-item">Gestão de Obra</div>
-        <div class="servico-item">Laudos Técnicos</div>
-        <div class="servico-item">Consultoria</div>
+      <div class="servicos-grid">
+        <div class="servico"><h3>Steel Frame</h3></div>
+        <div class="servico"><h3>Reformas</h3></div>
+        <div class="servico"><h3>Projetos</h3></div>
+        <div class="servico"><h3>Laudos Técnicos</h3></div>
+        <div class="servico"><h3>Gestão de Obra</h3></div>
       </div>
     </div>
   </section>
 
-  <section id="galeria" class="galeria">
+  <!-- Galeria -->
+  <section id="galeria">
     <div class="container">
       <h2>Galeria de Projetos</h2>
-      <div class="grid-galeria">
-        <a href="leito-hospitalar.html" class="galeria-item">
-          <img src="imagens/obra1.png" alt="Leito Hospitalar" />
+      <div class="galeria-grid">
+        <a href="leito.html" class="galeria-item">
+          <img src="img/leito1.png" alt="Leito Hospitalar" />
           <span>Leito Hospitalar</span>
         </a>
-        <a href="barragem.html" class="galeria-item">
-          <img src="imagens/obra2.png" alt="Implementação de Barragem" />
+        <a href="rio.html" class="galeria-item">
+          <img src="img/rio1.png" alt="Barragem" />
           <span>Implementação de Barragem</span>
         </a>
-        <a href="cobertura-comercial.html" class="galeria-item">
-          <img src="imagens/obra3.png" alt="Cobertura galvanizado" />
+        <a href="cobertura.html" class="galeria-item">
+          <img src="img/cobertura1.png" alt="Cobertura" />
           <span>Cobertura galvanizado em ponto comercial</span>
         </a>
-        <a href="reforma-barra.html" class="galeria-item">
-          <img src="imagens/obra4.png" alt="Reforma Barra Studio" />
+        <a href="studio.html" class="galeria-item">
+          <img src="img/reforma1.png" alt="Studio" />
           <span>Reforma Barra Studio</span>
         </a>
       </div>
     </div>
   </section>
 
-  <section id="avaliacoes" class="avaliacoes">
+  <!-- Avaliações -->
+  <section id="avaliacoes">
     <div class="container">
       <h2>Avaliações dos Clientes</h2>
-      <div class="avaliacao">
-        <p>“Serviço excelente e atendimento profissional. Recomendo!”</p>
-        <strong>— Cliente Satisfeito</strong>
+      <div class="avaliacoes">
+        <blockquote>"Serviço excelente e profissionalismo ímpar!"</blockquote>
+        <blockquote>"Atendimento rápido, soluções inteligentes e ótimo custo-benefício."</blockquote>
       </div>
     </div>
   </section>
 
-  <section id="contato" class="contato">
+  <!-- Acompanhamento -->
+  <section id="acompanhamento">
+    <div class="container">
+      <h2>Acompanhamento de Obra</h2>
+      <p>Clientes têm acesso a um painel exclusivo para acompanhar o andamento das suas obras em tempo real.</p>
+      <a href="login.html" class="botao">Acessar Painel</a>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
     <div class="container">
       <h2>Contato</h2>
-      <form id="form-contato" action="enviar.php" method="POST">
+      <form action="enviar.php" method="POST">
         <input type="text" name="nome" placeholder="Seu nome" required />
-        <input type="email" name="email" placeholder="Seu email" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
         <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
         <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
         <button type="submit">Enviar</button>
@@ -100,7 +118,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
+      <p>&copy; 2025 Engplan Brasil | Todos os direitos reservados</p>
     </div>
   </footer>
 
