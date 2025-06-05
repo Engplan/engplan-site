@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Login - Engplan Engenharia</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Engplan</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="Engplan Engenharia" />
-    </a>
+  <header class="video-banner">
+    <video autoplay muted loop playsinline class="video-banner__video">
+      <source src="videos/institucional.mp4" type="video/mp4">
+      Seu navegador não suporta o vídeo.
+    </video>
+    <div class="video-banner__overlay">
+      <h1>Acesso ao Painel</h1>
+    </div>
   </header>
 
-  <main class="login-container" style="max-width:400px; margin: 80px auto; padding: 20px; background:#f9f9f9; border-radius:10px; box-shadow:0 3px 10px rgba(47,79,79,0.15);">
-    <h2 style="color:#2f4f4f; text-align:center; margin-bottom: 24px;">Área do Cliente - Login</h2>
-    <form action="painel.html" method="post" autocomplete="off">
-      <label for="username">Usuário</label>
-      <input type="text" id="username" name="username" required placeholder="Digite seu usuário" />
-
-      <label for="password">Senha</label>
-      <input type="password" id="password" name="password" required placeholder="Digite sua senha" />
-
+  <section style="max-width: 400px; margin: auto; padding: 40px 20px;">
+    <form action="painel.html" method="POST">
+      <input type="text" name="usuario" placeholder="Usuário" required>
+      <input type="password" name="senha" placeholder="Senha" required>
       <button type="submit">Entrar</button>
     </form>
-    <p style="margin-top:15px; text-align:center; color:#555; font-size:0.9rem;">Esqueceu sua senha? <a href="#" style="color:#3f6f6f; text-decoration:none;">Clique aqui</a></p>
-  </main>
-
-  <footer class="footer">
-    <p>© 2025 Engplan Engenharia - Todos os direitos reservados.</p>
-  </footer>
+  </section>
 </body>
 </html>
