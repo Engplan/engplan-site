@@ -1,224 +1,252 @@
-/* style.css completo */
-
-:root {
-  --cor-principal: #2F4F4F;
-  --cor-secundaria: #f0f0f0;
-  --cor-destaque: #00bfa6;
-  --cor-clara: #ffffff;
-  --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
+/* Reset e base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--cor-secundaria);
-  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
   line-height: 1.6;
 }
 
 /* Cabeçalho */
-.header {
-  background-color: var(--cor-principal);
-  color: var(--cor-clara);
-  padding: 20px;
+.cabecalho {
+  background-color: #2f4f4f;
+  padding: 1rem 2rem;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
-  box-shadow: var(--sombra-suave);
-}
-
-.logo-container {
-  display: flex;
   align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .logo {
-  width: 50px;
-  height: auto;
+  height: 50px;
 }
 
-.navbar {
+.menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
+  gap: 1rem;
 }
 
-.navbar a {
-  color: var(--cor-clara);
+.menu a {
+  color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
+  font-weight: 500;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.navbar a:hover {
-  color: var(--cor-destaque);
+.menu a:hover {
+  color: #ffcc00;
+  transform: scale(1.05);
 }
 
-.btn-login {
-  background: var(--cor-destaque);
-  padding: 6px 12px;
-  border-radius: 6px;
-  color: white !important;
+.login {
+  background-color: #ffcc00;
+  color: #2f4f4f;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-/* Seções Gerais */
-.section {
-  padding: 60px 20px;
+/* Hero */
+.hero {
+  text-align: center;
+  background-color: #ddd;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #2f4f4f;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.hero video {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* Sessões */
+.sessao {
+  padding: 3rem 1rem;
   text-align: center;
 }
 
-.section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: var(--cor-principal);
+.sessao h2 {
+  font-size: 2rem;
+  color: #2f4f4f;
+  margin-bottom: 1.5rem;
 }
 
-.cards .grid {
+/* Serviços */
+.grid-servicos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
-.card {
-  background: white;
-  padding: 20px;
+.servico {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1.2rem;
   border-radius: 10px;
-  box-shadow: var(--sombra-suave);
-  transition: transform 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-.card:hover {
+.servico:hover {
   transform: translateY(-5px);
 }
 
 /* Galeria */
 .galeria-grid {
   display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
-.galeria-item {
+.imagem {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: var(--sombra-suave);
+  border-radius: 8px;
 }
 
-.galeria-item img {
+.imagem img {
   width: 100%;
   height: auto;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
+  display: block;
 }
 
-.galeria-item:hover img {
-  transform: scale(1.05);
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  width: 100%;
-  padding: 10px;
-  font-size: 1em;
-  text-align: center;
+.imagem:hover img {
+  transform: scale(1.1);
 }
 
 /* Avaliações */
 .avaliacoes blockquote {
-  background: #fff;
-  border-left: 4px solid var(--cor-destaque);
-  padding: 15px;
-  margin: 10px auto;
+  margin: 1rem auto;
   max-width: 600px;
   font-style: italic;
-}
-
-/* Vídeos */
-.video-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  background: #000;
-  padding: 40px 20px;
-}
-
-.video-section video {
-  max-width: 480px;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: var(--sombra-suave);
+  color: #444;
 }
 
 /* Formulário */
-form {
+.formulario {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-  margin: auto;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 1rem;
 }
 
-input, textarea, button {
-  padding: 12px;
-  font-size: 1em;
-  border-radius: 6px;
+.formulario input,
+.formulario textarea {
+  padding: 0.8rem;
+  border-radius: 5px;
   border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
-button {
-  background: var(--cor-principal);
-  color: white;
-  cursor: pointer;
-  transition: background 0.3s;
+.formulario button {
+  background-color: #2f4f4f;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
 }
 
-button:hover {
-  background: var(--cor-destaque);
+.formulario button:hover {
+  background-color: #ffcc00;
+  color: #2f4f4f;
+  font-weight: bold;
 }
 
-/* Painel Lateral */
-.painel-lateral {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 999;
-}
-
-.painel-lateral img {
-  width: 40px;
-  height: auto;
-  transition: transform 0.3s;
-}
-
-.painel-lateral img:hover {
-  transform: scale(1.1);
+/* reCAPTCHA */
+.g-recaptcha {
+  align-self: center;
 }
 
 /* Rodapé */
-.footer {
-  background: var(--cor-principal);
-  color: white;
+.rodape {
+  background-color: #2f4f4f;
+  color: #fff;
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 30px 20px;
-  margin-top: 40px;
 }
 
-.logo-footer {
-  width: 40px;
-  margin-bottom: 10px;
+.rodape .social {
+  margin-bottom: 1rem;
+}
+
+.rodape img {
+  height: 30px;
+  margin: 0 0.5rem;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.rodape img:hover {
+  transform: scale(1.1);
+}
+
+/* Login e painel */
+.login-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.painel {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .servico,
+  .imagem {
+    margin: 0 auto;
+  }
 }

@@ -3,62 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Engplan Engineering - Complete civil engineering solutions with quality and responsibility.">
   <title>Engplan Engineering</title>
+  <meta name="description" content="Engineering, construction and renovations with quality and innovation.">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/logo.png" />
 </head>
 <body>
-  <header>
-    <div class="container header-flex">
-      <img src="img/logo.png" alt="Engplan Logo" class="logo" />
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#tracking">Tracking</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="cabecalho">
+    <img src="img/logo.png" alt="Engplan Logo" class="logo" />
+    <nav class="menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#monitoring">Monitoring</a>
+      <a href="#contact">Contact</a>
+      <a href="index.html">PT</a>
+      <a href="login.html" class="login">Client Area</a>
+    </nav>
   </header>
 
-  <section class="video-section">
-    <video src="videos/institucional.mp4" autoplay muted loop playsinline></video>
-    <div class="overlay">
-      <h1>Engineering with Quality</h1>
-      <p>Turning projects into reality.</p>
+  <section class="hero">
+    <h1>Engplan Engineering</h1>
+    <p>Excellence in projects, construction and renovations.</p>
+    <video src="videos/institucional.mp4" autoplay loop muted></video>
+  </section>
+
+  <section id="about" class="sessao">
+    <h2>About Engplan</h2>
+    <p>We specialize in civil engineering, delivering innovative and personalized solutions for each client.</p>
+  </section>
+
+  <section id="services" class="sessao">
+    <h2>Our Services</h2>
+    <div class="grid-servicos">
+      <div class="servico">Residential Projects</div>
+      <div class="servico">Civil Construction</div>
+      <div class="servico">Commercial Renovations</div>
+      <div class="servico">Technical Consulting</div>
     </div>
   </section>
 
-  <section id="about"><div class="container"><h2>About Us</h2><p>Engplan Engineering specializes in comprehensive civil engineering solutions with a focus on quality, innovation, and sustainability.</p></div></section>
-  <section id="services"><div class="container"><h2>Our Services</h2><div class="grid"><div class="card">🏗️ Structural Projects</div><div class="card">🧱 Renovations</div><div class="card">📐 Technical Consulting</div><div class="card">🌱 Sustainability</div></div></div></section>
-  <section id="gallery"><div class="container"><h2>Project Gallery</h2><div class="galeria-grid"><img src="img/obra1.png"><img src="img/obra2.png"><img src="img/obra3.png"><img src="img/obra4.png"></div></div></section>
-  <section id="reviews"><div class="container"><h2>Customer Reviews</h2><blockquote>"Excellent service and flawless execution!" — Client A</blockquote><blockquote>"Exceeded all expectations!" — Client B</blockquote></div></section>
-  <section id="tracking"><div class="container"><h2>Project Tracking</h2><p>Access the exclusive dashboard to track your project progress.</p><a href="painel.html" class="botao">Access Dashboard</a></div></section>
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <form action="https://formsubmit.co/engplan@exemplo.com" method="POST">
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
-        <button type="submit">Send</button>
-      </form>
+  <section id="gallery" class="sessao">
+    <h2>Works Gallery</h2>
+    <div class="galeria-grid">
+      <div class="imagem"><img src="img/obra1.png" alt="Work 1" /></div>
+      <div class="imagem"><img src="img/obra2.png" alt="Work 2" /></div>
+      <div class="imagem"><img src="img/obra3.png" alt="Work 3" /></div>
+      <div class="imagem"><img src="img/obra4.png" alt="Work 4" /></div>
     </div>
   </section>
 
-  <footer>
-    <div class="container rodape-flex">
-      <p>&copy; 2025 Engplan Engineering</p>
-      <div class="social">
-        <a href="https://wa.me/5521972083284" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp" /></a>
-        <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="img/instagram.png" alt="Instagram" /></a>
-      </div>
+  <section id="reviews" class="sessao">
+    <h2>Client Reviews</h2>
+    <div class="avaliacoes">
+      <blockquote>"Great experience, project delivered on time!" — John</blockquote>
+      <blockquote>"Professional and attentive team." — Mary</blockquote>
     </div>
+  </section>
+
+  <section id="monitoring" class="sessao">
+    <h2>Project Monitoring</h2>
+    <p>Track your project's progress in real time through our <a href="painel.html">client area</a>.</p>
+  </section>
+
+  <section id="contact" class="sessao">
+    <h2>Contact Us</h2>
+    <form action="enviar.php" method="POST" class="formulario">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer class="rodape">
+    <div class="social">
+      <a href="https://wa.me/5521972083284" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp" /></a>
+      <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="img/instagram.png" alt="Instagram" /></a>
+    </div>
+    <p>&copy; 2025 Engplan Engineering. All rights reserved.</p>
   </footer>
 </body>
 </html>
