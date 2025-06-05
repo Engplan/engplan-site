@@ -3,87 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Painel de Obras | Engplan</title>
-  <meta name="description" content="Acompanhe o andamento das obras em execução com transparência e tecnologia." />
-  <meta name="keywords" content="Engenharia, Engplan, Obras, Acompanhamento, Painel de Obras, Rio de Janeiro" />
-  <meta name="author" content="Engplan Engenharia" />
-  <meta property="og:title" content="Painel de Obras | Engplan" />
-  <meta property="og:description" content="Acompanhe o andamento das obras em execução com transparência e tecnologia." />
-  <meta property="og:image" content="https://engplanbrasil.com.br/images/logo.png" />
-  <meta property="og:url" content="https://engplanbrasil.com.br/painel.html" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="images/logo.png" />
+  <title>Painel de Obras - Engplan</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="header">
-    <img src="images/logo.png" alt="Engplan Logo" class="logo" loading="lazy" />
-    <nav class="menu">
-      <a href="index.html">Início</a>
-      <a href="index-en.html">EN</a>
-      <a href="login.html">Área do Cliente</a>
-    </nav>
-  </header>
-
-  <main class="painel-obras">
-    <h1>Acompanhamento de Obras</h1>
-    <p>Aqui você pode acompanhar o andamento das obras em execução.</p>
-    
-    <div class="tabela-obras">
-      <table>
-        <thead>
-          <tr>
-            <th>Obra</th>
-            <th>Cliente</th>
-            <th>Status</th>
-            <th>Última Atualização</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Residência Costa</td>
-            <td>João Costa</td>
-            <td><span class="status andamento">Em andamento</span></td>
-            <td>02/06/2025</td>
-          </tr>
-          <tr>
-            <td>Prédio Comercial RJ</td>
-            <td>Construtora Ideal</td>
-            <td><span class="status concluido">Concluída</span></td>
-            <td>15/05/2025</td>
-          </tr>
-          <tr>
-            <td>Casa em Petrópolis</td>
-            <td>Maria Lima</td>
-            <td><span class="status aguardando">Aguardando início</span></td>
-            <td>--</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+  <header><div class="container"><h1>Painel da Obra</h1></div></header>
+  <main class="container">
+    <section>
+      <h2>Obra em Andamento</h2>
+      <p>Status: 80% concluída</p>
+      <p>Última atualização: 03/06/2025</p>
+      <img src="img/obra4.png" alt="Andamento da Obra" />
+    </section>
   </main>
-
-  <footer>
-    <p>© 2025 Engplan Engenharia</p>
-    <div class="social">
-      <a href="https://wa.me/5521972083284" target="_blank">
-        <img src="images/whatsapp.png" alt="WhatsApp" loading="lazy" />
-      </a>
-      <a href="https://instagram.com/engplanbrasil" target="_blank">
-        <img src="images/instagram.png" alt="Instagram" loading="lazy" />
-      </a>
-    </div>
-  </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const lazyItems = document.querySelectorAll('[loading="lazy"]');
-      lazyItems.forEach(el => {
-        el.addEventListener('load', () => {
-          el.classList.add('loaded');
-        });
-      });
-    });
-  </script>
+  <footer><div class="container"><p>&copy; 2025 Engplan Engenharia</p></div></footer>
 </body>
 </html>
