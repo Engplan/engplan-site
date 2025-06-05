@@ -2,100 +2,121 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engplan Engenharia - Projetos e Obras</title>
-  <meta name="description" content="Engplan Engenharia: excelência em obras, projetos e acompanhamento técnico.">
-  <meta name="keywords" content="Engenharia, Projetos, Obras, Engplan, Acompanhamento">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Engplan Engenharia">
-  <meta property="og:description" content="Excelência em obras e projetos de engenharia.">
-  <meta property="og:image" content="images/logo.png">
-  <meta property="og:type" content="website">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Engplan Brasil - Engenharia e Construção</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="preload" as="image" href="images/logo.png" />
-  <link rel="icon" href="images/logo.png" type="image/png">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-  <header class="cabecalho">
-    <img src="images/logo.png" alt="Logo Engplan" class="logo" width="250" />
+  <header class="header">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Engplan Brasil Logo" class="logo" />
+    </div>
     <nav class="menu">
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#avaliacoes">Avaliações</a>
-      <a href="#acompanhamento">Acompanhamento</a>
-      <a href="#contato">Contato</a>
-      <a href="painel.html">Painel</a>
-      <a href="login.html">Login</a>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#acompanhamento">Acompanhamento</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="video" class="video-section">
-    <video src="videos/institucional.mp4" autoplay muted loop playsinline></video>
-  </section>
+  <main>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="sobre">
+      <h2>Sobre a Engplan Brasil</h2>
+      <p>
+        A Engplan Brasil é referência em soluções completas para construção civil, 
+        com especialização em Steel Frame, gestão de obras, reformas, projetos arquitetônicos e laudos técnicos.
+        Atuamos com excelência para garantir qualidade, segurança e sustentabilidade em cada etapa do seu projeto.
+        Nossa equipe multidisciplinar utiliza as melhores práticas e tecnologias para entregar resultados eficientes,
+        atendendo às necessidades específicas de cada cliente com profissionalismo e transparência.
+      </p>
+    </section>
 
-  <section id="sobre">
-    <h2>Sobre a Engplan</h2>
-    <p>Engenharia de excelência com soluções completas em projetos, execução de obras e consultoria técnica.</p>
-  </section>
+    <!-- Seção Serviços -->
+    <section id="servicos" class="servicos">
+      <h2>Serviços</h2>
+      <div class="grid-servicos">
+        <div class="servico-item">Steel Frame</div>
+        <div class="servico-item">Gestão de Obras</div>
+        <div class="servico-item">Reformas</div>
+        <div class="servico-item">Projetos Arquitetônicos</div>
+        <div class="servico-item">Laudos Técnicos</div>
+      </div>
+    </section>
 
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <div class="grid-servicos">
-      <div class="servico">Projetos Estruturais</div>
-      <div class="servico">Execução de Obras</div>
-      <div class="servico">Laudos Técnicos</div>
-      <div class="servico">Acompanhamento de Obras</div>
-    </div>
-  </section>
+    <!-- Seção Galeria -->
+    <section id="galeria" class="galeria">
+      <h2>Galeria</h2>
+      <div class="grid-galeria">
+        <img src="images/obra1.png" alt="Obra 1" />
+        <img src="images/obra2.png" alt="Obra 2" />
+        <img src="images/obra3.png" alt="Obra 3" />
+        <img src="images/obra4.png" alt="Obra 4" />
+      </div>
+    </section>
 
-  <section id="galeria">
-    <h2>Galeria</h2>
-    <div class="galeria-grid">
-      <img src="images/obra1.png" alt="Obra 1" loading="lazy">
-      <img src="images/obra2.png" alt="Obra 2" loading="lazy">
-      <img src="images/obra3.png" alt="Obra 3" loading="lazy">
-      <img src="images/obra4.png" alt="Obra 4" loading="lazy">
-    </div>
-  </section>
+    <!-- Seção Avaliações -->
+    <section id="avaliacoes" class="avaliacoes">
+      <h2>Avaliações</h2>
+      <div class="avaliacao-item">Cliente 1: Excelente serviço e atendimento!</div>
+      <div class="avaliacao-item">Cliente 2: Profissionais altamente capacitados.</div>
+      <div class="avaliacao-item">Cliente 3: Recomendo para projetos de qualquer porte.</div>
+    </section>
 
-  <section id="avaliacoes">
-    <h2>Avaliações de Clientes</h2>
-    <div class="avaliacoes">
-      <div class="comentario">"Obra perfeita e equipe competente!"</div>
-      <div class="comentario">"Excelente acompanhamento técnico!"</div>
-    </div>
-  </section>
+    <!-- Seção Acompanhamento -->
+    <section id="acompanhamento" class="acompanhamento">
+      <h2>Acompanhamento de Obras</h2>
+      <p>Acompanhe o progresso das suas obras com nosso painel exclusivo para clientes.</p>
+      <a href="painel.html" class="btn-acompanhamento">Acessar Painel</a>
+    </section>
 
-  <section id="acompanhamento">
-    <h2>Acompanhamento de Obras</h2>
-    <a href="painel.html" class="botao">Acessar Painel de Obras</a>
-  </section>
+    <!-- Seção Vídeo Institucional -->
+    <section id="video" class="video-section">
+      <h2>Vídeo Institucional</h2>
+      <video controls width="100%" preload="metadata">
+        <source src="videos/institucional.mp4" type="video/mp4" />
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+      <h3>Engenharia e Projetos</h3>
+      <video controls width="100%" preload="metadata">
+        <source src="videos/engenharia.mp4" type="video/mp4" />
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <form action="https://formsubmit.co/seu-email@email.com" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-      <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <!-- Seção Contato -->
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <form id="form-contato" method="POST" action="send_email.php">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
 
-  <footer>
-    <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
-    <div class="social">
-      <a href="https://wa.me/5521972083284" target="_blank">
-        <img src="images/whatsapp.png" alt="WhatsApp" width="24">
-      </a>
-      <a href="https://instagram.com/engplanbrasil" target="_blank">
-        <img src="images/instagram.png" alt="Instagram" width="24">
-      </a>
-    </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="contato-redirect">
+        <a href="https://wa.me/5521972083284" target="_blank" rel="noopener" class="btn-whatsapp">WhatsApp</a>
+        <a href="https://instagram.com/engplanbrasil" target="_blank" rel="noopener" class="btn-instagram">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="images/logo.png" alt="Engplan Brasil Logo" class="footer-logo" />
+    <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
   </footer>
-
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
