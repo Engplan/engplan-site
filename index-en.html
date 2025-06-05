@@ -3,69 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engplan Engineering</title>
+  <title>Engplan Engineering | Projects and Works with Excellence</title>
+  <meta name="description" content="Engplan Engineering: complete solutions in residential and commercial construction. Track your projects in real-time with transparency and technology." />
+  <meta name="keywords" content="Engineering, Engplan, Construction, Civil Engineering, Projects, Work Tracking, Rio de Janeiro" />
+  <meta name="author" content="Engplan Engineering" />
+  <meta property="og:title" content="Engplan Engineering" />
+  <meta property="og:description" content="Modern solutions in engineering and work tracking." />
+  <meta property="og:image" content="https://engplanbrasil.com.br/images/logo.png" />
+  <meta property="og:url" content="https://engplanbrasil.com.br" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="images/logo.png" />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <header class="header">
-    <img src="images/logo.png" alt="Engplan Logo" class="logo" />
+    <img src="images/logo.png" alt="Engplan Logo" class="logo" loading="lazy" />
     <nav class="menu">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-      <a href="login.html" class="login-btn">Client Area</a>
+      <a href="index.html">Home</a>
+      <a href="index-en.html">EN</a>
+      <a href="login.html">Client Area</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Engplan</h2>
-    <p>We are a Brazilian engineering company specialized in construction, supervision, and real estate solutions.</p>
-    <video src="videos/institucional.mp4" controls></video>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card">🏗️ Construction</div>
-      <div class="card">📐 Design</div>
-      <div class="card">📊 Supervision</div>
-      <div class="card">🏢 Real Estate</div>
-    </div>
-  </section>
-
-  <section id="gallery">
-    <h2>Project Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/obra1.png" alt="Work 1" />
-      <img src="images/obra2.png" alt="Work 2" />
-      <img src="images/obra3.png" alt="Work 3" />
-      <img src="images/obra4.png" alt="Work 4" />
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/{SEU_CÓDIGO}" method="POST">
-      <input type="text" name="name" placeholder="Name" required />
-      <input type="email" name="_replyto" placeholder="Email" required />
-      <textarea name="message" placeholder="Message" required></textarea>
-      <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+  <main>
+    <h1>Welcome to Engplan Engineering</h1>
+    <p>We offer complete solutions in civil engineering, focusing on quality, transparency, and technology.</p>
+    <img src="images/obra1.png" alt="Residential Project 1" loading="lazy" />
+  </main>
 
   <footer>
     <p>© 2025 Engplan Engineering</p>
     <div class="social">
       <a href="https://wa.me/5521972083284" target="_blank">
-        <img src="images/whatsapp.png" alt="WhatsApp" />
+        <img src="images/whatsapp.png" alt="WhatsApp" loading="lazy" />
       </a>
       <a href="https://instagram.com/engplanbrasil" target="_blank">
-        <img src="images/instagram.png" alt="Instagram" />
+        <img src="images/instagram.png" alt="Instagram" loading="lazy" />
       </a>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lazyItems = document.querySelectorAll('[loading="lazy"]');
+      lazyItems.forEach(el => {
+        el.addEventListener('load', () => {
+          el.classList.add('loaded');
+        });
+      });
+    });
+  </script>
 </body>
 </html>
