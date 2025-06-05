@@ -2,59 +2,59 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Painel do Cliente | Engplan Engenharia</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Acompanhamento de obras - Engplan Engenharia."/>
+  <title>Painel de Acompanhamento | Engplan</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="images/logo.png" />
 </head>
 <body>
 
   <header>
-    <div class="container header-container">
-      <img src="img/logo.png" alt="Logo Engplan" class="logo" />
-      <nav class="menu">
-        <a href="index.html">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
+    <img src="images/logo.png" alt="Logo da Engplan" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#tracking">Voltar</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="painel" class="section">
-    <div class="container painel-container">
-      <h2>Olá, Cliente!</h2>
-      <p>Acompanhe o progresso da sua obra abaixo:</p>
+  <main>
+    <section id="dashboard">
+      <h1>Acompanhamento de Obras</h1>
+      <p>Aqui você pode acompanhar o andamento das obras com atualizações periódicas.</p>
 
-      <div class="obra-grid">
+      <div class="dashboard-grid">
         <div class="obra-card">
-          <h3>Obra Residencial - RJ</h3>
-          <p>Progresso: 75%</p>
-          <progress value="75" max="100"></progress>
-          <a href="projeto1.html" class="btn">Ver detalhes</a>
+          <h2>Obra 1 - Residencial Niterói</h2>
+          <p>Status: <span class="status andamento">Em andamento</span></p>
+          <p>Última atualização: 02/06/2025</p>
+          <img src="images/obra1.png" alt="Obra 1" />
         </div>
+
         <div class="obra-card">
-          <h3>Comercial - SP</h3>
-          <p>Progresso: 60%</p>
-          <progress value="60" max="100"></progress>
-          <a href="projeto2.html" class="btn">Ver detalhes</a>
+          <h2>Obra 2 - Escritório Copacabana</h2>
+          <p>Status: <span class="status concluido">Concluída</span></p>
+          <p>Última atualização: 28/05/2025</p>
+          <img src="images/obra2.png" alt="Obra 2" />
         </div>
+
         <div class="obra-card">
-          <h3>Residencial - MG</h3>
-          <p>Progresso: 40%</p>
-          <progress value="40" max="100"></progress>
-          <a href="projeto3.html" class="btn">Ver detalhes</a>
+          <h2>Obra 3 - Galpão Industrial</h2>
+          <p>Status: <span class="status andamento">Em andamento</span></p>
+          <p>Última atualização: 31/05/2025</p>
+          <img src="images/obra3.png" alt="Obra 3" />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <div class="container footer-container">
-      <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
-      <div class="social">
-        <a href="https://wa.me/5521972083284" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp" /></a>
-        <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="img/instagram.png" alt="Instagram" /></a>
-      </div>
+    <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
+    <div class="social">
+      <a href="https://wa.me/5521972083284" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"/></a>
+      <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a>
     </div>
   </footer>
 
