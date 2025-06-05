@@ -5,101 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engplan Brasil</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="imagens/favicon.png" type="image/png">
 </head>
 <body>
+
   <header>
-    <div class="container header-container">
-      <img src="img/logo.png" alt="Logo Engplan" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
+    <video autoplay muted loop id="banner-video">
+      <source src="videos/institucional.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
+    <div class="overlay">
+      <h1>Engplan Brasil</h1>
+      <p>Excelência em Engenharia</p>
     </div>
   </header>
 
-  <section class="video-banner">
-    <video autoplay muted loop>
-      <source src="video/institucional.mp4" type="video/mp4" />
-      Seu navegador não suporta vídeos.
-    </video>
-    <div class="banner-overlay">
-      <h1>Engplan Brasil</h1>
-      <p>Excelência em obras, reformas e engenharia Steel Frame</p>
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#avaliacoes">Avaliações</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre" class="secao">
+    <h2>Sobre a Engplan Brasil</h2>
+    <p>A Engplan Brasil atua há anos nos setores de <strong>Steel Frame</strong>, <strong>gestão de obras</strong>, <strong>reformas residenciais e comerciais</strong>, além da elaboração de <strong>projetos técnicos e laudos especializados</strong>. Nossa missão é oferecer soluções técnicas inovadoras com qualidade e compromisso com o cliente.</p>
+  </section>
+
+  <section id="servicos" class="secao">
+    <h2>Serviços</h2>
+    <div class="servico-grid">
+      <div class="servico">Projetos e Laudos Técnicos</div>
+      <div class="servico">Execução de Obras</div>
+      <div class="servico">Consultoria Técnica</div>
+      <div class="servico">Manutenção e Reformas</div>
     </div>
   </section>
 
-  <section id="sobre">
-    <div class="container">
-      <h2>Sobre a Engplan Brasil</h2>
-      <p>
-        A Engplan Brasil atua no mercado de engenharia oferecendo serviços especializados em construções com sistema Steel Frame, gestão de obras, reformas de imóveis, elaboração de projetos e emissão de laudos técnicos. Nosso compromisso é com a excelência, inovação e responsabilidade técnica, entregando sempre qualidade e agilidade para nossos clientes em todo o Brasil.
-      </p>
+  <section id="galeria" class="secao">
+    <h2>Galeria de Projetos</h2>
+    <div class="galeria-grid">
+      <a href="leito-hospitalar.html">
+        <img src="imagens/leito1.png" alt="Leito Hospitalar" />
+        <span>Leito Hospitalar</span>
+      </a>
+      <a href="barragem.html">
+        <img src="imagens/rio1.png" alt="Barragem" />
+        <span>Implementação de Barragem</span>
+      </a>
+      <a href="cobertura.html">
+        <img src="imagens/cobertura1.png" alt="Cobertura" />
+        <span>Cobertura galvanizado em ponto comercial</span>
+      </a>
+      <a href="reforma-barra-studio.html">
+        <img src="imagens/reforma1.png" alt="Studio" />
+        <span>Reforma Barra Studio</span>
+      </a>
     </div>
   </section>
 
-  <section id="servicos">
-    <div class="container">
-      <h2>Nossos Serviços</h2>
-      <div class="grid">
-        <div class="card">Projetos</div>
-        <div class="card">Laudos Técnicos</div>
-        <div class="card">Reformas</div>
-        <div class="card">Steel Frame</div>
-        <div class="card">Gestão de Obras</div>
+  <section id="avaliacoes" class="secao">
+    <h2>Avaliações dos Clientes</h2>
+    <div class="avaliacoes">
+      <div class="avaliacao">
+        <p>“Serviço excelente, entrega no prazo e qualidade impecável.”</p>
+        <span>— Cliente Satisfeito</span>
+      </div>
+      <div class="avaliacao">
+        <p>“Equipe técnica capacitada e atendimento diferenciado.”</p>
+        <span>— Engenheiro Parceiro</span>
       </div>
     </div>
   </section>
 
-  <section id="galeria">
-    <div class="container">
-      <h2>Galeria de Projetos</h2>
-      <div class="grid galeria-grid">
-        <a href="leito.html" class="galeria-card">
-          <img src="img/leito1.png" alt="Leito Hospitalar" />
-          <p>Leito Hospitalar</p>
-        </a>
-        <a href="rio.html" class="galeria-card">
-          <img src="img/rio1.png" alt="Implementação de Barragem" />
-          <p>Implementação de Barragem</p>
-        </a>
-        <a href="cobertura.html" class="galeria-card">
-          <img src="img/cobertura1.png" alt="Cobertura Galvanizado" />
-          <p>Cobertura galvanizado em ponto comercial</p>
-        </a>
-        <a href="studio.html" class="galeria-card">
-          <img src="img/reforma1.png" alt="Reforma Barra Studio" />
-          <p>Reforma Barra Studio</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato">
-    <div class="container">
-      <h2>Fale Conosco</h2>
-      <form action="enviar.php" method="POST">
-        <input type="text" name="nome" placeholder="Seu nome" required />
-        <input type="email" name="email" placeholder="Seu e-mail" required />
-        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-        <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
-        <button type="submit">Enviar</button>
-      </form>
-      <div class="contato-links">
-        <a href="https://wa.me/5521972083284" target="_blank">WhatsApp</a>
-        <a href="https://instagram.com/engplanbrasil" target="_blank">Instagram</a>
-      </div>
-    </div>
+  <section id="contato" class="secao">
+    <h2>Fale Conosco</h2>
+    <form action="envia.php" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+      <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
-    </div>
+    <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
   </footer>
 
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
