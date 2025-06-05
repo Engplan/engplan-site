@@ -2,20 +2,29 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Engplan Brasil - Engenharia & Planejamento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engplan Brasil</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="imagens/favicon.png" type="image/png">
 </head>
 <body>
 
   <header>
+    <div class="social-icons">
+      <a href="https://wa.me/5521972083284" target="_blank" aria-label="WhatsApp">
+        <img src="imagens/whatsapp-icon.png" alt="WhatsApp">
+      </a>
+      <a href="https://instagram.com/engplanbrasil" target="_blank" aria-label="Instagram">
+        <img src="imagens/instagram-icon.png" alt="Instagram">
+      </a>
+    </div>
     <video autoplay muted loop id="banner-video">
-      <source src="videos/banner.mp4" type="video/mp4" />
-      Seu navegador não suporta vídeo em HTML5.
+      <source src="videos/institucional.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
     </video>
     <div class="overlay">
-      <h1>Engenharia com Excelência</h1>
-      <p>Soluções inteligentes para obras públicas e privadas</p>
+      <h1>Engplan Brasil</h1>
+      <p>Excelência em Engenharia</p>
     </div>
   </header>
 
@@ -25,90 +34,74 @@
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#galeria">Galeria</a></li>
       <li><a href="#avaliacoes">Avaliações</a></li>
-      <li><a href="#acompanhamento">Acompanhamento</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
 
-  <section class="secao" id="sobre">
-    <h2>Sobre a Engplan</h2>
-    <p>A Engplan atua há mais de 10 anos no setor de engenharia civil, executando projetos e obras com excelência técnica, comprometimento e inovação.</p>
+  <section id="sobre" class="secao">
+    <h2>Sobre a Engplan Brasil</h2>
+    <p>A Engplan Brasil atua há anos nos setores de <strong>Steel Frame</strong>, <strong>gestão de obras</strong>, <strong>reformas residenciais e comerciais</strong>, além da elaboração de <strong>projetos técnicos e laudos especializados</strong>. Nossa missão é oferecer soluções técnicas inovadoras com qualidade e compromisso com o cliente.</p>
   </section>
 
-  <section class="secao" id="servicos">
+  <section id="servicos" class="secao">
     <h2>Serviços</h2>
     <div class="servico-grid">
-      <div class="servico">
-        <h3>Projetos Técnicos</h3>
-        <p>Desenvolvimento completo de projetos de engenharia civil e infraestrutura.</p>
-      </div>
-      <div class="servico">
-        <h3>Execução de Obras</h3>
-        <p>Construção, reforma e manutenção de obras públicas e privadas.</p>
-      </div>
-      <div class="servico">
-        <h3>Planejamento e Gestão</h3>
-        <p>Gerenciamento de obras com foco em prazos, custos e qualidade.</p>
-      </div>
+      <div class="servico">Projetos e Laudos Técnicos</div>
+      <div class="servico">Execução de Obras</div>
+      <div class="servico">Consultoria Técnica</div>
+      <div class="servico">Manutenção e Reformas</div>
     </div>
   </section>
 
-  <section class="secao" id="galeria">
+  <section id="galeria" class="secao">
     <h2>Galeria de Projetos</h2>
     <div class="galeria-grid">
       <a href="leito-hospitalar.html">
-        <img src="imagens/obra1.png" alt="Leito Hospitalar" />
+        <img src="imagens/leito1.png" alt="Leito Hospitalar" />
         <span>Leito Hospitalar</span>
       </a>
-      <a href="reforma-barra-studio.html">
-        <img src="imagens/obra2.png" alt="Reforma Barra Studio" />
-        <span>Reforma Barra Studio</span>
-      </a>
-      <a href="implementacao-barragem.html">
-        <img src="imagens/obra3.png" alt="Implementação de Barragem" />
+      <a href="barragem.html">
+        <img src="imagens/rio1.png" alt="Barragem" />
         <span>Implementação de Barragem</span>
       </a>
-      <a href="cobertura-comercial.html">
-        <img src="imagens/obra4.png" alt="Cobertura Galvanizado" />
-        <span>Cobertura Galvanizado</span>
+      <a href="cobertura.html">
+        <img src="imagens/cobertura1.png" alt="Cobertura" />
+        <span>Cobertura galvanizado em ponto comercial</span>
+      </a>
+      <a href="reforma-barra-studio.html">
+        <img src="imagens/reforma1.png" alt="Studio" />
+        <span>Reforma Barra Studio</span>
       </a>
     </div>
   </section>
 
-  <section class="secao" id="avaliacoes">
-    <h2>Avaliação dos Clientes</h2>
+  <section id="avaliacoes" class="secao">
+    <h2>Avaliações dos Clientes</h2>
     <div class="avaliacoes">
       <div class="avaliacao">
-        <p>"Profissionalismo e pontualidade definem a Engplan. Recomendo!"</p>
-        <strong>– João Silva</strong>
+        <p>“Serviço excelente, entrega no prazo e qualidade impecável.”</p>
+        <span>— Cliente Satisfeito</span>
       </div>
       <div class="avaliacao">
-        <p>"Obra entregue antes do prazo, com excelente qualidade."</p>
-        <strong>– Carla Mendes</strong>
+        <p>“Equipe técnica capacitada e atendimento diferenciado.”</p>
+        <span>— Engenheiro Parceiro</span>
       </div>
     </div>
   </section>
 
-  <section class="secao" id="acompanhamento">
-    <h2>Acompanhamento de Obras</h2>
-    <p>Acesse o painel de acompanhamento das obras em tempo real.</p>
-    <a href="painel.html" style="color: #004d8d; font-weight: bold;">→ Ir para o Painel</a>
-  </section>
-
-  <section class="secao" id="contato">
+  <section id="contato" class="secao">
     <h2>Fale Conosco</h2>
-    <form action="https://formsubmit.co/engplanbrasil@gmail.com" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+    <form action="envia.php" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+      <!-- reCAPTCHA pode ser adicionado aqui, se necessário -->
       <button type="submit">Enviar</button>
     </form>
-    <!-- reCAPTCHA pode ser reinserido aqui, se necessário -->
   </section>
 
   <footer>
-    <p>&copy; 2025 Engplan Brasil - Todos os direitos reservados.</p>
-    <p>Instagram: @engplanbrasil | WhatsApp: (21) 97208-3284</p>
+    <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
   </footer>
 
 </body>
