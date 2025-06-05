@@ -2,88 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Engplan Engineering – Civil construction, project management and renovation services with quality and commitment.">
   <title>Engplan Engineering</title>
-  <meta name="description" content="Engineering, construction and renovations with quality and innovation.">
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="img/logo.png" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-  <header class="cabecalho">
-    <img src="img/logo.png" alt="Engplan Logo" class="logo" />
-    <nav class="menu">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#monitoring">Monitoring</a>
-      <a href="#contact">Contact</a>
-      <a href="index.html">PT</a>
-      <a href="login.html" class="login">Client Area</a>
-    </nav>
+
+  <header>
+    <div class="container header-container">
+      <img src="img/logo.png" alt="Engplan Logo" class="logo" />
+      <nav class="menu">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#tracking">Tracking</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Engplan Engineering</h1>
-    <p>Excellence in projects, construction and renovations.</p>
-    <video src="videos/institucional.mp4" autoplay loop muted></video>
-  </section>
-
-  <section id="about" class="sessao">
-    <h2>About Engplan</h2>
-    <p>We specialize in civil engineering, delivering innovative and personalized solutions for each client.</p>
-  </section>
-
-  <section id="services" class="sessao">
-    <h2>Our Services</h2>
-    <div class="grid-servicos">
-      <div class="servico">Residential Projects</div>
-      <div class="servico">Civil Construction</div>
-      <div class="servico">Commercial Renovations</div>
-      <div class="servico">Technical Consulting</div>
+  <section id="hero">
+    <div class="container">
+      <h1>Engineering That Builds the Future</h1>
+      <p>Specialists in residential and commercial projects, renovations and full construction management.</p>
+      <a href="#contact" class="btn">Contact Us</a>
     </div>
   </section>
 
-  <section id="gallery" class="sessao">
-    <h2>Works Gallery</h2>
-    <div class="galeria-grid">
-      <div class="imagem"><img src="img/obra1.png" alt="Work 1" /></div>
-      <div class="imagem"><img src="img/obra2.png" alt="Work 2" /></div>
-      <div class="imagem"><img src="img/obra3.png" alt="Work 3" /></div>
-      <div class="imagem"><img src="img/obra4.png" alt="Work 4" /></div>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Engplan Engineering is a reference in civil construction, standing out for its professionalism, quality and commitment to deadlines.</p>
     </div>
   </section>
 
-  <section id="reviews" class="sessao">
-    <h2>Client Reviews</h2>
-    <div class="avaliacoes">
-      <blockquote>"Great experience, project delivered on time!" — John</blockquote>
-      <blockquote>"Professional and attentive team." — Mary</blockquote>
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="grid">
+        <div class="card">Residential Projects</div>
+        <div class="card">Commercial Works</div>
+        <div class="card">Renovations</div>
+        <div class="card">Supervision and Management</div>
+      </div>
     </div>
   </section>
 
-  <section id="monitoring" class="sessao">
-    <h2>Project Monitoring</h2>
-    <p>Track your project's progress in real time through our <a href="painel.html">client area</a>.</p>
-  </section>
-
-  <section id="contact" class="sessao">
-    <h2>Contact Us</h2>
-    <form action="enviar.php" method="POST" class="formulario">
-      <input type="text" name="name" placeholder="Your name" required />
-      <input type="email" name="email" placeholder="Your email" required />
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer class="rodape">
-    <div class="social">
-      <a href="https://wa.me/5521972083284" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp" /></a>
-      <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="img/instagram.png" alt="Instagram" /></a>
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="img/obra1.png" alt="Construction 1">
+          <p>Renovation – Residential</p>
+        </div>
+        <div class="gallery-item">
+          <img src="img/obra2.png" alt="Construction 2">
+          <p>Facade Finish</p>
+        </div>
+        <div class="gallery-item">
+          <img src="img/obra3.png" alt="Construction 3">
+          <p>Engineering Execution</p>
+        </div>
+        <div class="gallery-item">
+          <img src="img/obra4.png" alt="Construction 4">
+          <p>Complete Remodeling</p>
+        </div>
+      </div>
     </div>
-    <p>&copy; 2025 Engplan Engineering. All rights reserved.</p>
+  </section>
+
+  <section id="videos" class="section">
+    <div class="container">
+      <h2>Institutional Video</h2>
+      <video src="videos/institucional.mp4" controls autoplay muted loop></video>
+      <h3>Engineering Projects</h3>
+      <video src="videos/engenharia.mp4" controls muted loop></video>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2>Client Testimonials</h2>
+      <div class="testimonials">
+        <blockquote>"Excellent work, I recommend it to everyone!" – Ana M.</blockquote>
+        <blockquote>"Seriousness and commitment in every detail." – Carlos S.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="tracking" class="section">
+    <div class="container">
+      <h2>Work Tracking</h2>
+      <p>Access your construction panel with your client login to track the evolution of your project.</p>
+      <a href="login.html" class="btn">Client Area</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form" method="POST" action="send-email.php">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Engplan Engineering. All rights reserved.</p>
+      <div class="social">
+        <a href="https://wa.me/5521972083284" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp" /></a>
+        <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="img/instagram.png" alt="Instagram" /></a>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
