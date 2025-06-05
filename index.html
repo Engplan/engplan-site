@@ -2,95 +2,56 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Engplan Engenharia</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="icon" href="img/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engplan Engenharia | Projetos e Obras com Excelência</title>
+  <meta name="description" content="Engplan Engenharia: soluções completas em obras residenciais e comerciais. Acompanhe seus projetos em tempo real, com transparência e tecnologia." />
+  <meta name="keywords" content="Engenharia, Engplan, Obras, Construção Civil, Projetos, Acompanhamento de Obras, Rio de Janeiro" />
+  <meta name="author" content="Engplan Engenharia" />
+  <meta property="og:title" content="Engplan Engenharia" />
+  <meta property="og:description" content="Soluções modernas em engenharia e acompanhamento de obras." />
+  <meta property="og:image" content="https://engplanbrasil.com.br/images/logo.png" />
+  <meta property="og:url" content="https://engplanbrasil.com.br" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <header class="cabecalho">
-    <img src="img/logo.png" alt="Logo Engplan" class="logo" />
+  <header class="header">
+    <img src="images/logo.png" alt="Engplan Logo" class="logo" loading="lazy" />
     <nav class="menu">
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#avaliacoes">Avaliações</a>
-      <a href="#acompanhamento">Acompanhamento</a>
-      <a href="#contato">Contato</a>
+      <a href="index.html">Início</a>
+      <a href="index-en.html">EN</a>
+      <a href="login.html">Área do Cliente</a>
     </nav>
   </header>
 
-  <section id="sobre">
-    <h2>Sobre a Engplan</h2>
-    <p>Somos uma empresa especializada em engenharia e planejamento de obras com soluções completas e inovadoras.</p>
-  </section>
-
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <div class="grid-servicos">
-      <div class="servico">Projetos Estruturais</div>
-      <div class="servico">Gestão de Obras</div>
-      <div class="servico">Consultorias Técnicas</div>
-    </div>
-  </section>
-
-  <section id="galeria">
-    <h2>Galeria de Obras</h2>
-    <div class="galeria-grid">
-      <div class="galeria-item">
-        <img src="img/obra1.png" alt="Obra 1">
-        <div class="overlay">Obra Residencial</div>
-      </div>
-      <div class="galeria-item">
-        <img src="img/obra2.png" alt="Obra 2">
-        <div class="overlay">Obra Comercial</div>
-      </div>
-      <div class="galeria-item">
-        <img src="img/obra3.png" alt="Obra 3">
-        <div class="overlay">Projeto em Execução</div>
-      </div>
-      <div class="galeria-item">
-        <img src="img/obra4.png" alt="Obra 4">
-        <div class="overlay">Finalização de Obra</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="avaliacoes">
-    <h2>Avaliações dos Clientes</h2>
-    <div class="avaliacao">⭐⭐⭐⭐⭐ "Excelente trabalho!"</div>
-    <div class="avaliacao">⭐⭐⭐⭐ "Profissionais qualificados."</div>
-  </section>
-
-  <section id="acompanhamento">
-    <h2>Acompanhamento de Obras</h2>
-    <a href="painel.html" class="botao">Acessar Painel</a>
-  </section>
-
-  <section id="contato">
-    <h2>Fale Conosco</h2>
-    <form action="envia.php" method="POST">
-      <input type="text" name="nome" placeholder="Nome" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-      <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <section id="videos">
-    <h2>Vídeos</h2>
-    <video src="videos/institucional.mp4" controls></video>
-    <video src="videos/engenharia.mp4" controls></video>
-  </section>
+  <main>
+    <h1>Bem-vindo à Engplan Engenharia</h1>
+    <p>Oferecemos soluções completas em engenharia civil, com foco em qualidade, transparência e tecnologia.</p>
+    <img src="images/obra1.png" alt="Projeto Residencial 1" loading="lazy" />
+  </main>
 
   <footer>
     <p>© 2025 Engplan Engenharia</p>
-    <a href="https://wa.me/5521972083284" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp" /></a>
-    <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="img/instagram.png" alt="Instagram" /></a>
+    <div class="social">
+      <a href="https://wa.me/5521972083284" target="_blank">
+        <img src="images/whatsapp.png" alt="WhatsApp" loading="lazy" />
+      </a>
+      <a href="https://instagram.com/engplanbrasil" target="_blank">
+        <img src="images/instagram.png" alt="Instagram" loading="lazy" />
+      </a>
+    </div>
   </footer>
 
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lazyItems = document.querySelectorAll('[loading="lazy"]');
+      lazyItems.forEach(el => {
+        el.addEventListener('load', () => {
+          el.classList.add('loaded');
+        });
+      });
+    });
+  </script>
 </body>
 </html>

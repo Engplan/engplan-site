@@ -2,13 +2,22 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Painel de Obras | Engplan</title>
+  <meta name="description" content="Acompanhe o andamento das obras em execução com transparência e tecnologia." />
+  <meta name="keywords" content="Engenharia, Engplan, Obras, Acompanhamento, Painel de Obras, Rio de Janeiro" />
+  <meta name="author" content="Engplan Engenharia" />
+  <meta property="og:title" content="Painel de Obras | Engplan" />
+  <meta property="og:description" content="Acompanhe o andamento das obras em execução com transparência e tecnologia." />
+  <meta property="og:image" content="https://engplanbrasil.com.br/images/logo.png" />
+  <meta property="og:url" content="https://engplanbrasil.com.br/painel.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="images/logo.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="header">
-    <img src="images/logo.png" alt="Engplan Logo" class="logo" />
+    <img src="images/logo.png" alt="Engplan Logo" class="logo" loading="lazy" />
     <nav class="menu">
       <a href="index.html">Início</a>
       <a href="index-en.html">EN</a>
@@ -58,12 +67,23 @@
     <p>© 2025 Engplan Engenharia</p>
     <div class="social">
       <a href="https://wa.me/5521972083284" target="_blank">
-        <img src="images/whatsapp.png" alt="WhatsApp">
+        <img src="images/whatsapp.png" alt="WhatsApp" loading="lazy" />
       </a>
       <a href="https://instagram.com/engplanbrasil" target="_blank">
-        <img src="images/instagram.png" alt="Instagram">
+        <img src="images/instagram.png" alt="Instagram" loading="lazy" />
       </a>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lazyItems = document.querySelectorAll('[loading="lazy"]');
+      lazyItems.forEach(el => {
+        el.addEventListener('load', () => {
+          el.classList.add('loaded');
+        });
+      });
+    });
+  </script>
 </body>
 </html>

@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST["email"]);
     $mensagem = htmlspecialchars($_POST["mensagem"]);
 
-    $destinatario = "contato@engplanbrasil.com.br";
+    $destinatario = "engplanbrasil@gmail.com";
     $assunto = "Mensagem do site Engplan";
     $corpo = "Nome: $nome\nEmail: $email\nMensagem:\n$mensagem";
 
