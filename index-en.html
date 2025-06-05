@@ -2,108 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Engplan Engenharia - Specialized solutions in construction, renovation, project management, and inspections."/>
-  <meta name="keywords" content="Engineering, Construction, Project Management, Inspections, Engplan"/>
-  <meta name="author" content="Engplan Engenharia"/>
-  <title>Engplan Engineering</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="icon" href="images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engplan Engineering - Projects and Construction</title>
+  <meta name="description" content="Engineering excellence in projects, construction, and technical consultancy.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
-
-  <header>
+  <header class="cabecalho">
     <img src="images/logo.png" alt="Engplan Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#tracking">Tracking</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="login.html">Client Login</a></li>
-      </ul>
+    <nav class="menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#tracking">Tracking</a>
+      <a href="#contact">Contact</a>
+      <a href="painel.html">Dashboard</a>
     </nav>
   </header>
 
-  <main>
-    <section id="hero">
-      <h1>Welcome to Engplan Engenharia</h1>
-      <p>Professional engineering solutions for your construction and renovation needs.</p>
-      <a href="#about" class="btn">Learn More</a>
-    </section>
+  <section id="video" class="video-section">
+    <video src="videos/institucional.mp4" autoplay muted loop playsinline></video>
+  </section>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Engplan Engenharia provides innovative, sustainable, and efficient engineering solutions. With a dedicated team and modern tools, we deliver quality and excellence in each project.</p>
-    </section>
+  <section id="about">
+    <h2>About Engplan</h2>
+    <p>Complete engineering solutions for projects, construction execution, and consultancy.</p>
+  </section>
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <div class="grid">
-        <div class="card"> <h3>Projects</h3> <p>Complete architectural and structural design services.</p> </div>
-        <div class="card"> <h3>Construction</h3> <p>Execution of residential and commercial construction works.</p> </div>
-        <div class="card"> <h3>Renovations</h3> <p>Interior, exterior and structural renovations.</p> </div>
-        <div class="card"> <h3>Inspections</h3> <p>Technical evaluations and real estate inspections.</p> </div>
-      </div>
-    </section>
+  <section id="services">
+    <h2>Services</h2>
+    <div class="grid-servicos">
+      <div class="servico">Structural Projects</div>
+      <div class="servico">Construction Execution</div>
+      <div class="servico">Technical Reports</div>
+      <div class="servico">Project Supervision</div>
+    </div>
+  </section>
 
-    <section id="gallery">
-      <h2>Project Gallery</h2>
-      <div class="gallery">
-        <img src="images/obra1.png" alt="Project 1"/>
-        <img src="images/obra2.png" alt="Project 2"/>
-        <img src="images/obra3.png" alt="Project 3"/>
-        <img src="images/obra4.png" alt="Project 4"/>
-      </div>
-    </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="galeria-grid">
+      <img src="images/obra1.png" alt="Work 1" loading="lazy">
+      <img src="images/obra2.png" alt="Work 2" loading="lazy">
+      <img src="images/obra3.png" alt="Work 3" loading="lazy">
+      <img src="images/obra4.png" alt="Work 4" loading="lazy">
+    </div>
+  </section>
 
-    <section id="videos">
-      <h2>Presentation Videos</h2>
-      <div class="video-grid">
-        <video controls>
-          <source src="videos/institucional.mp4" type="video/mp4"/>
-          Your browser does not support the video tag.
-        </video>
-        <video controls>
-          <source src="videos/engenharia.mp4" type="video/mp4"/>
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </section>
+  <section id="testimonials">
+    <h2>Client Reviews</h2>
+    <div class="avaliacoes">
+      <div class="comentario">"Excellent construction and support!"</div>
+      <div class="comentario">"Reliable technical management!"</div>
+    </div>
+  </section>
 
-    <section id="reviews">
-      <h2>Client Reviews</h2>
-      <div class="reviews">
-        <blockquote>"Reliable and extremely professional service!"</blockquote>
-        <blockquote>"The renovation exceeded expectations. Thank you, Engplan!"</blockquote>
-      </div>
-    </section>
+  <section id="tracking">
+    <h2>Project Tracking</h2>
+    <a href="painel.html" class="botao">Access Project Panel</a>
+  </section>
 
-    <section id="tracking">
-      <h2>Project Tracking</h2>
-      <p>Access real-time updates about your projects through our secure platform.</p>
-      <a href="painel.html" class="btn">Access Dashboard</a>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form action="form-handler.php" method="POST">
-        <input type="text" name="name" placeholder="Name" required/>
-        <input type="email" name="email" placeholder="Email" required/>
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formsubmit.co/your-email@example.com" method="POST">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Engplan Engenharia. All rights reserved.</p>
+    <p>&copy; 2025 Engplan Engineering. All rights reserved.</p>
     <div class="social">
-      <a href="https://wa.me/5521972083284" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"/></a>
-      <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a>
+      <a href="https://wa.me/5521972083284" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp" width="24"></a>
+      <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="images/instagram.png" alt="Instagram" width="24"></a>
     </div>
   </footer>
 

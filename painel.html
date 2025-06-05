@@ -2,61 +2,36 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Acompanhamento de obras - Engplan Engenharia."/>
-  <title>Painel de Acompanhamento | Engplan</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="icon" href="images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel de Obras - Engplan</title>
+  <meta name="description" content="Acompanhe suas obras com a Engplan Engenharia.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
-
-  <header>
-    <img src="images/logo.png" alt="Logo da Engplan" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="index.html#tracking">Voltar</a></li>
-      </ul>
+  <header class="cabecalho">
+    <img src="images/logo.png" alt="Logo Engplan" class="logo" />
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="login.html">Login</a>
     </nav>
   </header>
 
   <main>
-    <section id="dashboard">
-      <h1>Acompanhamento de Obras</h1>
-      <p>Aqui você pode acompanhar o andamento das obras com atualizações periódicas.</p>
-
-      <div class="dashboard-grid">
-        <div class="obra-card">
-          <h2>Obra 1 - Residencial Niterói</h2>
-          <p>Status: <span class="status andamento">Em andamento</span></p>
-          <p>Última atualização: 02/06/2025</p>
-          <img src="images/obra1.png" alt="Obra 1" />
-        </div>
-
-        <div class="obra-card">
-          <h2>Obra 2 - Escritório Copacabana</h2>
-          <p>Status: <span class="status concluido">Concluída</span></p>
-          <p>Última atualização: 28/05/2025</p>
-          <img src="images/obra2.png" alt="Obra 2" />
-        </div>
-
-        <div class="obra-card">
-          <h2>Obra 3 - Galpão Industrial</h2>
-          <p>Status: <span class="status andamento">Em andamento</span></p>
-          <p>Última atualização: 31/05/2025</p>
-          <img src="images/obra3.png" alt="Obra 3" />
-        </div>
-      </div>
+    <section id="painel">
+      <h2>Painel de Acompanhamento</h2>
+      <p>Selecione sua obra abaixo para ver o andamento:</p>
+      <ul>
+        <li><a href="projeto1.html">Obra Residencial - RJ</a></li>
+        <li><a href="projeto2.html">Prédio Comercial - SP</a></li>
+        <li><a href="projeto3.html">Reforma Estrutural - MG</a></li>
+        <li><a href="projeto4.html">Projeto Elétrico - BA</a></li>
+      </ul>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
-    <div class="social">
-      <a href="https://wa.me/5521972083284" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"/></a>
-      <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a>
-    </div>
   </footer>
-
 </body>
 </html>
