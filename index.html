@@ -3,100 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Engplan Brasil</title>
+  <title>Engplan Brasil - Engenharia & Planejamento</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Cabeçalho -->
   <header>
-    <div class="container">
-      <div class="logo">Engplan Brasil</div>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#avaliacoes">Avaliações</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+    <video autoplay muted loop id="banner-video">
+      <source src="videos/banner.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo em HTML5.
+    </video>
+    <div class="overlay">
+      <h1>Engenharia com Excelência</h1>
+      <p>Soluções inteligentes para obras públicas e privadas</p>
     </div>
   </header>
 
-  <!-- Banner com vídeo em loop -->
-  <section class="banner">
-    <video autoplay muted loop playsinline>
-      <source src="video/institucional.mp4" type="video/mp4">
-      Seu navegador não suporta vídeos HTML5.
-    </video>
-    <div class="overlay"></div>
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#avaliacoes">Avaliações</a></li>
+      <li><a href="#acompanhamento">Acompanhamento</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section class="secao" id="sobre">
+    <h2>Sobre a Engplan</h2>
+    <p>A Engplan atua há mais de 10 anos no setor de engenharia civil, executando projetos e obras com excelência técnica, comprometimento e inovação.</p>
   </section>
 
-  <!-- Sobre -->
-  <section id="sobre" class="sobre">
-    <h2>Sobre a Engplan Brasil</h2>
-    <p>
-      A Engplan Brasil é uma empresa especializada em soluções completas para construção civil, com foco em sistemas Steel Frame, reformas residenciais e comerciais, gestão de obras, elaboração de projetos técnicos e emissão de laudos especializados. Atuamos com seriedade, inovação e excelência em todas as etapas, garantindo eficiência, economia e sustentabilidade para nossos clientes.
-    </p>
-  </section>
-
-  <!-- Serviços -->
-  <section id="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="servicos">
-      <div class="item">Projetos Arquitetônicos</div>
-      <div class="item">Execução de Obras</div>
-      <div class="item">Gestão de Obras</div>
-      <div class="item">Laudos Técnicos</div>
-      <div class="item">Steel Frame</div>
-      <div class="item">Reformas em Geral</div>
+  <section class="secao" id="servicos">
+    <h2>Serviços</h2>
+    <div class="servico-grid">
+      <div class="servico">
+        <h3>Projetos Técnicos</h3>
+        <p>Desenvolvimento completo de projetos de engenharia civil e infraestrutura.</p>
+      </div>
+      <div class="servico">
+        <h3>Execução de Obras</h3>
+        <p>Construção, reforma e manutenção de obras públicas e privadas.</p>
+      </div>
+      <div class="servico">
+        <h3>Planejamento e Gestão</h3>
+        <p>Gerenciamento de obras com foco em prazos, custos e qualidade.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Galeria -->
-  <section id="galeria">
-    <h2>Galeria de Obras</h2>
-    <div class="galeria">
-      <a href="leito-hospitalar.html" class="card" data-title="Leito Hospitalar">
-        <img src="img/leito1.png" alt="Leito Hospitalar" />
+  <section class="secao" id="galeria">
+    <h2>Galeria de Projetos</h2>
+    <div class="galeria-grid">
+      <a href="leito-hospitalar.html">
+        <img src="imagens/obra1.png" alt="Leito Hospitalar" />
+        <span>Leito Hospitalar</span>
       </a>
-      <a href="barragem.html" class="card" data-title="Implementação de Barragem">
-        <img src="img/rio1.png" alt="Barragem" />
+      <a href="reforma-barra-studio.html">
+        <img src="imagens/obra2.png" alt="Reforma Barra Studio" />
+        <span>Reforma Barra Studio</span>
       </a>
-      <a href="cobertura.html" class="card" data-title="Cobertura galvanizado em ponto comercial">
-        <img src="img/cobertura1.png" alt="Cobertura" />
+      <a href="implementacao-barragem.html">
+        <img src="imagens/obra3.png" alt="Implementação de Barragem" />
+        <span>Implementação de Barragem</span>
       </a>
-      <a href="reforma-barra-studio.html" class="card" data-title="Reforma Barra Studio">
-        <img src="img/reforma1.png" alt="Reforma Studio" />
+      <a href="cobertura-comercial.html">
+        <img src="imagens/obra4.png" alt="Cobertura Galvanizado" />
+        <span>Cobertura Galvanizado</span>
       </a>
     </div>
   </section>
 
-  <!-- Avaliações -->
-  <section id="avaliacoes" class="avaliacoes">
+  <section class="secao" id="avaliacoes">
     <h2>Avaliação dos Clientes</h2>
-    <div class="box">
-      <p>"Serviço de alta qualidade! A equipe foi muito profissional do início ao fim."</p>
+    <div class="avaliacoes">
+      <div class="avaliacao">
+        <p>"Profissionalismo e pontualidade definem a Engplan. Recomendo!"</p>
+        <strong>– João Silva</strong>
+      </div>
+      <div class="avaliacao">
+        <p>"Obra entregue antes do prazo, com excelente qualidade."</p>
+        <strong>– Carla Mendes</strong>
+      </div>
     </div>
-    <div class="box">
-      <p>"Recomendo fortemente a Engplan Brasil. Excelentes em Steel Frame e reformas!"</p>
-    </div>
-  <section id="contato" class="secao">
-  <h2>Fale Conosco</h2>
-  <form action="envia.php" method="POST">
-    <input type="text" name="nome" placeholder="Seu nome" required />
-    <input type="email" name="email" placeholder="Seu e-mail" required />
-    <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
+  </section>
 
-  <!-- Rodapé -->
+  <section class="secao" id="acompanhamento">
+    <h2>Acompanhamento de Obras</h2>
+    <p>Acesse o painel de acompanhamento das obras em tempo real.</p>
+    <a href="painel.html" style="color: #004d8d; font-weight: bold;">→ Ir para o Painel</a>
+  </section>
+
+  <section class="secao" id="contato">
+    <h2>Fale Conosco</h2>
+    <form action="https://formsubmit.co/contato@engplanbrasil.com.br" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <!-- reCAPTCHA pode ser reinserido aqui, se necessário -->
+  </section>
+
   <footer>
-    <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Engplan Brasil - Todos os direitos reservados.</p>
+    <p>Instagram: @engplanbrasil | WhatsApp: (21) 97208-3284</p>
   </footer>
 
-  
 </body>
 </html>
