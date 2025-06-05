@@ -1,57 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engplan Engenharia | Projetos e Obras com Excelência</title>
-  <meta name="description" content="Engplan Engenharia: soluções completas em obras residenciais e comerciais. Acompanhe seus projetos em tempo real, com transparência e tecnologia." />
-  <meta name="keywords" content="Engenharia, Engplan, Obras, Construção Civil, Projetos, Acompanhamento de Obras, Rio de Janeiro" />
+  <meta name="description" content="Engplan Engenharia - Projetos, execução e acompanhamento de obras." />
+  <meta name="keywords" content="engenharia, obras, construção, projetos, Engplan" />
   <meta name="author" content="Engplan Engenharia" />
-  <meta property="og:title" content="Engplan Engenharia" />
-  <meta property="og:description" content="Soluções modernas em engenharia e acompanhamento de obras." />
-  <meta property="og:image" content="https://engplanbrasil.com.br/images/logo.png" />
-  <meta property="og:url" content="https://engplanbrasil.com.br" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="images/logo.png" />
+  <title>Engplan Engenharia</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
+
 <body>
   <header class="header">
-    <img src="images/logo.png" alt="Engplan Logo" class="logo" loading="lazy" />
-    <nav class="menu">
-      <a href="index.html">Início</a>
-      <a href="index-en.html">EN</a>
-      <a href="login.html">Área do Cliente</a>
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Logo Engplan" class="logo" />
+      <h1>Engplan Engenharia</h1>
+    </div>
+    <nav class="navbar">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#acompanhamento">Acompanhamento</a>
+      <a href="#contato">Contato</a>
+      <a href="login.html" class="btn-login">Login</a>
     </nav>
   </header>
 
-  <main>
-    <h1>Bem-vindo à Engplan Engenharia</h1>
-    <p>Oferecemos soluções completas em engenharia civil, com foco em qualidade, transparência e tecnologia.</p>
-    <img src="images/obra1.png" alt="Projeto Residencial 1" loading="lazy" />
-  </main>
+  <section id="sobre" class="section">
+    <h2>Sobre a Engplan</h2>
+    <p>Especialistas em engenharia com foco em qualidade e segurança nas obras.</p>
+  </section>
 
-  <footer>
-    <p>© 2025 Engplan Engenharia</p>
-    <div class="social">
-      <a href="https://wa.me/5521972083284" target="_blank">
-        <img src="images/whatsapp.png" alt="WhatsApp" loading="lazy" />
-      </a>
-      <a href="https://instagram.com/engplanbrasil" target="_blank">
-        <img src="images/instagram.png" alt="Instagram" loading="lazy" />
-      </a>
+  <section id="servicos" class="section cards">
+    <h2>Nossos Serviços</h2>
+    <div class="grid">
+      <div class="card">Projetos Estruturais</div>
+      <div class="card">Execução de Obras</div>
+      <div class="card">Laudos e Vistorias</div>
+      <div class="card">Acompanhamento de Obras</div>
     </div>
+    <p><a href="servicos-modelo.pdf" target="_blank">Download do PDF</a></p>
+  </section>
+
+  <section id="galeria" class="section">
+    <h2>Galeria de Obras</h2>
+    <div class="galeria-grid">
+      <div class="galeria-item">
+        <img src="img/obra1.png" alt="Obra 1" />
+        <div class="overlay">Residencial A</div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/obra2.png" alt="Obra 2" />
+        <div class="overlay">Comercial B</div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/obra3.png" alt="Obra 3" />
+        <div class="overlay">Industrial C</div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/obra4.png" alt="Obra 4" />
+        <div class="overlay">Condomínio D</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="avaliacoes" class="section avaliacoes">
+    <h2>Avaliação dos Clientes</h2>
+    <blockquote>"Profissionalismo impecável. Recomendo!" - João M.</blockquote>
+    <blockquote>"Entrega no prazo e serviço de qualidade." - Ana P.</blockquote>
+  </section>
+
+  <section id="acompanhamento" class="section">
+    <h2>Acompanhamento de Obras</h2>
+    <p>Veja o andamento das obras <a href="painel.html">clicando aqui</a>.</p>
+  </section>
+
+  <section class="video-section">
+    <video controls autoplay muted loop>
+      <source src="videos/institucional.mp4" type="video/mp4">
+      Seu navegador não suporta o vídeo.
+    </video>
+  </section>
+
+  <section id="contato" class="section">
+    <h2>Fale Conosco</h2>
+    <form action="https://formsubmit.co/contato@engplanbrasil.com.br" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+      <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <img src="img/logo.png" class="logo-footer" alt="Logo" />
+    <p>&copy; 2025 Engplan Engenharia - Todos os direitos reservados</p>
   </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const lazyItems = document.querySelectorAll('[loading="lazy"]');
-      lazyItems.forEach(el => {
-        el.addEventListener('load', () => {
-          el.classList.add('loaded');
-        });
-      });
-    });
-  </script>
+  <div class="painel-lateral">
+    <a href="https://wa.me/5521972083284" target="_blank">
+      <img src="img/whatsapp.png" alt="WhatsApp" />
+    </a>
+    <a href="https://www.instagram.com/engplanbrasil" target="_blank">
+      <img src="img/instagram.png" alt="Instagram" />
+    </a>
+  </div>
 </body>
+
 </html>
