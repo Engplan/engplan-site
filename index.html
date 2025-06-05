@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engplan Engenharia</title>
-  <meta name="description" content="Engplan Engenharia: projetos, construções e reformas com qualidade e inovação.">
-  <meta name="keywords" content="engenharia, construção, projetos, reformas, Engplan, obras, arquitetura">
-  <meta name="author" content="Engplan Engenharia">
+  <title>Engplan Engenharia - Projetos e Obras</title>
+  <meta name="description" content="Engplan Engenharia: excelência em obras, projetos e acompanhamento técnico.">
+  <meta name="keywords" content="Engenharia, Projetos, Obras, Engplan, Acompanhamento">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Engplan Engenharia">
+  <meta property="og:description" content="Excelência em obras e projetos de engenharia.">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="img/logo.png" />
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="preload" as="image" href="images/logo.png" />
+  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
   <header class="cabecalho">
-    <img src="img/logo.png" alt="Logo Engplan" class="logo" />
+    <img src="images/logo.png" alt="Logo Engplan" class="logo" width="250" />
     <nav class="menu">
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
@@ -21,76 +26,76 @@
       <a href="#avaliacoes">Avaliações</a>
       <a href="#acompanhamento">Acompanhamento</a>
       <a href="#contato">Contato</a>
-      <a href="index-en.html">EN</a>
-      <a href="login.html" class="login">Área do Cliente</a>
+      <a href="painel.html">Painel</a>
+      <a href="login.html">Login</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Engplan Engenharia</h1>
-    <p>Excelência em projetos, construções e reformas.</p>
-    <video src="videos/institucional.mp4" autoplay loop muted></video>
+  <section id="video" class="video-section">
+    <video src="videos/institucional.mp4" autoplay muted loop playsinline></video>
   </section>
 
-  <section id="sobre" class="sessao">
+  <section id="sobre">
     <h2>Sobre a Engplan</h2>
-    <p>Somos especialistas em engenharia civil, entregando soluções inovadoras e personalizadas para cada cliente.</p>
+    <p>Engenharia de excelência com soluções completas em projetos, execução de obras e consultoria técnica.</p>
   </section>
 
-  <section id="servicos" class="sessao">
-    <h2>Nossos Serviços</h2>
+  <section id="servicos">
+    <h2>Serviços</h2>
     <div class="grid-servicos">
-      <div class="servico">Projetos Residenciais</div>
-      <div class="servico">Construção Civil</div>
-      <div class="servico">Reformas Comerciais</div>
-      <div class="servico">Consultoria Técnica</div>
+      <div class="servico">Projetos Estruturais</div>
+      <div class="servico">Execução de Obras</div>
+      <div class="servico">Laudos Técnicos</div>
+      <div class="servico">Acompanhamento de Obras</div>
     </div>
   </section>
 
-  <section id="galeria" class="sessao">
-    <h2>Galeria de Obras</h2>
+  <section id="galeria">
+    <h2>Galeria</h2>
     <div class="galeria-grid">
-      <div class="imagem"><img src="img/obra1.png" alt="Obra 1" /></div>
-      <div class="imagem"><img src="img/obra2.png" alt="Obra 2" /></div>
-      <div class="imagem"><img src="img/obra3.png" alt="Obra 3" /></div>
-      <div class="imagem"><img src="img/obra4.png" alt="Obra 4" /></div>
+      <img src="images/obra1.png" alt="Obra 1" loading="lazy">
+      <img src="images/obra2.png" alt="Obra 2" loading="lazy">
+      <img src="images/obra3.png" alt="Obra 3" loading="lazy">
+      <img src="images/obra4.png" alt="Obra 4" loading="lazy">
     </div>
   </section>
 
-  <section id="avaliacoes" class="sessao">
-    <h2>Avaliação dos Clientes</h2>
+  <section id="avaliacoes">
+    <h2>Avaliações de Clientes</h2>
     <div class="avaliacoes">
-      <blockquote>“Ótima experiência, obra entregue no prazo!” — João</blockquote>
-      <blockquote>“Equipe profissional e atenciosa.” — Maria</blockquote>
+      <div class="comentario">"Obra perfeita e equipe competente!"</div>
+      <div class="comentario">"Excelente acompanhamento técnico!"</div>
     </div>
   </section>
 
-  <section id="acompanhamento" class="sessao">
-    <h2>Acompanhamento de Obra</h2>
-    <p>Acompanhe o andamento da sua obra em tempo real através da nossa <a href="painel.html">área do cliente</a>.</p>
+  <section id="acompanhamento">
+    <h2>Acompanhamento de Obras</h2>
+    <a href="painel.html" class="botao">Acessar Painel de Obras</a>
   </section>
 
-  <section id="contato" class="sessao">
-    <h2>Fale Conosco</h2>
-    <form action="enviar.php" method="POST" class="formulario">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu email" required />
+  <section id="contato">
+    <h2>Contato</h2>
+    <form action="https://formsubmit.co/seu-email@email.com" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
       <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
       <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
       <button type="submit">Enviar</button>
     </form>
   </section>
 
-  <footer class="rodape">
+  <footer>
+    <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
     <div class="social">
       <a href="https://wa.me/5521972083284" target="_blank">
-        <img src="img/whatsapp.png" alt="WhatsApp" />
+        <img src="images/whatsapp.png" alt="WhatsApp" width="24">
       </a>
       <a href="https://instagram.com/engplanbrasil" target="_blank">
-        <img src="img/instagram.png" alt="Instagram" />
+        <img src="images/instagram.png" alt="Instagram" width="24">
       </a>
     </div>
-    <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
