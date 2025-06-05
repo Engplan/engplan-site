@@ -4,105 +4,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engplan Brasil</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="imagens/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
-
   <header>
-    <div class="social-icons">
-      <a href="https://wa.me/5521972083284" target="_blank" aria-label="WhatsApp">
-        <img src="imagens/whatsapp-icon.png" alt="WhatsApp">
-      </a>
-      <a href="https://instagram.com/engplanbrasil" target="_blank" aria-label="Instagram">
-        <img src="imagens/instagram-icon.png" alt="Instagram">
-      </a>
-    </div>
-    <video autoplay muted loop id="banner-video">
-      <source src="videos/institucional.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo.
-    </video>
-    <div class="overlay">
+    <div class="container">
       <h1>Engplan Brasil</h1>
-      <p>Excelência em Engenharia</p>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <a href="https://wa.me/5521972083284" target="_blank" class="icon-link">📱</a>
+          </li>
+          <li>
+            <a href="https://instagram.com/engplanbrasil" target="_blank" class="icon-link">📷</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#galeria">Galeria</a></li>
-      <li><a href="#avaliacoes">Avaliações</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-
-  <section id="sobre" class="secao">
-    <h2>Sobre a Engplan Brasil</h2>
-    <p>A Engplan Brasil atua há anos nos setores de <strong>Steel Frame</strong>, <strong>gestão de obras</strong>, <strong>reformas residenciais e comerciais</strong>, além da elaboração de <strong>projetos técnicos e laudos especializados</strong>. Nossa missão é oferecer soluções técnicas inovadoras com qualidade e compromisso com o cliente.</p>
-  </section>
-
-  <section id="servicos" class="secao">
-    <h2>Serviços</h2>
-    <div class="servico-grid">
-      <div class="servico">Projetos e Laudos Técnicos</div>
-      <div class="servico">Execução de Obras</div>
-      <div class="servico">Consultoria Técnica</div>
-      <div class="servico">Manutenção e Reformas</div>
-    </div>
-  </section>
-
-  <section id="galeria" class="secao">
-    <h2>Galeria de Projetos</h2>
-    <div class="galeria-grid">
-      <a href="leito-hospitalar.html">
-        <img src="imagens/leito1.png" alt="Leito Hospitalar" />
-        <span>Leito Hospitalar</span>
-      </a>
-      <a href="barragem.html">
-        <img src="imagens/rio1.png" alt="Barragem" />
-        <span>Implementação de Barragem</span>
-      </a>
-      <a href="cobertura.html">
-        <img src="imagens/cobertura1.png" alt="Cobertura" />
-        <span>Cobertura galvanizado em ponto comercial</span>
-      </a>
-      <a href="reforma-barra-studio.html">
-        <img src="imagens/reforma1.png" alt="Studio" />
-        <span>Reforma Barra Studio</span>
-      </a>
-    </div>
-  </section>
-
-  <section id="avaliacoes" class="secao">
-    <h2>Avaliações dos Clientes</h2>
-    <div class="avaliacoes">
-      <div class="avaliacao">
-        <p>“Serviço excelente, entrega no prazo e qualidade impecável.”</p>
-        <span>— Cliente Satisfeito</span>
+  <main>
+    <section id="inicio" class="banner">
+      <video autoplay muted loop playsinline>
+        <source src="video.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo.
+      </video>
+      <div class="banner-content">
+        <h2>Excelência em Engenharia e Planejamento</h2>
+        <p>Transformamos ideias em realidade com inovação e responsabilidade.</p>
       </div>
-      <div class="avaliacao">
-        <p>“Equipe técnica capacitada e atendimento diferenciado.”</p>
-        <span>— Engenheiro Parceiro</span>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contato" class="secao">
-    <h2>Fale Conosco</h2>
-    <form action="envia.php" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu e-mail" required />
-      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-      <!-- reCAPTCHA pode ser adicionado aqui, se necessário -->
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <h2>Sobre a Engplan</h2>
+        <p>
+          Somos uma empresa especializada em projetos, reformas e construções
+          com foco em qualidade e eficiência. Atendemos clientes residenciais,
+          comerciais e industriais em todo o Brasil.
+        </p>
+      </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+      <div class="container">
+        <h2>Nossos Serviços</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="icones/projeto.svg" alt="Projetos" />
+            <h3>Projetos</h3>
+            <p>Elaboração de projetos arquitetônicos e estruturais.</p>
+          </div>
+          <div class="card">
+            <img src="icones/reforma.svg" alt="Reformas" />
+            <h3>Reformas</h3>
+            <p>Modernização e adaptação de espaços existentes.</p>
+          </div>
+          <div class="card">
+            <img src="icones/construcao.svg" alt="Construção" />
+            <h3>Construção</h3>
+            <p>Execução de obras civis do início ao fim.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="galeria">
+      <div class="container">
+        <h2>Galeria de Projetos</h2>
+        <div class="grid">
+          <a href="leito-hospitalar.html"><img src="imagens/leito1.png" alt="Leito Hospitalar" /></a>
+          <a href="reforma-barra.html"><img src="imagens/reforma1.png" alt="Reforma Barra Studio" /></a>
+          <a href="implementacao-rio.html"><img src="imagens/rio1.png" alt="Implementação Rio" /></a>
+          <a href="cobertura-comercial.html"><img src="imagens/cobertura1.png" alt="Cobertura Galvanizada" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="avaliacoes" class="avaliacoes">
+      <div class="container">
+        <h2>Avaliações dos Clientes</h2>
+        <div class="cards">
+          <div class="card">
+            <p>"Serviço excelente e entrega no prazo. Super recomendo!"</p>
+            <span>- Juliana M.</span>
+          </div>
+          <div class="card">
+            <p>"Equipe profissional e comprometida com o resultado."</p>
+            <span>- Rafael T.</span>
+          </div>
+          <div class="card">
+            <p>"Excelente atendimento e ótimo custo-benefício."</p>
+            <span>- Carla S.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="container">
+        <h2>Fale Conosco</h2>
+        <p>Entre em contato para orçamentos, dúvidas ou sugestões.</p>
+        <form action="mailto:engplanbrasil@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <input type="text" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Seu e-mail" required />
+          </div>
+          <div class="form-group">
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
+    </div>
   </footer>
-
 </body>
 </html>
