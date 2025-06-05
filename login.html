@@ -2,34 +2,33 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Login - Engplan Engenharia</title>
-  <meta name="description" content="Área de login para clientes da Engplan Engenharia.">
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
-  <header class="cabecalho">
-    <img src="images/logo.png" alt="Logo Engplan" class="logo" />
-    <nav class="menu">
-      <a href="index.html">Início</a>
-      <a href="painel.html">Painel</a>
-    </nav>
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Engplan Engenharia" />
+    </a>
   </header>
 
-  <main>
-    <section id="login">
-      <h2>Área do Cliente</h2>
-      <form action="#" method="POST">
-        <input type="email" name="email" placeholder="Seu e-mail" required />
-        <input type="password" name="senha" placeholder="Sua senha" required />
-        <button type="submit">Entrar</button>
-      </form>
-    </section>
+  <main class="login-container" style="max-width:400px; margin: 80px auto; padding: 20px; background:#f9f9f9; border-radius:10px; box-shadow:0 3px 10px rgba(47,79,79,0.15);">
+    <h2 style="color:#2f4f4f; text-align:center; margin-bottom: 24px;">Área do Cliente - Login</h2>
+    <form action="painel.html" method="post" autocomplete="off">
+      <label for="username">Usuário</label>
+      <input type="text" id="username" name="username" required placeholder="Digite seu usuário" />
+
+      <label for="password">Senha</label>
+      <input type="password" id="password" name="password" required placeholder="Digite sua senha" />
+
+      <button type="submit">Entrar</button>
+    </form>
+    <p style="margin-top:15px; text-align:center; color:#555; font-size:0.9rem;">Esqueceu sua senha? <a href="#" style="color:#3f6f6f; text-decoration:none;">Clique aqui</a></p>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
+  <footer class="footer">
+    <p>© 2025 Engplan Engenharia - Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>

@@ -2,87 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engplan Engineering - Projects and Construction</title>
-  <meta name="description" content="Engineering excellence in projects, construction, and technical consultancy.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Engplan Engineering - Home</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
-  <header class="cabecalho">
-    <img src="images/logo.png" alt="Engplan Logo" class="logo" />
+  <header class="header">
+    <a href="index-en.html" class="logo">
+      <img src="images/logo.png" alt="Engplan Engineering" />
+    </a>
     <nav class="menu">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#tracking">Tracking</a>
-      <a href="#contact">Contact</a>
-      <a href="painel.html">Dashboard</a>
+      <ul>
+        <li><a href="index-en.html" class="active">Home</a></li>
+        <li><a href="services-en.html">Services</a></li>
+        <li><a href="gallery-en.html">Gallery</a></li>
+        <li><a href="reviews-en.html">Reviews</a></li>
+        <li><a href="tracking-en.html">Project Tracking</a></li>
+        <li><a href="contact-en.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="video" class="video-section">
-    <video src="videos/institucional.mp4" autoplay muted loop playsinline></video>
-  </section>
+  <main style="max-width: 960px; margin: 40px auto; padding: 15px;">
+    <section class="sobre">
+      <h1>Welcome to Engplan Engineering</h1>
+      <p>Your trusted partner in construction planning and project management. We provide innovative and efficient engineering solutions to make your projects successful.</p>
+    </section>
 
-  <section id="about">
-    <h2>About Engplan</h2>
-    <p>Complete engineering solutions for projects, construction execution, and consultancy.</p>
-  </section>
+    <section class="servicos">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Structural Projects</li>
+        <li>Project Management</li>
+        <li>Site Supervision</li>
+        <li>Consulting and Advisory</li>
+      </ul>
+    </section>
 
-  <section id="services">
-    <h2>Services</h2>
-    <div class="grid-servicos">
-      <div class="servico">Structural Projects</div>
-      <div class="servico">Construction Execution</div>
-      <div class="servico">Technical Reports</div>
-      <div class="servico">Project Supervision</div>
-    </div>
-  </section>
+    <section class="galeria">
+      <h2>Gallery</h2>
+      <!-- imagens e layout similares -->
+    </section>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="galeria-grid">
-      <img src="images/obra1.png" alt="Work 1" loading="lazy">
-      <img src="images/obra2.png" alt="Work 2" loading="lazy">
-      <img src="images/obra3.png" alt="Work 3" loading="lazy">
-      <img src="images/obra4.png" alt="Work 4" loading="lazy">
-    </div>
-  </section>
+    <section class="avaliacoes">
+      <h2>Client Reviews</h2>
+      <!-- avaliações traduzidas -->
+    </section>
 
-  <section id="testimonials">
-    <h2>Client Reviews</h2>
-    <div class="avaliacoes">
-      <div class="comentario">"Excellent construction and support!"</div>
-      <div class="comentario">"Reliable technical management!"</div>
-    </div>
-  </section>
+    <section class="acompanhamento">
+      <h2>Project Tracking</h2>
+      <p>Keep updated with the status of your construction projects, deadlines, and communications with our technical team.</p>
+      <a href="login.html" class="btn-acompanhamento">Access Your Panel</a>
+    </section>
 
-  <section id="tracking">
-    <h2>Project Tracking</h2>
-    <a href="painel.html" class="botao">Access Project Panel</a>
-  </section>
+    <section class="contato">
+      <h2>Contact Us</h2>
+      <p>Contact us for any questions or to schedule a consultation.</p>
+      <a href="contact-en.html" class="btn-acompanhamento">Get in Touch</a>
+    </section>
+  </main>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="https://formsubmit.co/your-email@example.com" method="POST">
-      <input type="text" name="name" placeholder="Your name" required>
-      <input type="email" name="email" placeholder="Your email" required>
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Engplan Engineering. All rights reserved.</p>
-    <div class="social">
-      <a href="https://wa.me/5521972083284" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp" width="24"></a>
-      <a href="https://instagram.com/engplanbrasil" target="_blank"><img src="images/instagram.png" alt="Instagram" width="24"></a>
-    </div>
+  <footer class="footer">
+    <p>© 2025 Engplan Engineering - All rights reserved.</p>
   </footer>
-
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>

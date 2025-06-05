@@ -2,36 +2,43 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Painel de Obras - Engplan</title>
-  <meta name="description" content="Acompanhe suas obras com a Engplan Engenharia.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Painel do Cliente - Engplan Engenharia</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
-  <header class="cabecalho">
-    <img src="images/logo.png" alt="Logo Engplan" class="logo" />
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Engplan Engenharia" />
+    </a>
     <nav class="menu">
-      <a href="index.html">Início</a>
-      <a href="login.html">Login</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="painel.html" class="active">Painel</a></li>
+        <li><a href="login.html">Sair</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="painel">
-      <h2>Painel de Acompanhamento</h2>
-      <p>Selecione sua obra abaixo para ver o andamento:</p>
-      <ul>
-        <li><a href="projeto1.html">Obra Residencial - RJ</a></li>
-        <li><a href="projeto2.html">Prédio Comercial - SP</a></li>
-        <li><a href="projeto3.html">Reforma Estrutural - MG</a></li>
-        <li><a href="projeto4.html">Projeto Elétrico - BA</a></li>
+  <main style="max-width: 900px; margin: 60px auto; padding: 15px;">
+    <h1 style="color:#2f4f4f; margin-bottom: 30px;">Acompanhamento da Obra</h1>
+
+    <section class="acompanhamento">
+      <p>Bem-vindo ao seu painel de acompanhamento! Aqui você pode acompanhar o status atualizado da sua obra, visualizar documentos, prazos e comunicação com a equipe técnica.</p>
+
+      <ul style="text-align:left; margin-top:30px; list-style-type: disc; padding-left: 20px; color:#333; font-size: 1.1rem;">
+        <li><strong>Status Atual:</strong> Em andamento</li>
+        <li><strong>Próxima Visita:</strong> 15/06/2025</li>
+        <li><strong>Responsável Técnico:</strong> Eng. João Silva</li>
+        <li><strong>Documentos Disponíveis:</strong> Projeto estrutural, Cronograma atualizado</li>
       </ul>
+
+      <a href="contato.html" class="btn-acompanhamento" style="margin-top:30px;">Fale com seu gerente de obra</a>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Engplan Engenharia. Todos os direitos reservados.</p>
+  <footer class="footer">
+    <p>© 2025 Engplan Engenharia - Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
