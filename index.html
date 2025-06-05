@@ -4,118 +4,127 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engplan Brasil</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="imagens/favicon.png" />
+  <script src="https://kit.fontawesome.com/a2c5b4a37a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Cabeçalho -->
   <header>
     <div class="container">
-      <h1 class="logo">Engplan Brasil</h1>
+      <h1 class="logo">Engplan</h1>
       <nav>
-        <ul class="nav-links">
-          <li><a href="#inicio">Início</a></li>
+        <ul class="menu">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#acompanhamento">Obras</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li><a href="https://wa.me/5521972083284" target="_blank" class="social-icon">📱</a></li>
-          <li><a href="https://instagram.com/engplanbrasil" target="_blank" class="social-icon">📷</a></li>
         </ul>
+        <div class="redes">
+          <a href="https://wa.me/5521972083284" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com/engplanbrasil" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section id="inicio" class="banner">
-      <video autoplay muted loop playsinline>
-        <source src="video.mp4" type="video/mp4" />
-        Seu navegador não suporta vídeo.
-      </video>
-      <div class="banner-content">
-        <h2>Excelência em Engenharia e Planejamento</h2>
-        <p>Transformamos ideias em realidade com inovação e responsabilidade.</p>
-      </div>
-    </section>
+  <!-- Vídeo institucional -->
+  <section class="banner">
+    <video autoplay muted loop playsinline>
+      <source src="imagens/video-engplan.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay">
+      <h2>Excelência em Engenharia e Planejamento</h2>
+    </div>
+  </section>
 
-    <section id="sobre" class="sobre">
-      <div class="container">
-        <h2>Sobre a Engplan</h2>
-        <p>
-          Somos uma empresa especializada em projetos, reformas e construções com foco em qualidade, inovação e responsabilidade. Atendemos obras residenciais, comerciais e industriais em todo o Brasil.
-        </p>
-      </div>
-    </section>
+  <!-- Sobre -->
+  <section id="sobre" class="sessao">
+    <div class="container">
+      <h2>Sobre a Engplan</h2>
+      <p>Somos uma empresa especializada em obras civis, reformas e infraestrutura. Com anos de experiência no mercado, entregamos qualidade, segurança e compromisso em cada projeto.</p>
+    </div>
+  </section>
 
-    <section id="servicos" class="servicos">
-      <div class="container">
-        <h2>Nossos Serviços</h2>
-        <div class="cards">
-          <div class="card">
-            <img src="icones/projeto.svg" alt="Projetos" />
-            <h3>Projetos</h3>
-            <p>Desenvolvimento completo de projetos arquitetônicos, elétricos e hidráulicos.</p>
-          </div>
-          <div class="card">
-            <img src="icones/reforma.svg" alt="Reformas" />
-            <h3>Reformas</h3>
-            <p>Modernização de ambientes com foco em eficiência e estética.</p>
-          </div>
-          <div class="card">
-            <img src="icones/construcao.svg" alt="Construções" />
-            <h3>Construções</h3>
-            <p>Execução de obras residenciais, comerciais e industriais com excelência.</p>
-          </div>
+  <!-- Serviços -->
+  <section id="servicos" class="sessao cinza">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="grid-servicos">
+        <div class="servico">
+          <i class="fas fa-hard-hat"></i>
+          <h3>Construções</h3>
+          <p>Projetos residenciais, comerciais e industriais do início ao fim.</p>
+        </div>
+        <div class="servico">
+          <i class="fas fa-tools"></i>
+          <h3>Reformas</h3>
+          <p>Reformas completas com planejamento e acompanhamento técnico.</p>
+        </div>
+        <div class="servico">
+          <i class="fas fa-drafting-compass"></i>
+          <h3>Projetos</h3>
+          <p>Execução e regularização de projetos com responsabilidade técnica.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="galeria" class="galeria">
-      <div class="container">
-        <h2>Galeria de Projetos</h2>
-        <div class="grid">
-          <a href="leito-hospitalar.html"><img src="imagens/leito1.png" alt="Leito Hospitalar" /></a>
-          <a href="reforma-barra.html"><img src="imagens/reforma1.png" alt="Reforma Studio Barra" /></a>
-          <a href="implementacao-rio.html"><img src="imagens/rio1.png" alt="Implementação de Barragem" /></a>
-          <a href="cobertura-comercial.html"><img src="imagens/cobertura1.png" alt="Cobertura em Galvanizado" /></a>
+  <!-- Galeria -->
+  <section id="galeria" class="sessao">
+    <div class="container">
+      <h2>Galeria de Projetos</h2>
+      <div class="grid-galeria">
+        <a href="leito-hospitalar.html"><img src="imagens/obra1.png" alt="Leito Hospitalar" /></a>
+        <a href="reforma-barra.html"><img src="imagens/obra2.png" alt="Reforma Studio" /></a>
+        <a href="rio.html"><img src="imagens/obra3.png" alt="Barragem" /></a>
+        <a href="cobertura-comercial.html"><img src="imagens/obra4.png" alt="Cobertura Comercial" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section id="avaliacoes" class="sessao cinza">
+    <div class="container">
+      <h2>Avaliações de Clientes</h2>
+      <div class="avaliacoes">
+        <div class="card-avaliacao">
+          <p>"Serviço excelente do início ao fim. Recomendo muito!"</p>
+          <strong>– Marcos Silva</strong>
+        </div>
+        <div class="card-avaliacao">
+          <p>"Equipe profissional, obra entregue no prazo e com qualidade."</p>
+          <strong>– Carla Mendes</strong>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="avaliacoes" class="avaliacoes">
-      <div class="container">
-        <h2>Avaliações dos Clientes</h2>
-        <div class="cards">
-          <div class="card">
-            <p>"Serviço excelente, equipe comprometida e obra entregue antes do prazo!"</p>
-            <span>- Juliana M.</span>
-          </div>
-          <div class="card">
-            <p>"A Engplan transformou nosso projeto em realidade com total profissionalismo."</p>
-            <span>- Rafael T.</span>
-          </div>
-          <div class="card">
-            <p>"Recomendo fortemente! Ótima comunicação e resultados impecáveis."</p>
-            <span>- Carla S.</span>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Acompanhamento -->
+  <section id="acompanhamento" class="sessao">
+    <div class="container">
+      <h2>Acompanhamento de Obras</h2>
+      <p>Acesse o painel completo para ver o andamento de todas as obras em tempo real.</p>
+      <a href="painel.html" class="botao">Acompanhar Obras</a>
+    </div>
+  </section>
 
-    <section id="contato" class="contato">
-      <div class="container">
-        <h2>Fale Conosco</h2>
-        <p>Entre em contato para orçamentos, dúvidas ou sugestões.</p>
-        <form action="mailto:engplanbrasil@gmail.com" method="POST" enctype="text/plain">
-          <input type="text" name="nome" placeholder="Seu nome" required />
-          <input type="email" name="email" placeholder="Seu e-mail" required />
-          <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
-  </main>
+  <!-- Contato -->
+  <section id="contato" class="sessao cinza">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <form action="https://formsubmit.co/engplanbrasil@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="message" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
 
+  <!-- Rodapé -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
