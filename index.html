@@ -8,104 +8,80 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Engplan Brasil</h1>
+    <div class="container header-container">
+      <img src="img/logo.png" alt="Logo Engplan" class="logo" />
       <nav>
         <ul>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#avaliacoes">Avaliações</a></li>
-          <li><a href="#acompanhamento">Acompanhamento</a></li>
           <li><a href="#contato">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero com vídeo institucional -->
-  <section class="hero-video">
-    <video autoplay muted loop playsinline>
+  <section class="video-banner">
+    <video autoplay muted loop>
       <source src="video/institucional.mp4" type="video/mp4" />
-      Seu navegador não suporta vídeos em HTML5.
+      Seu navegador não suporta vídeos.
     </video>
-    <div class="hero-texto">
-      <h2>Soluções em Engenharia, Projetos e Execução</h2>
-      <p>Steel Frame, Gestão de Obras, Reformas, Projetos e Laudos Técnicos</p>
+    <div class="banner-overlay">
+      <h1>Engplan Brasil</h1>
+      <p>Excelência em obras, reformas e engenharia Steel Frame</p>
     </div>
   </section>
 
-  <!-- Sobre -->
   <section id="sobre">
     <div class="container">
       <h2>Sobre a Engplan Brasil</h2>
-      <p>Atuamos com excelência em projetos e execução de obras em Steel Frame, reformas residenciais e comerciais, gestão de obras, desenvolvimento de projetos técnicos e emissão de laudos. Nossa missão é entregar soluções modernas com precisão técnica e alto padrão de qualidade.</p>
+      <p>
+        A Engplan Brasil atua no mercado de engenharia oferecendo serviços especializados em construções com sistema Steel Frame, gestão de obras, reformas de imóveis, elaboração de projetos e emissão de laudos técnicos. Nosso compromisso é com a excelência, inovação e responsabilidade técnica, entregando sempre qualidade e agilidade para nossos clientes em todo o Brasil.
+      </p>
     </div>
   </section>
 
-  <!-- Serviços -->
   <section id="servicos">
     <div class="container">
       <h2>Nossos Serviços</h2>
-      <div class="servicos-grid">
-        <div class="servico"><h3>Steel Frame</h3></div>
-        <div class="servico"><h3>Reformas</h3></div>
-        <div class="servico"><h3>Projetos</h3></div>
-        <div class="servico"><h3>Laudos Técnicos</h3></div>
-        <div class="servico"><h3>Gestão de Obra</h3></div>
+      <div class="grid">
+        <div class="card">Projetos</div>
+        <div class="card">Laudos Técnicos</div>
+        <div class="card">Reformas</div>
+        <div class="card">Steel Frame</div>
+        <div class="card">Gestão de Obras</div>
       </div>
     </div>
   </section>
 
-  <!-- Galeria -->
   <section id="galeria">
     <div class="container">
       <h2>Galeria de Projetos</h2>
-      <div class="galeria-grid">
-        <a href="leito.html" class="galeria-item">
+      <div class="grid galeria-grid">
+        <a href="leito.html" class="galeria-card">
           <img src="img/leito1.png" alt="Leito Hospitalar" />
-          <span>Leito Hospitalar</span>
+          <p>Leito Hospitalar</p>
         </a>
-        <a href="rio.html" class="galeria-item">
-          <img src="img/rio1.png" alt="Barragem" />
-          <span>Implementação de Barragem</span>
+        <a href="rio.html" class="galeria-card">
+          <img src="img/rio1.png" alt="Implementação de Barragem" />
+          <p>Implementação de Barragem</p>
         </a>
-        <a href="cobertura.html" class="galeria-item">
-          <img src="img/cobertura1.png" alt="Cobertura" />
-          <span>Cobertura galvanizado em ponto comercial</span>
+        <a href="cobertura.html" class="galeria-card">
+          <img src="img/cobertura1.png" alt="Cobertura Galvanizado" />
+          <p>Cobertura galvanizado em ponto comercial</p>
         </a>
-        <a href="studio.html" class="galeria-item">
-          <img src="img/reforma1.png" alt="Studio" />
-          <span>Reforma Barra Studio</span>
+        <a href="studio.html" class="galeria-card">
+          <img src="img/reforma1.png" alt="Reforma Barra Studio" />
+          <p>Reforma Barra Studio</p>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Avaliações -->
-  <section id="avaliacoes">
-    <div class="container">
-      <h2>Avaliações dos Clientes</h2>
-      <div class="avaliacoes">
-        <blockquote>"Serviço excelente e profissionalismo ímpar!"</blockquote>
-        <blockquote>"Atendimento rápido, soluções inteligentes e ótimo custo-benefício."</blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- Acompanhamento -->
-  <section id="acompanhamento">
-    <div class="container">
-      <h2>Acompanhamento de Obra</h2>
-      <p>Clientes têm acesso a um painel exclusivo para acompanhar o andamento das suas obras em tempo real.</p>
-      <a href="login.html" class="botao">Acessar Painel</a>
-    </div>
-  </section>
-
-  <!-- Contato -->
   <section id="contato">
     <div class="container">
-      <h2>Contato</h2>
+      <h2>Fale Conosco</h2>
       <form action="enviar.php" method="POST">
         <input type="text" name="nome" placeholder="Seu nome" required />
         <input type="email" name="email" placeholder="Seu e-mail" required />
@@ -113,12 +89,16 @@
         <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
         <button type="submit">Enviar</button>
       </form>
+      <div class="contato-links">
+        <a href="https://wa.me/5521972083284" target="_blank">WhatsApp</a>
+        <a href="https://instagram.com/engplanbrasil" target="_blank">Instagram</a>
+      </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Engplan Brasil | Todos os direitos reservados</p>
+      <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
     </div>
   </footer>
 
