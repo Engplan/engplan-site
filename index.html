@@ -5,26 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engplan Brasil</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>Engplan Brasil</h1>
+      <h1 class="logo">Engplan Brasil</h1>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#avaliacoes">Avaliações</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li>
-            <a href="https://wa.me/5521972083284" target="_blank" class="icon-link">📱</a>
-          </li>
-          <li>
-            <a href="https://instagram.com/engplanbrasil" target="_blank" class="icon-link">📷</a>
-          </li>
+          <li><a href="https://wa.me/5521972083284" target="_blank" class="social-icon">📱</a></li>
+          <li><a href="https://instagram.com/engplanbrasil" target="_blank" class="social-icon">📷</a></li>
         </ul>
       </nav>
     </div>
@@ -46,9 +42,7 @@
       <div class="container">
         <h2>Sobre a Engplan</h2>
         <p>
-          Somos uma empresa especializada em projetos, reformas e construções
-          com foco em qualidade e eficiência. Atendemos clientes residenciais,
-          comerciais e industriais em todo o Brasil.
+          Somos uma empresa especializada em projetos, reformas e construções com foco em qualidade, inovação e responsabilidade. Atendemos obras residenciais, comerciais e industriais em todo o Brasil.
         </p>
       </div>
     </section>
@@ -60,17 +54,17 @@
           <div class="card">
             <img src="icones/projeto.svg" alt="Projetos" />
             <h3>Projetos</h3>
-            <p>Elaboração de projetos arquitetônicos e estruturais.</p>
+            <p>Desenvolvimento completo de projetos arquitetônicos, elétricos e hidráulicos.</p>
           </div>
           <div class="card">
             <img src="icones/reforma.svg" alt="Reformas" />
             <h3>Reformas</h3>
-            <p>Modernização e adaptação de espaços existentes.</p>
+            <p>Modernização de ambientes com foco em eficiência e estética.</p>
           </div>
           <div class="card">
-            <img src="icones/construcao.svg" alt="Construção" />
-            <h3>Construção</h3>
-            <p>Execução de obras civis do início ao fim.</p>
+            <img src="icones/construcao.svg" alt="Construções" />
+            <h3>Construções</h3>
+            <p>Execução de obras residenciais, comerciais e industriais com excelência.</p>
           </div>
         </div>
       </div>
@@ -81,9 +75,9 @@
         <h2>Galeria de Projetos</h2>
         <div class="grid">
           <a href="leito-hospitalar.html"><img src="imagens/leito1.png" alt="Leito Hospitalar" /></a>
-          <a href="reforma-barra.html"><img src="imagens/reforma1.png" alt="Reforma Barra Studio" /></a>
-          <a href="implementacao-rio.html"><img src="imagens/rio1.png" alt="Implementação Rio" /></a>
-          <a href="cobertura-comercial.html"><img src="imagens/cobertura1.png" alt="Cobertura Galvanizada" /></a>
+          <a href="reforma-barra.html"><img src="imagens/reforma1.png" alt="Reforma Studio Barra" /></a>
+          <a href="implementacao-rio.html"><img src="imagens/rio1.png" alt="Implementação de Barragem" /></a>
+          <a href="cobertura-comercial.html"><img src="imagens/cobertura1.png" alt="Cobertura em Galvanizado" /></a>
         </div>
       </div>
     </section>
@@ -93,15 +87,15 @@
         <h2>Avaliações dos Clientes</h2>
         <div class="cards">
           <div class="card">
-            <p>"Serviço excelente e entrega no prazo. Super recomendo!"</p>
+            <p>"Serviço excelente, equipe comprometida e obra entregue antes do prazo!"</p>
             <span>- Juliana M.</span>
           </div>
           <div class="card">
-            <p>"Equipe profissional e comprometida com o resultado."</p>
+            <p>"A Engplan transformou nosso projeto em realidade com total profissionalismo."</p>
             <span>- Rafael T.</span>
           </div>
           <div class="card">
-            <p>"Excelente atendimento e ótimo custo-benefício."</p>
+            <p>"Recomendo fortemente! Ótima comunicação e resultados impecáveis."</p>
             <span>- Carla S.</span>
           </div>
         </div>
@@ -113,15 +107,9 @@
         <h2>Fale Conosco</h2>
         <p>Entre em contato para orçamentos, dúvidas ou sugestões.</p>
         <form action="mailto:engplanbrasil@gmail.com" method="POST" enctype="text/plain">
-          <div class="form-group">
-            <input type="text" name="nome" placeholder="Seu nome" required />
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" placeholder="Seu e-mail" required />
-          </div>
-          <div class="form-group">
-            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-          </div>
+          <input type="text" name="nome" placeholder="Seu nome" required />
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+          <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
           <button type="submit">Enviar</button>
         </form>
       </div>
