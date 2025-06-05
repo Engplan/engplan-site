@@ -1,102 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engplan Brasil</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="imagens/favicon.png" type="image/png">
 </head>
 <body>
 
-  <!-- Cabeçalho -->
   <header>
-    <div class="container">
-      <div class="logo">Engplan Brasil</div>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#avaliacoes">Avaliações</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+    <video autoplay muted loop id="banner-video">
+      <source src="videos/institucional.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
+    <div class="overlay">
+      <h1>Engplan Brasil</h1>
+      <p>Excelência em Engenharia</p>
     </div>
   </header>
 
-  <!-- Banner com vídeo em loop -->
-  <section class="banner">
-    <video autoplay muted loop playsinline>
-      <source src="video/institucional.mp4" type="video/mp4">
-      Seu navegador não suporta vídeos HTML5.
-    </video>
-    <div class="overlay"></div>
-  </section>
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#avaliacoes">Avaliações</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 
-  <!-- Sobre -->
-  <section id="sobre" class="sobre">
+  <section id="sobre" class="secao">
     <h2>Sobre a Engplan Brasil</h2>
-    <p>
-      A Engplan Brasil é uma empresa especializada em soluções completas para construção civil, com foco em sistemas Steel Frame, reformas residenciais e comerciais, gestão de obras, elaboração de projetos técnicos e emissão de laudos especializados. Atuamos com seriedade, inovação e excelência em todas as etapas, garantindo eficiência, economia e sustentabilidade para nossos clientes.
-    </p>
+    <p>A Engplan Brasil atua há anos nos setores de <strong>Steel Frame</strong>, <strong>gestão de obras</strong>, <strong>reformas residenciais e comerciais</strong>, além da elaboração de <strong>projetos técnicos e laudos especializados</strong>. Nossa missão é oferecer soluções técnicas inovadoras com qualidade e compromisso com o cliente.</p>
   </section>
 
-  <!-- Serviços -->
-  <section id="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="servicos">
-      <div class="item">Projetos Arquitetônicos</div>
-      <div class="item">Execução de Obras</div>
-      <div class="item">Gestão de Obras</div>
-      <div class="item">Laudos Técnicos</div>
-      <div class="item">Steel Frame</div>
-      <div class="item">Reformas em Geral</div>
+  <section id="servicos" class="secao">
+    <h2>Serviços</h2>
+    <div class="servico-grid">
+      <div class="servico">Projetos e Laudos Técnicos</div>
+      <div class="servico">Execução de Obras</div>
+      <div class="servico">Consultoria Técnica</div>
+      <div class="servico">Manutenção e Reformas</div>
     </div>
   </section>
 
-  <!-- Galeria -->
-  <section id="galeria">
-    <h2>Galeria de Obras</h2>
-    <div class="galeria">
-      <a href="leito-hospitalar.html" class="card" data-title="Leito Hospitalar">
-        <img src="img/leito1.png" alt="Leito Hospitalar" />
-      </a>
-      <a href="barragem.html" class="card" data-title="Implementação de Barragem">
-        <img src="img/rio1.png" alt="Barragem" />
-      </a>
-      <a href="cobertura.html" class="card" data-title="Cobertura galvanizado em ponto comercial">
-        <img src="img/cobertura1.png" alt="Cobertura" />
-      </a>
-      <a href="reforma-barra-studio.html" class="card" data-title="Reforma Barra Studio">
-        <img src="img/reforma1.png" alt="Reforma Studio" />
-      </a>
+  <section id="galeria" class="secao">
+    <h2>Galeria de Projetos</h2>
+    <div class="galeria-grid">
+      <a href="leito-hospitalar.html"><img src="imagens/leito1.png" alt="Leito Hospitalar" /><span>Leito Hospitalar</span></a>
+      <a href="barragem.html"><img src="imagens/rio1.png" alt="Barragem" /><span>Implementação de Barragem</span></a>
+      <a href="cobertura.html"><img src="imagens/cobertura1.png" alt="Cobertura" /><span>Cobertura galvanizado em ponto comercial</span></a>
+      <a href="reforma-barra-studio.html"><img src="imagens/reforma1.png" alt="Studio" /><span>Reforma Barra Studio</span></a>
     </div>
   </section>
 
-  <!-- Avaliações -->
-  <section id="avaliacoes" class="avaliacoes">
-    <h2>Avaliação dos Clientes</h2>
-    <div class="box">
-      <p>"Serviço de alta qualidade! A equipe foi muito profissional do início ao fim."</p>
-    </div>
-    <div class="box">
-      <p>"Recomendo fortemente a Engplan Brasil. Excelentes em Steel Frame e reformas!"</p>
+  <section id="avaliacoes" class="secao">
+    <h2>Avaliações dos Clientes</h2>
+    <div class="avaliacoes">
+      <div class="avaliacao"><p>“Serviço excelente, entrega no prazo e qualidade impecável.”</p><span>— Cliente Satisfeito</span></div>
+      <div class="avaliacao"><p>“Equipe técnica capacitada e atendimento diferenciado.”</p><span>— Engenheiro Parceiro</span></div>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="contato">
+  <section id="contato" class="secao">
     <h2>Fale Conosco</h2>
-    <form action="enviar.php" method="POST">
+    <form action="envia.php" method="POST">
       <input type="text" name="nome" placeholder="Seu nome" required />
       <input type="email" name="email" placeholder="Seu e-mail" required />
-      <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
       <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
       <button type="submit">Enviar</button>
     </form>
   </section>
 
-  <!-- Rodapé -->
   <footer>
     <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
   </footer>
