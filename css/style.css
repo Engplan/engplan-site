@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -5,47 +6,56 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
+  background-color: #f4f4f4;
   color: #333;
-  background: #f9f9f9;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
+/* Cabeçalho */
 header {
-  background: #003366;
-  padding: 1rem 0;
+  background-color: #004a7c;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-.logo {
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
   height: 50px;
 }
 
-nav {
-  float: right;
-}
-
-.menu {
-  list-style: none;
+header nav ul {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
 }
 
-.menu a {
-  color: #fff;
+header nav a {
+  color: white;
   text-decoration: none;
+  font-weight: bold;
   transition: color 0.3s;
 }
 
-.menu a:hover {
-  color: #ffd700;
+header nav a:hover {
+  color: #ffcc00;
 }
 
+/* Banner com vídeo */
 .banner {
   position: relative;
   height: 70vh;
@@ -65,150 +75,226 @@ nav {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.4);
-  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
   padding: 2rem;
 }
 
-.sobre, .servicos, .galeria, .avaliacoes, .acompanhamento, .contato {
-  padding: 4rem 0;
+.banner .overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-h2 {
+.banner .overlay p {
+  font-size: 1.2rem;
+}
+
+/* Seções */
+section {
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+section:nth-of-type(even) {
+  background-color: #f0f0f0;
+}
+
+section h2 {
   text-align: center;
+  font-size: 2rem;
   margin-bottom: 2rem;
-  color: #003366;
+  color: #004a7c;
 }
 
-.cards, .cards-avaliacoes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+/* Sobre */
+#sobre p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
-.card, .card-avaliacao {
-  background: #fff;
+/* Serviços */
+.servicos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.servico {
+  background: white;
   padding: 1.5rem;
+  border: 1px solid #ddd;
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  flex: 1 1 280px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  text-align: center;
   transition: transform 0.3s;
 }
 
-.card:hover {
+.servico:hover {
   transform: translateY(-5px);
 }
 
-.card img {
-  width: 100%;
-  border-radius: 8px;
+.servico h3 {
+  color: #004a7c;
+  margin-bottom: 0.8rem;
 }
 
-.galeria .grid-galeria {
+/* Galeria */
+.galeria-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.grid-galeria a {
+.imagem-projeto {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
-  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s;
 }
 
-.grid-galeria img {
+.imagem-projeto img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s;
 }
 
-.grid-galeria span {
+.imagem-projeto span {
   position: absolute;
   bottom: 0;
-  left: 0;
-  padding: 0.5rem 1rem;
-  background: rgba(0,0,0,0.7);
-  color: #fff;
   width: 100%;
+  background: rgba(0, 74, 124, 0.8);
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.imagem-projeto:hover img {
+  transform: scale(1.05);
+}
+
+/* Avaliações */
+.avaliacoes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.avaliacao {
+  background: #fff;
+  padding: 1.5rem;
+  border-left: 4px solid #004a7c;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.avaliacao p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.avaliacao span {
+  font-weight: bold;
+  color: #004a7c;
+}
+
+/* Acompanhamento */
+#acompanhamento {
   text-align: center;
 }
 
-.grid-galeria a:hover img {
-  transform: scale(1.1);
+#acompanhamento p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
-.acompanhamento .btn {
+.botao {
   display: inline-block;
-  background: #003366;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  background: #004a7c;
+  color: white;
+  padding: 0.8rem 2rem;
   text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
   transition: background 0.3s;
 }
 
-.acompanhamento .btn:hover {
-  background: #0055aa;
+.botao:hover {
+  background: #003356;
 }
 
-form {
+/* Contato */
+#contato form {
+  max-width: 700px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-form input, form textarea {
-  padding: 0.75rem;
+#contato input,
+#contato textarea {
+  padding: 1rem;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-form button {
-  background: #003366;
-  color: #fff;
-  padding: 0.75rem;
+#contato button {
+  padding: 1rem;
+  background-color: #004a7c;
+  color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
-form button:hover {
-  background: #0055aa;
+#contato button:hover {
+  background-color: #003356;
 }
 
+/* Footer */
 footer {
-  background: #003366;
-  color: #fff;
+  background-color: #004a7c;
+  color: white;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
 }
 
-.redes a {
-  color: #ffd700;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
-
+/* Responsividade extra */
 @media (max-width: 768px) {
-  .menu {
+  header {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
-  .cards, .cards-avaliacoes {
+  header nav ul {
     flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
   }
 
-  .banner .overlay h1 {
-    font-size: 1.5rem;
+  .banner .overlay h2 {
+    font-size: 2rem;
   }
 
   .banner .overlay p {
