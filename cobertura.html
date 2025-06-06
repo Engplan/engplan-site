@@ -2,47 +2,79 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cobertura Galvanizado | Engplan Brasil</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="imagens/favicon.png" type="image/png">
 </head>
 <body>
-
   <header>
-    <video autoplay muted loop id="banner-video">
-      <source src="videos/institucional.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo.
-    </video>
-    <div class="overlay">
-      <h1>Cobertura Galvanizado</h1>
-      <p>Ponto comercial com proteção, durabilidade e estética</p>
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo Engplan Brasil" />
+      <h1>ENGPLAN BRASIL</h1>
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#servicos">Serviços</a></li>
+        <li><a href="index.html#galeria">Galeria</a></li>
+        <li><a href="painel.html">Acompanhamento de Obra</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+        <li>
+          <a href="https://wa.me/5524992428913" target="_blank">
+            <img src="imagens/whatsapp.png" alt="WhatsApp" class="icon" />
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/engplanbrasil" target="_blank">
+            <img src="imagens/instagram.png" alt="Instagram" class="icon" />
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html#sobre">Sobre</a></li>
-      <li><a href="index.html#servicos">Serviços</a></li>
-      <li><a href="index.html#galeria">Galeria</a></li>
-      <li><a href="index.html#avaliacoes">Avaliações</a></li>
-      <li><a href="index.html#contato">Contato</a></li>
-    </ul>
-  </nav>
-
-  <section class="secao">
-    <h2>Cobertura Galvanizado em Ponto Comercial</h2>
-    <p>Execução de cobertura galvanizada com estrutura metálica para um ponto comercial. A obra seguiu os mais altos padrões técnicos, garantindo leveza estrutural, proteção climática e estética visual.</p>
-    <div class="galeria-grid">
-      <img src="imagens/cobertura1.png" alt="Cobertura Galvanizado 1" />
-      <img src="imagens/cobertura2.png" alt="Cobertura Galvanizado 2" />
-      <img src="imagens/cobertura3.png" alt="Cobertura Galvanizado 3" />
+  <section class="banner-video">
+    <video autoplay muted loop>
+      <source src="videos/banner.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo em HTML5.
+    </video>
+    <div class="overlay">
+      <h2>Cobertura Galvanizado</h2>
+      <p>Execução de estrutura metálica com acabamento resistente e moderno.</p>
     </div>
+  </section>
+
+  <section id="galeria" class="galeria">
+    <h2>Detalhes da Obra</h2>
+    <div class="galeria-imagens">
+      <div class="imagem-projeto">
+        <img src="imagens/cobertura1.png" alt="Cobertura 1">
+        <span>Início da montagem da estrutura</span>
+      </div>
+      <div class="imagem-projeto">
+        <img src="imagens/cobertura2.png" alt="Cobertura 2">
+        <span>Execução do telhado galvanizado</span>
+      </div>
+      <div class="imagem-projeto">
+        <img src="imagens/cobertura3.png" alt="Cobertura 3">
+        <span>Obra finalizada com cobertura metálica</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form action="https://formspree.io/f/mnqepzjl" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu email" required />
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <footer>
     <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
   </footer>
-
 </body>
 </html>
