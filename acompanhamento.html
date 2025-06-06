@@ -1,5 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Acompanhamento de Obras - Engplan</title><link rel="stylesheet" href="css/style.css"></head>
-<body><h1>Acompanhamento de Obras</h1><p>Status dos projetos.</p></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel de Acompanhamento - Engplan</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="video-banner">
+    <video autoplay muted loop playsinline class="video-banner__video">
+      <source src="videos/institucional.mp4" type="video/mp4" />
+      Seu navegador não suporta o vídeo.
+    </video>
+    <div class="video-banner__overlay">
+      <h1>Painel de Obras</h1>
+      <p>Acompanhe em tempo real os projetos da Engplan Brasil</p>
+    </div>
+  </header>
+
+  <main class="painel">
+    <div class="filtros">
+      <label for="filtro-status">Filtrar por status:</label>
+      <select id="filtro-status" onchange="filtrarObras()">
+        <option value="todos">Todos</option>
+        <option value="andamento">Em Andamento</option>
+        <option value="concluido">Concluído</option>
+      </select>
+    </div>
+
+    <div class="cards-obras" id="lista-obras">
+      <div class="card-obra" data-status="andamento">
+        <h3>Residência Fluminense</h3>
+        <p>Status: <strong>Em Andamento</strong></p>
+        <p>Responsável: Eng. Lucas Alves</p>
+        <div class="progresso">
+          <div class="barra" style="width: 60%;"></div>
+        </div>
+      </div>
+
+      <div class="card-obra" data-status="concluido">
+        <h3>Consultório Médico Zona Sul</h3>
+        <p>Status: <strong>Concluído</strong></p>
+        <p>Responsável: Eng. Ana Souza</p>
+        <div class="progresso">
+          <div class="barra" style="width: 100%; background-color: #4caf50;"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function filtrarObras() {
+      const filtro = document.getElementById('filtro-status').value;
+      const cards = document.querySelectorAll('.card-obra');
+      cards.forEach(card => {
+        if (filtro === 'todos' || card.dataset.status === filtro) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
 </html>
