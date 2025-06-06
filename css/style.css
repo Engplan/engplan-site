@@ -1,67 +1,60 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+/* Body */
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background: #f5f5f5;
-  color: #222;
+  color: #333;
+  background-color: #fff;
 }
 
-/* Cabeçalho */
+/* Header */
 header {
-  background: #002e4d;
-  color: #fff;
+  background-color: #013440;
+  color: white;
+  padding: 1rem 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-header .logo {
+.logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 10px;
 }
 
-header .logo img {
-  width: 50px;
-  height: auto;
+.logo img {
+  height: 50px;
 }
 
-header nav ul {
-  display: flex;
-  gap: 1rem;
+nav ul {
   list-style: none;
+  display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-header nav ul li a {
-  color: #fff;
+nav a {
+  color: white;
   text-decoration: none;
-  padding: 0.5rem;
-  transition: background 0.3s;
+  font-weight: bold;
 }
 
-header nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* Banner */
 .banner {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   overflow: hidden;
 }
 
@@ -71,32 +64,28 @@ header nav ul li a:hover {
   object-fit: cover;
 }
 
-.banner .overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
+  background: rgba(0,0,0,0.5);
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
   text-align: center;
   padding: 2rem;
 }
 
-.banner .overlay h2 {
+.overlay h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.banner .overlay p {
-  font-size: 1.2rem;
-}
-
-/* Seções gerais */
+/* Seções */
 section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -104,33 +93,22 @@ section {
 }
 
 section h2 {
-  text-align: center;
   font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #002e4d;
-}
-
-/* Sobre */
-#sobre p {
-  font-size: 1.1rem;
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
+  margin-bottom: 1rem;
+  color: #013440;
 }
 
 /* Serviços */
 .servicos-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
 .servico {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
   transition: transform 0.3s;
 }
 
@@ -138,156 +116,116 @@ section h2 {
   transform: translateY(-5px);
 }
 
-.servico h3 {
-  margin-bottom: 0.5rem;
-  color: #002e4d;
-}
-
 /* Galeria */
 .galeria-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .imagem-projeto {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
 
 .imagem-projeto img {
   width: 100%;
+  height: auto;
   display: block;
-  transition: transform 0.3s ease;
 }
 
 .imagem-projeto span {
   position: absolute;
   bottom: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(1, 52, 64, 0.8);
+  color: white;
   width: 100%;
-  color: #fff;
   text-align: center;
-  padding: 0.7rem;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.imagem-projeto:hover img {
-  transform: scale(1.05);
+  padding: 0.5rem;
 }
 
 /* Avaliações */
 .avaliacoes-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .avaliacao {
-  background: #fff;
-  padding: 1.5rem;
-  border-left: 5px solid #002e4d;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background: #f0f0f0;
+  padding: 1rem;
+  border-left: 5px solid #013440;
+  border-radius: 5px;
 }
 
-.avaliacao p {
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-
-.avaliacao span {
-  font-weight: bold;
-  color: #002e4d;
-}
-
-/* Acompanhamento */
-#acompanhamento {
-  text-align: center;
-}
-
+/* Botão */
 .botao {
-  background: #002e4d;
-  color: #fff;
-  padding: 0.8rem 2rem;
-  border: none;
-  border-radius: 25px;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #013440;
+  color: white;
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.botao:hover {
-  background: #004c7c;
-}
-
-/* Contato */
-#contato form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 500px;
-  margin: auto;
-}
-
-#contato input,
-#contato textarea {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-#contato button {
-  background: #002e4d;
-  color: #fff;
-  padding: 0.8rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-#contato button:hover {
-  background: #004c7c;
-}
-
-#contato p {
-  text-align: center;
   margin-top: 1rem;
 }
 
-/* Rodapé */
+.botao:hover {
+  background: #025869;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #013440;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #025869;
+}
+
+/* Footer */
 footer {
-  background: #002e4d;
-  color: #fff;
+  background: #013440;
+  color: white;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 1rem;
   margin-top: 2rem;
 }
 
-/* Responsividade extra */
-@media (max-width: 600px) {
-  header {
+/* Responsivo */
+@media (max-width: 768px) {
+  nav ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
-  header nav ul {
-    flex-direction: column;
-    width: 100%;
+  .banner {
+    height: 50vh;
   }
 
-  .banner .overlay h2 {
+  .overlay h2 {
     font-size: 2rem;
-  }
-
-  .banner .overlay p {
-    font-size: 1rem;
   }
 }
