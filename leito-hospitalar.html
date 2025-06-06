@@ -2,83 +2,70 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Leito Hospitalar | Engplan Brasil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ENGPLAN BRASIL - Implementação de Barragem</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="imagens/favicon.png" />
 </head>
 <body>
-  <header>
+
+<header>
+  <div class="container-header">
     <div class="logo">
-      <img src="imagens/logo.png" alt="Logo Engplan Brasil" />
-      <h1>ENGPLAN BRASIL</h1>
+      <img src="imagens/logo.png" alt="ENGPLAN BRASIL" />
+      <span>ENGPLAN BRASIL</span>
     </div>
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
         <li><a href="index.html#sobre">Sobre</a></li>
         <li><a href="index.html#servicos">Serviços</a></li>
         <li><a href="index.html#galeria">Galeria</a></li>
-        <li><a href="painel.html">Acompanhamento de Obra</a></li>
+        <li><a href="index.html#acompanhamento">Acompanhamento</a></li>
+        <li><a href="index.html#avaliacoes">Avaliações</a></li>
         <li><a href="index.html#contato">Contato</a></li>
-        <li>
-          <a href="https://wa.me/5524992428913" target="_blank">
-            <img src="imagens/whatsapp.png" alt="WhatsApp" class="icon" />
-          </a>
-        </li>
-        <li>
-          <a href="https://instagram.com/engplanbrasil" target="_blank">
-            <img src="imagens/instagram.png" alt="Instagram" class="icon" />
-          </a>
-        </li>
       </ul>
     </nav>
-  </header>
+    <div class="contatos-header">
+      <a href="https://instagram.com/engplanbrasil" target="_blank" aria-label="Instagram">
+        <img src="imagens/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://wa.me/5524992428913" target="_blank" aria-label="WhatsApp">
+        <img src="imagens/whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="tel:+5524992428913" class="whatsapp-text">+55 24 99242-8913</a>
+    </div>
+  </div>
+</header>
 
-  <section class="banner-video">
-    <video autoplay muted loop>
-      <source src="videos/banner.mp4" type="video/mp4" />
-      Seu navegador não suporta vídeo em HTML5.
-    </video>
-    <div class="overlay">
-      <h2>Leito Hospitalar</h2>
-      <p>Excelência técnica em engenharia para a saúde.</p>
+<main class="container">
+  <section class="pagina-projeto">
+    <h1>Implementação de Barragem</h1>
+    <p>
+      Projeto completo para a implementação e manutenção de barragens, com foco em segurança, sustentabilidade e eficiência técnica.
+    </p>
+
+    <div class="galeria-grid">
+      <img src="imagens/obras/rio1.png" alt="Barragem 1" />
+      <img src="imagens/obras/rio2.png" alt="Barragem 2" />
+      <img src="imagens/obras/rio3.png" alt="Barragem 3" />
+      <img src="imagens/obras/rio4.png" alt="Barragem 4" />
+      <img src="imagens/obras/rio5.png" alt="Barragem 5" />
+      <img src="imagens/obras/rio6.png" alt="Barragem 6" />
+      <img src="imagens/obras/rio7.png" alt="Barragem 7" />
+      <img src="imagens/obras/rio8.png" alt="Barragem 8" />
     </div>
   </section>
+</main>
 
-  <section id="galeria" class="galeria">
-    <h2>Detalhes da Obra</h2>
-    <div class="galeria-imagens">
-      <div class="imagem-projeto">
-        <img src="imagens/leito1.png" alt="Leito 1">
-        <span>Montagem do sistema hospitalar</span>
-      </div>
-      <div class="imagem-projeto">
-        <img src="imagens/leito2.png" alt="Leito 2">
-        <span>Estrutura elétrica hospitalar</span>
-      </div>
-      <div class="imagem-projeto">
-        <img src="imagens/leito3.png" alt="Leito 3">
-        <span>Acabamentos e revestimentos</span>
-      </div>
-      <div class="imagem-projeto">
-        <img src="imagens/leito4.png" alt="Leito 4">
-        <span>Entrega final da instalação</span>
-      </div>
-    </div>
-  </section>
+<footer>
+  <div class="container-footer">
+    <p>&copy; 2025 ENGPLAN BRASIL. Todos os direitos reservados.</p>
+    <p>
+      <a href="https://instagram.com/engplanbrasil" target="_blank" rel="noopener noreferrer">@engplanbrasil</a> |
+      WhatsApp: <a href="https://wa.me/5524992428913" target="_blank" rel="noopener noreferrer">+55 24 99242-8913</a>
+    </p>
+  </div>
+</footer>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <form action="https://formspree.io/f/mnqepzjl" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu email" required />
-      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
-  </footer>
 </body>
 </html>
