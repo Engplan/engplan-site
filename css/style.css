@@ -5,70 +5,69 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
+html {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Header */
+/* Cabeçalho */
 header {
-  background-color: #003366;
+  background-color: #004080;
   color: white;
-  padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 10px;
 }
 
 .logo img {
-  height: 50px;
+  height: 40px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
 }
 
 nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
-  margin-top: 1rem;
-  gap: 1.2rem;
-}
-
-nav a {
-  color: white;
-  font-weight: 500;
   display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: color 0.3s;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-nav a:hover {
-  color: #ffc107;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
-/* Banner */
+/* Banner com vídeo */
 .banner {
   position: relative;
-  width: 100%;
   height: 60vh;
   overflow: hidden;
 }
@@ -83,62 +82,63 @@ nav a:hover {
   position: absolute;
   top: 0;
   left: 0;
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  background: rgba(0, 51, 102, 0.5);
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: white;
+  justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 20px;
 }
 
-.banner h2 {
+.banner .overlay h2 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
-.banner p {
+.banner .overlay p {
   font-size: 1.2rem;
 }
 
 /* Seções */
 section {
-  padding: 4rem 2rem;
+  padding: 60px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 section h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #003366;
+  color: #004080;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-/* Sobre */
-#sobre p {
+section p {
+  font-size: 1rem;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 /* Serviços */
 .servicos-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .card {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 300px;
+  flex: 1 1 250px;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -146,29 +146,32 @@ section h2 {
 }
 
 .card h3 {
-  color: #003366;
-  margin-bottom: 0.8rem;
+  color: #004080;
+  margin-bottom: 10px;
 }
 
 /* Galeria */
 .galeria-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .imagem-projeto {
   position: relative;
+  width: 100%;
+  max-width: 300px;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .imagem-projeto img {
   width: 100%;
-  height: auto;
-  transition: transform 0.4s ease;
   display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .imagem-projeto span {
@@ -176,12 +179,13 @@ section h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 51, 102, 0.7);
+  background: rgba(0, 64, 128, 0.7);
   color: white;
-  text-align: center;
-  padding: 0.6rem;
+  padding: 10px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .imagem-projeto:hover img {
@@ -189,112 +193,151 @@ section h2 {
 }
 
 .imagem-projeto:hover span {
-  background: rgba(0, 51, 102, 0.9);
+  opacity: 1;
 }
 
 /* Avaliações */
 .avaliacoes-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto;
+  gap: 20px;
+  align-items: center;
 }
 
 .avaliacao {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-left: 5px solid #003366;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  padding: 20px;
   border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Acompanhamento */
-#acompanhamento {
-  text-align: center;
+.avaliacao span {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
 }
 
+/* Botão */
 .botao {
   display: inline-block;
-  background-color: #003366;
+  background-color: #004080;
   color: white;
-  padding: 0.8rem 1.5rem;
-  margin-top: 1rem;
-  border-radius: 8px;
-  transition: background 0.3s;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
 .botao:hover {
-  background-color: #005bb5;
+  background-color: #002a5c;
 }
 
-/* Contato */
-#contato form {
+/* Formulário */
+form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto 2rem;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-#contato input,
-#contato textarea {
-  padding: 0.8rem;
+form input,
+form textarea {
+  padding: 12px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 8px;
   font-size: 1rem;
 }
 
-#contato button {
-  background-color: #003366;
+form button {
+  background-color: #004080;
   color: white;
-  padding: 0.8rem;
-  border: none;
-  border-radius: 8px;
+  padding: 12px;
   font-size: 1rem;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s ease;
 }
 
-#contato button:hover {
-  background-color: #005bb5;
+form button:hover {
+  background-color: #003060;
 }
 
-#contato p {
+/* Subpáginas – Galeria Interna */
+.projeto-detalhe {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.projeto-detalhe h2 {
   text-align: center;
-  margin-top: 0.5rem;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.projeto-detalhe p {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto 30px auto;
+}
+
+.imagens-projeto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.imagens-projeto img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.imagens-projeto img:hover {
+  transform: scale(1.03);
 }
 
 /* Rodapé */
 footer {
-  background-color: #003366;
+  background-color: #004080;
   color: white;
   text-align: center;
-  padding: 1rem 2rem;
-  margin-top: 2rem;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
 }
 
-/* Responsividade extra */
+/* Responsividade */
 @media (max-width: 768px) {
-  header {
-    align-items: flex-start;
-  }
-
   nav ul {
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
   }
 
-  .logo h1 {
-    font-size: 1.5rem;
+  .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria-container,
+  .servicos-container,
+  .imagens-projeto {
+    flex-direction: column;
+    align-items: center;
   }
 
   .banner .overlay h2 {
     font-size: 2rem;
-  }
-
-  .banner .overlay p {
-    font-size: 1rem;
   }
 }
