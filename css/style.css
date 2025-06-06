@@ -7,172 +7,297 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
   line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 /* Cabeçalho */
-.header {
-  background-color: #002b45;
+header {
+  background-color: #004a7c;
   color: white;
-  padding: 1rem 0;
-}
-
-.header-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 1rem;
+  padding: 1rem 2rem;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-.branding {
+header .logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 10px;
 }
 
-.logo {
+header .logo img {
   height: 50px;
 }
 
-.social-links img {
-  width: 30px;
-  margin-left: 1rem;
-  transition: transform 0.3s ease;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
 }
 
-.social-links img:hover {
-  transform: scale(1.1);
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-/* Banner */
+header nav a:hover {
+  color: #ffcc00;
+}
+
+/* Banner com vídeo */
 .banner {
   position: relative;
-  height: 60vh;
+  height: 70vh;
   overflow: hidden;
 }
 
-.banner-video {
+.banner video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.banner-overlay {
+.banner .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 43, 69, 0.6);
-  color: white;
   width: 100%;
   height: 100%;
+  background: rgba(0,0,0,0.4);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
+  padding: 2rem;
 }
 
-.banner-overlay h2 {
+.banner .overlay h2 {
   font-size: 2.5rem;
-  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.banner .overlay p {
+  font-size: 1.2rem;
 }
 
 /* Seções */
-.section {
-  padding: 4rem 1rem;
+section {
+  padding: 4rem 2rem;
+  background-color: white;
 }
 
-.section.dark {
-  background-color: #e9ecef;
+section:nth-of-type(even) {
+  background-color: #f0f0f0;
 }
 
-.section h2 {
+section h2 {
   text-align: center;
+  font-size: 2rem;
   margin-bottom: 2rem;
-  color: #002b45;
+  color: #004a7c;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 1rem;
+/* Sobre */
+#sobre p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Serviços */
+.servicos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.servico {
+  background: white;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.servico:hover {
+  transform: translateY(-5px);
+}
+
+.servico h3 {
+  color: #004a7c;
+  margin-bottom: 0.8rem;
 }
 
 /* Galeria */
-.galeria-grid {
+.galeria-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.galeria-grid img {
+.imagem-projeto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.imagem-projeto img {
   width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s;
 }
 
-.galeria-grid img:hover {
+.imagem-projeto span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 74, 124, 0.8);
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.imagem-projeto:hover img {
   transform: scale(1.05);
 }
 
 /* Avaliações */
+.avaliacoes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .avaliacao {
-  background-color: white;
-  border-left: 4px solid #002b45;
-  padding: 1rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-left: 4px solid #004a7c;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.avaliacao p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.avaliacao span {
+  font-weight: bold;
+  color: #004a7c;
+}
+
+/* Acompanhamento */
+#acompanhamento {
+  text-align: center;
+}
+
+#acompanhamento p {
+  font-size: 1.1rem;
   margin-bottom: 1rem;
-  border-radius: 6px;
 }
 
-/* Botão */
-.btn {
+.botao {
   display: inline-block;
-  background-color: #002b45;
+  background: #004a7c;
   color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 4px;
+  padding: 0.8rem 2rem;
   text-decoration: none;
-  transition: background 0.3s ease;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
-.btn:hover {
-  background-color: #014f78;
+.botao:hover {
+  background: #003356;
 }
 
-/* Formulário */
-form {
+/* Contato */
+#contato form {
+  max-width: 700px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-input, textarea {
-  padding: 0.75rem;
+#contato input,
+#contato textarea {
+  padding: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-/* Rodapé */
-.footer {
-  background-color: #002b45;
+#contato button {
+  padding: 1rem;
+  background-color: #004a7c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contato button:hover {
+  background-color: #003356;
+}
+
+/* Footer */
+footer {
+  background-color: #004a7c;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1.2rem;
   margin-top: 2rem;
+  font-size: 0.95rem;
 }
 
-/* Responsivo */
+/* Responsividade extra */
 @media (max-width: 768px) {
-  .header-container {
+  header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .banner-overlay h2 {
-    font-size: 1.8rem;
+  header nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .banner .overlay h2 {
+    font-size: 2rem;
+  }
+
+  .banner .overlay p {
+    font-size: 1rem;
   }
 }
