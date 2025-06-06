@@ -1,1 +1,3 @@
-echo bfg.jar >> .gitignore
+echo *.txt >> .gitignore
+echo *.zip >> .gitignore
+echo *.jar >> .gitignore
