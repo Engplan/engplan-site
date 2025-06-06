@@ -125,7 +125,11 @@
 
   <section id="contato">
     <h2>Contato</h2>
-    <form action="enviar.php" method="post">
+    <form action="https://formsubmit.co/engplanbrasil@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Nova mensagem do site ENGPLAN BRASIL">
+      <input type="hidden" name="_template" value="box">
+
       <input type="text" name="nome" placeholder="Seu nome" required />
       <input type="email" name="email" placeholder="Seu e-mail" required />
       <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
