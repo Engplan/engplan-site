@@ -2,122 +2,131 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Engplan Brasil</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="images/favicon.png" />
-  <script src="https://kit.fontawesome.com/9e3c6dc9c2.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <header class="navbar">
+  <header>
     <div class="container">
-      <a href="#" class="logo">Engplan</a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#avaliacoes">Avaliações</a></li>
-          <li><a href="#acompanhamento">Acompanhamento</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
+      <a href="#" class="logo">ENGPLAN</a>
+      <nav class="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#acompanhamento">Acompanhamento</a>
+        <a href="#contato">Contato</a>
       </nav>
     </div>
   </header>
 
-  <!-- BANNER COM VÍDEO -->
-  <section class="hero">
-    <video autoplay loop muted playsinline>
-      <source src="videos/video-institucional.mp4" type="video/mp4" />
+  <section class="banner">
+    <video autoplay muted loop class="video-banner">
+      <source src="videos/video.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo em HTML5.
     </video>
-    <div class="overlay"></div>
-    <div class="hero-content">
+    <div class="banner-content">
       <h1>Engenharia com Excelência</h1>
-      <p>Transformando projetos em realidade com responsabilidade e inovação.</p>
+      <p>Soluções modernas e eficientes para sua obra</p>
     </div>
   </section>
 
-  <!-- SOBRE -->
-  <section id="sobre" class="section sobre">
+  <section id="sobre" class="sobre">
     <div class="container">
       <h2>Sobre Nós</h2>
-      <p>A Engplan é especializada em soluções técnicas de engenharia com foco em planejamento, execução e acompanhamento de obras.</p>
+      <p>A Engplan atua há mais de 10 anos no mercado de engenharia, oferecendo soluções completas em obras residenciais, comerciais e industriais.</p>
     </div>
   </section>
 
-  <!-- SERVIÇOS -->
-  <section id="servicos" class="section servicos">
+  <section id="servicos" class="servicos">
     <div class="container">
-      <h2>Serviços</h2>
-      <div class="cards">
-        <div class="card"><i class="fas fa-drafting-compass"></i><h3>Projetos</h3></div>
-        <div class="card"><i class="fas fa-tools"></i><h3>Execução</h3></div>
-        <div class="card"><i class="fas fa-chart-line"></i><h3>Acompanhamento</h3></div>
+      <h2>Nossos Serviços</h2>
+      <div class="grid-servicos">
+        <div class="servico">
+          <img src="icons/projeto.svg" alt="Projetos" />
+          <h3>Projetos</h3>
+          <p>Desenvolvimento completo de projetos estruturais, elétricos e hidráulicos.</p>
+        </div>
+        <div class="servico">
+          <img src="icons/obra.svg" alt="Obras" />
+          <h3>Execução de Obras</h3>
+          <p>Planejamento, acompanhamento e execução de obras com alto padrão de qualidade.</p>
+        </div>
+        <div class="servico">
+          <img src="icons/consultoria.svg" alt="Consultoria" />
+          <h3>Consultoria Técnica</h3>
+          <p>Diagnóstico e suporte técnico para obras e reformas em andamento ou planejadas.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- GALERIA -->
-  <section id="galeria" class="section galeria">
+  <section id="galeria" class="galeria">
     <div class="container">
-      <h2>Galeria de Obras</h2>
+      <h2>Galeria de Projetos</h2>
       <div class="galeria-grid">
-        <a href="leito.html"><img src="images/obra1.png" alt="Obra 1"></a>
-        <a href="studio.html"><img src="images/obra2.png" alt="Obra 2"></a>
-        <a href="rio.html"><img src="images/obra3.png" alt="Obra 3"></a>
-        <a href="cobertura.html"><img src="images/obra4.png" alt="Obra 4"></a>
+        <a href="leito.html" class="item-galeria"><img src="imagens/obra1.png" alt="Leito Hospitalar"><span>Leito Hospitalar</span></a>
+        <a href="studio.html" class="item-galeria"><img src="imagens/obra2.png" alt="Reforma Studio"><span>Reforma Barra Studio</span></a>
+        <a href="rio.html" class="item-galeria"><img src="imagens/obra3.png" alt="Barragem"><span>Implementação de Barragem</span></a>
+        <a href="cobertura.html" class="item-galeria"><img src="imagens/obra4.png" alt="Cobertura"><span>Cobertura Comercial</span></a>
       </div>
     </div>
   </section>
 
-  <!-- AVALIAÇÕES -->
-  <section id="avaliacoes" class="section avaliacoes">
+  <section id="avaliacoes" class="avaliacoes">
     <div class="container">
-      <h2>Avaliação dos Clientes</h2>
-      <div class="cards">
-        <div class="card"><p>"Excelente serviço e atenção aos detalhes!"</p><strong>– João M.</strong></div>
-        <div class="card"><p>"Profissionais qualificados e pontuais."</p><strong>– Carla T.</strong></div>
-        <div class="card"><p>"Recomendo para qualquer projeto de engenharia."</p><strong>– Felipe R.</strong></div>
+      <h2>Avaliações dos Clientes</h2>
+      <div class="avaliacoes-grid">
+        <div class="avaliacao">
+          <p>"Profissionais competentes e comprometidos. Recomendo fortemente!"</p>
+          <strong>– João M.</strong>
+        </div>
+        <div class="avaliacao">
+          <p>"Acompanhar a obra online foi um diferencial. Serviço impecável."</p>
+          <strong>– Marina S.</strong>
+        </div>
+        <div class="avaliacao">
+          <p>"Desde o projeto até a entrega, tudo perfeito!"</p>
+          <strong>– Carlos L.</strong>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ACOMPANHAMENTO -->
-  <section id="acompanhamento" class="section acompanhamento">
+  <section id="acompanhamento" class="acompanhamento">
     <div class="container">
       <h2>Acompanhamento de Obras</h2>
-      <p>Transparência total com acesso em tempo real ao status da sua obra. <a href="painel.html">Acesse o painel aqui.</a></p>
+      <p>Confira o andamento das obras em tempo real. Acesse nosso painel para visualizar atualizações, fotos e prazos.</p>
+      <a href="painel.html" class="botao">Acessar Painel</a>
     </div>
   </section>
 
-  <!-- CONTATO -->
-  <section id="contato" class="section contato">
+  <section id="contato" class="contato">
     <div class="container">
-      <h2>Contato</h2>
-      <form method="post" action="enviar.php">
+      <h2>Fale Conosco</h2>
+      <form action="envia.php" method="POST">
         <input type="text" name="nome" placeholder="Seu nome" required />
         <input type="email" name="email" placeholder="Seu e-mail" required />
         <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+        <div class="g-recaptcha" data-sitekey="6LeUyFUrAAAAAIfjmsd5u1rElg_QDKALN3tG0nbp"></div>
         <button type="submit">Enviar</button>
       </form>
-      <div class="whatsapp">
-        <i class="fab fa-whatsapp"></i> <a href="https://wa.me/5524992428913" target="_blank">+55 24 99242-8913</a>
-      </div>
     </div>
   </section>
 
-  <!-- RODAPÉ -->
-  <footer class="footer">
+  <footer>
     <div class="container">
-      <p>&copy; 2025 Engplan Brasil. Todos os direitos reservados.</p>
-      <div class="social-icons">
-        <a href="https://instagram.com/engplanbrasil" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:contato@engplanbrasil.com.br"><i class="fas fa-envelope"></i></a>
+      <p>&copy; 2025 Engplan Brasil | Todos os direitos reservados</p>
+      <div class="redes">
+        <a href="https://instagram.com/engplanbrasil" target="_blank">Instagram</a>
+        <a href="https://wa.me/5521972083284" target="_blank">WhatsApp</a>
       </div>
     </div>
   </footer>
-
 </body>
 </html>
