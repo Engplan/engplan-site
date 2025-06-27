@@ -431,3 +431,140 @@ footer {
     align-items: center;
   }
 }
+/* Banner Vídeo Estendido */
+.banner-video {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-video video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.6);
+}
+
+.banner-overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Header dentro do banner */
+.header-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.header-banner .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-banner .logo img {
+  height: 40px;
+}
+
+.header-banner h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.header-banner nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+}
+
+.header-banner nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-banner nav a:hover {
+  color: #FFA500;
+}
+
+/* Conteúdo do banner */
+.banner-conteudo {
+  text-align: center;
+  color: white;
+  margin-top: auto;
+  padding-bottom: 60px;
+}
+
+.banner-conteudo h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.banner-conteudo p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+/* Botões do banner */
+.botoes-banner {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  background: #FFA500;
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background: #cc8400;
+}
+
+.cta-secundario {
+  background: transparent;
+  border: 2px solid #FFA500;
+  color: #FFA500;
+}
+
+.cta-secundario:hover {
+  background: #FFA500;
+  color: black;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-banner nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-conteudo h2 {
+    font-size: 2rem;
+  }
+  .banner-conteudo p {
+    font-size: 1rem;
+  }
+  .botoes-banner {
+    flex-direction: column;
+  }
+}
