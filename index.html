@@ -5,101 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ENGPLAN BRASIL</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="imagens/logo.png" type="image/png">
+  <link rel="icon" href="imagens/logo.png" type="image/png" />
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="imagens/logo.png" alt="Logo Engplan Brasil">
-      <h1>ENGPLAN BRASIL</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#galeria">Projetos</a></li>
-        <li><a href="#avaliacoes">Avaliações</a></li>
-        <li><a href="#acompanhamento">Acompanhamento</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="https://wa.me/5524992434862" target="_blank">
-          <img src="imagens/whatsapp.png" alt="WhatsApp" class="icon">WhatsApp</a></li>
-        <li><a href="https://instagram.com/engplanbrasil" target="_blank">
-          <img src="imagens/instagram.png" alt="Instagram" class="icon">Instagram</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <section class="banner">
     <video autoplay muted loop playsinline>
-      <source src="videos/banner.mp4" type="video/mp4">
+      <source src="videos/banner.mp4" type="video/mp4" />
       Seu navegador não suporta vídeo.
     </video>
-    <div class="overlay">
-      <h2>Engenharia com Excelência</h2>
-      <p>Projetos, Construções e Reformas com qualidade e segurança</p>
-      <div class="banner-cta">
-        <a href="https://wa.me/5524992434862" class="cta-btn">WhatsApp</a>
-        <a href="#contato" class="cta-btn cta-secondary">Fale Conosco</a>
+
+    <div class="banner-overlay">
+      <header class="hero-header">
+        <div class="logo">
+          <img src="imagens/logo.png" alt="Logo Engplan Brasil" />
+          <h1>ENGPLAN BRASIL</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Projetos Realizados</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#acompanhamento">Acompanhamento</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li>
+              <a href="https://wa.me/5524992434862" target="_blank" class="whatsapp-link">
+                <img src="imagens/whatsapp.png" alt="WhatsApp" class="icon" /> WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/engplanbrasil" target="_blank" class="instagram-link">
+                <img src="imagens/instagram.png" alt="Instagram" class="icon" /> Instagram
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="hero-content">
+        <h2>Engenharia com Excelência</h2>
+        <p>Projetos, Construções e Reformas com qualidade e segurança</p>
+        <div class="banner-cta">
+          <a href="https://wa.me/5524992434862" target="_blank" class="cta-btn">WhatsApp</a>
+          <a href="#contato" class="cta-btn cta-secondary">Fale Conosco</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="sobre">
-    <h2>Sobre a ENGPLAN BRASIL</h2>
-    <p>A ENGPLAN BRASIL é especializada em soluções completas de engenharia, atuando com excelência em
-      <strong>Steel Frame</strong>, reformas residenciais e comerciais, construções do zero, projetos
-      arquitetônicos e estruturais, elaboração de laudos técnicos e gestão de obras. Nossa equipe entrega
-      qualidade, segurança e compromisso em cada etapa do processo.</p>
-  </section>
+  <main>
+    <section id="sobre">
+      <h2>Sobre a ENGPLAN BRASIL</h2>
+      <p>
+        A ENGPLAN BRASIL é especializada em soluções completas de engenharia, atuando com excelência em
+        <strong>Steel Frame</strong>, reformas residenciais e comerciais, construções do zero, projetos arquitetônicos e estruturais, elaboração de laudos técnicos e gestão de obras.
+        Nossa equipe entrega qualidade, segurança e compromisso em cada etapa do processo.
+      </p>
+    </section>
 
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <div class="servicos-container">
-      <!-- cards conforme anteriormente -->
-      <div class="card"><h3>Projetos</h3><p>Desenvolvimento de projetos arquitetônicos, estruturais e complementares.</p></div>
-      <div class="card"><h3>Construção</h3><p>Execução de obras com materiais de qualidade e acompanhamento técnico.</p></div>
-      <div class="card"><h3>Reformas</h3><p>Transformações completas em imóveis residenciais, comerciais e industriais.</p></div>
-      <div class="card"><h3>Steel Frame</h3><p>Sistemas modernos e sustentáveis com estrutura metálica leve.</p></div>
-      <div class="card"><h3>Laudos Técnicos</h3><p>Vistorias e relatórios técnicos com responsabilidade e precisão.</p></div>
-      <div class="card"><h3>Gestão de Obra</h3><p>Planejamento e supervisão total para garantir prazos e eficiência.</p></div>
-    </div>
-  </section>
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <div class="servicos-container">
+        <div class="card"><h3>Projetos</h3><p>Desenvolvimento de projetos arquitetônicos, estruturais e complementares.</p></div>
+        <div class="card"><h3>Construção</h3><p>Execução de obras com materiais de qualidade e acompanhamento técnico.</p></div>
+        <div class="card"><h3>Reformas</h3><p>Transformações completas em imóveis residenciais, comerciais e industriais.</p></div>
+        <div class="card"><h3>Steel Frame</h3><p>Sistemas modernos e sustentáveis com estrutura metálica leve.</p></div>
+        <div class="card"><h3>Laudos Técnicos</h3><p>Vistorias e relatórios técnicos com responsabilidade e precisão.</p></div>
+        <div class="card"><h3>Gestão de Obra</h3><p>Planejamento e supervisão total para garantir prazos e eficiência.</p></div>
+      </div>
+    </section>
 
-  <section id="galeria">
-    <h2>Projetos Realizados</h2>
-    <div class="galeria-container">
-      <a href="leito-hospitalar.html"><div class="imagem-projeto"><img src="imagens/obra1.png"><span>Leito Hospitalar</span></div></a>
-      <a href="barragem.html"><div class="imagem-projeto"><img src="imagens/obra2.png"><span>Implementação de Barragem</span></div></a>
-      <a href="cobertura.html"><div class="imagem-projeto"><img src="imagens/obra3.png"><span>Cobertura Galvanizada</span></div></a>
-      <a href="reforma-barra-studio.html"><div class="imagem-projeto"><img src="imagens/obra4.png"><span>Reforma Barra Studio</span></div></a>
-    </div>
-  </section>
+    <section id="galeria">
+      <h2>Projetos Realizados</h2>
+      <div class="galeria-container">
+        <a href="leito-hospitalar.html">
+          <div class="imagem-projeto">
+            <img src="imagens/obra1.png" alt="Projeto Leito Hospitalar" />
+            <span>Leito Hospitalar</span>
+          </div>
+        </a>
+        <a href="barragem.html">
+          <div class="imagem-projeto">
+            <img src="imagens/obra2.png" alt="Implementação de Barragem" />
+            <span>Implementação de Barragem</span>
+          </div>
+        </a>
+        <a href="cobertura.html">
+          <div class="imagem-projeto">
+            <img src="imagens/obra3.png" alt="Cobertura Comercial" />
+            <span>Cobertura Galvanizada</span>
+          </div>
+        </a>
+        <a href="reforma-barra-studio.html">
+          <div class="imagem-projeto">
+            <img src="imagens/obra4.png" alt="Reforma Studio Barra" />
+            <span>Reforma Barra Studio</span>
+          </div>
+        </a>
+      </div>
+    </section>
 
-  <section id="avaliacoes">
-    <h2>Avaliações dos Clientes</h2>
-    <div class="avaliacoes-container">
-      <div class="avaliacao"><p>"Serviço impecável e dentro do prazo! Recomendo a ENGPLAN BRASIL sem dúvidas."</p><span>- João Silva</span></div>
-      <div class="avaliacao"><p>"Fizeram a reforma completa do nosso apartamento com qualidade e excelente atendimento."</p><span>- Ana Paula</span></div>
-    </div>
-  </section>
+    <section id="avaliacoes">
+      <h2>Avaliações dos Clientes</h2>
+      <div class="avaliacoes-container">
+        <div class="avaliacao">
+          <p>"Serviço impecável e dentro do prazo! Recomendo a ENGPLAN BRASIL sem dúvidas."</p>
+          <span>- João Silva</span>
+        </div>
+        <div class="avaliacao">
+          <p>"Fizeram a reforma completa do nosso apartamento com qualidade e excelente atendimento."</p>
+          <span>- Ana Paula</span>
+        </div>
+      </div>
+    </section>
 
-  <section id="acompanhamento">
-    <h2>Acompanhamento de Obras</h2>
-    <p>Acesse o painel exclusivo e acompanhe o progresso da sua obra em tempo real, com fotos, atualizações e cronograma.</p>
-    <a href="painel.html" class="botao">Acompanhar Obra</a>
-  </section>
+    <section id="acompanhamento">
+      <h2>Acompanhamento de Obras</h2>
+      <p>Acesse o painel exclusivo e acompanhe o progresso da sua obra em tempo real, com fotos, atualizações e cronograma.</p>
+      <a href="painel.html" class="botao">Acompanhar Obra</a>
+    </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <form action="https://formsubmit.co/engplanbrasil@gmail.com" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e‑mail" required>
-      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <p>WhatsApp: <a href="https://wa.me/5524992434862" target="_blank">+55 24 99243‑4862</a></p>
-    <p>Instagram: <a href="https://instagram.com/engplanbrasil" target="_blank">@engplanbrasil</a></p>
-  </section>
+    <section id="contato">
+      <h2>Contato</h2>
+      <form action="https://formsubmit.co/engplanbrasil@gmail.com" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p>
+        Entre em contato também pelo WhatsApp:
+        <a href="https://wa.me/5524992434862" target="_blank">+55 24 992434862</a>
+      </p>
+      <p>
+        Ou nos siga no Instagram:
+        <a href="https://instagram.com/engplanbrasil" target="_blank">@engplanbrasil</a>
+      </p>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 ENGPLAN BRASIL. Todos os direitos reservados.</p>
