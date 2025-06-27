@@ -413,3 +413,36 @@ footer {
     font-size: 1rem;
   }
 }
+.banner .banner-cta {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  background: #ffcc00;
+  color: #004080;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background: #e6b800;
+}
+
+.cta-secondary {
+  background: transparent;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+}
+
+.cta-secondary:hover {
+  background: #ffcc00;
+  color: #004080;
+}
+
