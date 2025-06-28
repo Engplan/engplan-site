@@ -2,14 +2,14 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ENGPLAN BRASIL</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="imagens/logo.png" type="image/png">
 </head>
 <body>
-
-  <header class="topo-sobreposto">
+  <!-- Header sobreposto -->
+  <header>
     <div class="logo">
       <img src="imagens/logo.png" alt="Logo Engplan Brasil" />
       <h1>ENGPLAN BRASIL</h1>
@@ -18,18 +18,15 @@
       <ul>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#galeria">Projetos Realizados</a></li>
+        <li><a href="#galeria">Projetos</a></li>
         <li><a href="#avaliacoes">Avaliações</a></li>
         <li><a href="#acompanhamento">Acompanhamento</a></li>
         <li><a href="#contato">Contato</a></li>
-        <li><a href="https://wa.me/5524992434862" target="_blank">
-          <img src="imagens/whatsapp.png" class="icon"> WhatsApp</a></li>
-        <li><a href="https://instagram.com/engplanbrasil" target="_blank">
-          <img src="imagens/instagram.png" class="icon"> Instagram</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Banner com vídeo e apenas botões -->
   <section class="banner">
     <video autoplay muted loop playsinline>
       <source src="videos/banner.mp4" type="video/mp4" />
@@ -39,7 +36,7 @@
       <h2>Engenharia com Excelência</h2>
       <p>Projetos, Construções e Reformas com qualidade e segurança</p>
       <div class="banner-cta">
-        <a href="https://wa.me/5524992434862" class="cta-btn" target="_blank">WhatsApp</a>
+        <a href="https://wa.me/5524992434862" target="_blank" class="cta-btn">WhatsApp</a>
         <a href="#contato" class="cta-btn cta-secondary">Fale Conosco</a>
       </div>
     </div>
@@ -65,10 +62,10 @@
   <section id="galeria">
     <h2>Projetos Realizados</h2>
     <div class="galeria-container">
-      <a href="leito-hospitalar.html"><div class="imagem-projeto"><img src="imagens/obra1.png" alt="Leito Hospitalar"><span>Leito Hospitalar</span></div></a>
-      <a href="barragem.html"><div class="imagem-projeto"><img src="imagens/obra2.png" alt="Barragem"><span>Implementação de Barragem</span></div></a>
-      <a href="cobertura.html"><div class="imagem-projeto"><img src="imagens/obra3.png" alt="Cobertura"><span>Cobertura Galvanizada</span></div></a>
-      <a href="reforma-barra-studio.html"><div class="imagem-projeto"><img src="imagens/obra4.png" alt="Reforma Studio"><span>Reforma Barra Studio</span></div></a>
+      <a href="leito-hospitalar.html"><div class="imagem-projeto"><img src="imagens/obra1.png" alt="Projeto Leito Hospitalar" /><span>Leito Hospitalar</span></div></a>
+      <a href="barragem.html"><div class="imagem-projeto"><img src="imagens/obra2.png" alt="Implementação de Barragem" /><span>Implementação de Barragem</span></div></a>
+      <a href="cobertura.html"><div class="imagem-projeto"><img src="imagens/obra3.png" alt="Cobertura Comercial" /><span>Cobertura Galvanizada</span></div></a>
+      <a href="reforma-barra-studio.html"><div class="imagem-projeto"><img src="imagens/obra4.png" alt="Reforma Studio Barra" /><span>Reforma Barra Studio</span></div></a>
     </div>
   </section>
 
@@ -89,8 +86,8 @@
   <section id="contato">
     <h2>Contato</h2>
     <form action="https://formsubmit.co/engplanbrasil@gmail.com" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
       <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
       <button type="submit">Enviar</button>
     </form>
@@ -101,6 +98,5 @@
   <footer>
     <p>&copy; 2025 ENGPLAN BRASIL. Todos os direitos reservados.</p>
   </footer>
-
 </body>
 </html>
