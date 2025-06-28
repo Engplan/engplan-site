@@ -2,19 +2,22 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ENGPLAN BRASIL</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="imagens/logo.png" type="image/png">
+  <link rel="icon" href="imagens/logo.png" type="image/png" />
 </head>
 <body>
-  <section class="banner-video">
-    <video autoplay muted loop playsinline>
+
+  <!-- Banner com Header sobreposto -->
+  <section class="video-banner">
+    <video autoplay muted loop playsinline class="video-banner__video">
       <source src="videos/banner.mp4" type="video/mp4" />
       Seu navegador não suporta vídeo.
     </video>
-    <div class="banner-overlay">
-      <header class="header-banner">
+
+    <div class="video-banner__overlay">
+      <header class="banner-header">
         <div class="logo">
           <img src="imagens/logo.png" alt="Logo Engplan Brasil" />
           <h1>ENGPLAN BRASIL</h1>
@@ -34,12 +37,13 @@
           </ul>
         </nav>
       </header>
-      <div class="banner-conteudo">
+
+      <div class="video-banner__content">
         <h2>Engenharia com Excelência</h2>
         <p>Projetos, Construções e Reformas com qualidade e segurança</p>
-        <div class="botoes-banner">
+        <div class="banner-cta">
           <a href="https://wa.me/5524992434862" class="cta-btn">WhatsApp</a>
-          <a href="#contato" class="cta-btn cta-secundario">Fale Conosco</a>
+          <a href="#contato" class="cta-btn cta-secondary">Fale Conosco</a>
         </div>
       </div>
     </div>
@@ -47,7 +51,7 @@
 
   <section id="sobre">
     <h2>Sobre a ENGPLAN BRASIL</h2>
-    <p>A ENGPLAN BRASIL é especializada em soluções completas de engenharia, atuando com excelência em <strong>Steel Frame</strong>, reformas residenciais e comerciais, construções do zero, projetos arquitetônicos e estruturais, elaboração de laudos técnicos e gestão de obras. Nossa equipe entrega qualidade, segurança e compromisso em cada etapa do processo.</p>
+    <p>A ENGPLAN BRASIL é especializada em soluções completas de engenharia, atuando com excelência em <strong>Steel Frame</strong>, reformas residenciais e comerciais, construções do zero, projetos arquitetônicos e estruturais, elaboração de laudos técnicos e gestão de obras.</p>
   </section>
 
   <section id="servicos">
@@ -66,9 +70,9 @@
     <h2>Projetos Realizados</h2>
     <div class="galeria-container">
       <a href="leito-hospitalar.html"><div class="imagem-projeto"><img src="imagens/obra1.png" alt="Projeto Leito Hospitalar" /><span>Leito Hospitalar</span></div></a>
-      <a href="barragem.html"><div class="imagem-projeto"><img src="imagens/obra2.png" alt="Implementação de Barragem" /><span>Implementação de Barragem</span></div></a>
-      <a href="cobertura.html"><div class="imagem-projeto"><img src="imagens/obra3.png" alt="Cobertura Comercial" /><span>Cobertura Galvanizada</span></div></a>
-      <a href="reforma-barra-studio.html"><div class="imagem-projeto"><img src="imagens/obra4.png" alt="Reforma Studio Barra" /><span>Reforma Barra Studio</span></div></a>
+      <a href="barragem.html"><div class="imagem-projeto"><img src="imagens/obra2.png" alt="Barragem" /><span>Implementação de Barragem</span></div></a>
+      <a href="cobertura.html"><div class="imagem-projeto"><img src="imagens/obra3.png" alt="Cobertura" /><span>Cobertura Galvanizada</span></div></a>
+      <a href="reforma-barra-studio.html"><div class="imagem-projeto"><img src="imagens/obra4.png" alt="Reforma" /><span>Reforma Barra Studio</span></div></a>
     </div>
   </section>
 
@@ -94,7 +98,7 @@
       <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
       <button type="submit">Enviar</button>
     </form>
-    <p>Entre em contato também pelo WhatsApp: <a href="https://wa.me/5524992434862" target="_blank">+55 24 99243-4862</a></p>
+    <p>Entre em contato também pelo WhatsApp: <a href="https://wa.me/5524992434862" target="_blank">+55 24 992434862</a></p>
     <p>Ou nos siga no Instagram: <a href="https://instagram.com/engplanbrasil" target="_blank">@engplanbrasil</a></p>
   </section>
 

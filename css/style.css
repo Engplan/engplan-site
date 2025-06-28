@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -11,144 +11,144 @@ html {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff; /* branco */
-  color: #222; /* preto leve */
+  background-color: #fff;
+  color: #222;
   line-height: 1.6;
 }
 
-/* Banner com vídeo e header integrado */
-.banner {
-  position: relative;
-  height: 90vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Cores principais */
+:root {
+  --laranja: #ff6600;
+  --preto: #111;
+  --branco: #ffffff;
 }
 
-.banner video {
-  position: absolute;
-  top: 0; left: 0;
+/* Banner com vídeo e header sobreposto */
+.video-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-banner__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
-  filter: brightness(0.5);
 }
 
-.banner-overlay {
-  position: relative;
-  z-index: 2;
+.video-banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1200px;
-  padding: 0 20px;
-  color: white;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
 }
 
-/* Header dentro do banner */
-.hero-header {
+.banner-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 15px 30px;
+  background: transparent;
+  flex-wrap: wrap;
+  z-index: 10;
 }
 
-.hero-header .logo {
+.logo {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-weight: 700;
-  font-size: 1.6rem;
+  gap: 10px;
+  color: var(--branco);
 }
 
-.hero-header .logo img {
-  height: 50px;
+.logo img {
+  height: 40px;
 }
 
-.hero-header nav ul {
+.logo h1 {
+  font-size: 1.5rem;
+  color: var(--branco);
+}
+
+nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
-  align-items: center;
-}
-
-.hero-header nav ul li a {
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 6px 8px;
-  transition: color 0.3s ease;
-  font-size: 1rem;
-}
-
-.hero-header nav ul li a:hover {
-  color: #ff6600; /* laranja */
-}
-
-.hero-header nav ul li a .icon {
-  width: 18px;
-  margin-right: 6px;
-  vertical-align: middle;
-}
-
-/* Conteúdo principal do banner */
-.hero-content {
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: 80px;
-  animation: fadeInUp 1s ease forwards;
-}
-
-.hero-content h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
-}
-
-.hero-content p {
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin-bottom: 30px;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
-}
-
-/* Botões do banner */
-.banner-cta {
-  display: inline-flex;
-  gap: 20px;
-  justify-content: center;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
-.cta-btn {
-  background-color: #ff6600; /* laranja */
-  color: white;
-  font-weight: 700;
-  padding: 14px 36px;
-  border-radius: 8px;
+nav ul li a {
+  color: var(--branco);
   text-decoration: none;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 8px rgb(255 102 0 / 0.4);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--laranja);
+}
+
+.icon {
+  width: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Conteúdo do banner */
+.video-banner__content {
+  text-align: center;
+  color: white;
+  padding-bottom: 60px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.video-banner__content h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+.video-banner__content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.banner-cta {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.cta-btn {
+  background-color: var(--laranja);
+  color: var(--branco);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
 
 .cta-btn:hover {
-  background-color: #e65500;
-  box-shadow: 0 6px 14px rgb(230 85 0 / 0.6);
+  background-color: #cc5200;
 }
 
 .cta-secondary {
-  background-color: transparent;
-  border: 2px solid #ff6600;
-  color: #ff6600;
-  box-shadow: none;
+  background: transparent;
+  border: 2px solid var(--laranja);
+  color: var(--laranja);
 }
 
 .cta-secondary:hover {
-  background-color: #ff6600;
+  background: var(--laranja);
   color: white;
 }
 
@@ -157,12 +157,11 @@ section {
   padding: 60px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  color: #222;
 }
 
 section h2 {
   font-size: 2rem;
-  color: #ff6600; /* laranja */
+  color: var(--preto);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -189,7 +188,6 @@ section p {
   max-width: 300px;
   flex: 1 1 250px;
   transition: transform 0.3s ease;
-  color: #222;
 }
 
 .card:hover {
@@ -197,7 +195,7 @@ section p {
 }
 
 .card h3 {
-  color: #ff6600;
+  color: var(--laranja);
   margin-bottom: 10px;
 }
 
@@ -230,7 +228,7 @@ section p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 102, 0, 0.8); /* laranja com transparência */
+  background: rgba(255, 102, 0, 0.85);
   color: white;
   padding: 10px;
   font-weight: bold;
@@ -256,12 +254,11 @@ section p {
 }
 
 .avaliacao {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   max-width: 600px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  color: #222;
 }
 
 .avaliacao span {
@@ -271,10 +268,10 @@ section p {
   color: #666;
 }
 
-/* Botão */
+/* Botão padrão */
 .botao {
   display: inline-block;
-  background-color: #ff6600; /* laranja */
+  background-color: var(--laranja);
   color: white;
   padding: 12px 24px;
   text-decoration: none;
@@ -285,7 +282,7 @@ section p {
 }
 
 .botao:hover {
-  background-color: #e65500;
+  background-color: #cc5200;
 }
 
 /* Formulário */
@@ -295,7 +292,6 @@ form {
   gap: 15px;
   max-width: 500px;
   margin: 0 auto;
-  color: #222;
 }
 
 form input,
@@ -307,7 +303,7 @@ form textarea {
 }
 
 form button {
-  background-color: #ff6600;
+  background-color: var(--laranja);
   color: white;
   padding: 12px;
   font-size: 1rem;
@@ -318,62 +314,47 @@ form button {
 }
 
 form button:hover {
-  background-color: #e65500;
-}
-
-/* Subpáginas – Galeria Interna */
-.projeto-detalhe {
-  background-color: #ffffff;
-  padding: 40px 20px;
-  border-radius: 8px;
-  margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  color: #222;
-}
-
-.projeto-detalhe h2 {
-  text-align: center;
-  color: #ff6600;
-  margin-bottom: 20px;
-}
-
-.projeto-detalhe p {
-  max-width: 800px;
-  text-align: center;
-  margin: 0 auto 30px auto;
-}
-
-.imagens-projeto {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.imagens-projeto img {
-  width: 100%;
-  max-width: 320px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-}
-
-.imagens-projeto img:hover {
-  transform: scale(1.03);
+  background-color: #cc5200;
 }
 
 /* Rodapé */
 footer {
-  background-color: #ff6600;
+  background-color: var(--preto);
   color: white;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
   margin-top: 40px;
-  font-weight: 600;
 }
 
-/* Animação fadeInUp para o banner */
+/* Responsivo */
+@media (max-width: 768px) {
+  .banner-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-banner__content h2 {
+    font-size: 2rem;
+  }
+
+  .video-banner__content p {
+    font-size: 1rem;
+  }
+
+  .galeria-container,
+  .servicos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Animação */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -382,189 +363,5 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .hero-header {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .hero-header nav ul {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .hero-content h2 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .banner {
-    height: 70vh;
-  }
-
-  .cta-btn {
-    padding: 12px 24px;
-    font-size: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .galeria-container,
-  .servicos-container,
-  .imagens-projeto {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-/* Banner Vídeo Estendido */
-.banner-video {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.banner-video video {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  filter: brightness(0.6);
-}
-
-.banner-overlay {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.4);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-/* Header dentro do banner */
-.header-banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  flex-wrap: wrap;
-}
-
-.header-banner .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.header-banner .logo img {
-  height: 40px;
-}
-
-.header-banner h1 {
-  font-size: 1.5rem;
-  color: white;
-}
-
-.header-banner nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  list-style: none;
-}
-
-.header-banner nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.header-banner nav a:hover {
-  color: #FFA500;
-}
-
-/* Conteúdo do banner */
-.banner-conteudo {
-  text-align: center;
-  color: white;
-  margin-top: auto;
-  padding-bottom: 60px;
-}
-
-.banner-conteudo h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.banner-conteudo p {
-  font-size: 1.4rem;
-  margin-bottom: 20px;
-}
-
-/* Botões do banner */
-.botoes-banner {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.cta-btn {
-  padding: 12px 30px;
-  background: #FFA500;
-  color: black;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: 0.3s;
-  text-decoration: none;
-}
-
-.cta-btn:hover {
-  background: #cc8400;
-}
-
-.cta-secundario {
-  background: transparent;
-  border: 2px solid #FFA500;
-  color: #FFA500;
-}
-
-.cta-secundario:hover {
-  background: #FFA500;
-  color: black;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .header-banner nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  .banner-conteudo h2 {
-    font-size: 2rem;
-  }
-  .banner-conteudo p {
-    font-size: 1rem;
-  }
-  .botoes-banner {
-    flex-direction: column;
   }
 }
