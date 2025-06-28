@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -12,59 +12,109 @@ html {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff;
-  color: #222;
+  color: #333;
   line-height: 1.6;
 }
 
-/* Cores principais */
-:root {
-  --laranja: #ff6600;
-  --preto: #111;
-  --branco: #ffffff;
-}
-
-/* Banner com vídeo e header sobreposto */
-.video-banner {
+/* Banner em vídeo fullscreen com header sobreposto */
+.banner {
   position: relative;
-  width: 100%;
   height: 100vh;
+  width: 100%;
   overflow: hidden;
 }
 
-.video-banner__video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.video-banner__overlay {
+.banner video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 2;
+  object-fit: cover;
+  z-index: 0;
 }
 
-.banner-header {
+.banner .overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.banner h2 {
+  font-size: 3rem;
+  color: orange;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+}
+
+.banner p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #f1f1f1;
+}
+
+/* Botões do banner */
+.banner-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  background-color: orange;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #e69500;
+}
+
+.cta-secondary {
+  background: transparent;
+  border: 2px solid orange;
+  color: orange;
+}
+
+.cta-secondary:hover {
+  background: orange;
+  color: #000;
+}
+
+/* Cabeçalho sobreposto */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background: transparent;
   flex-wrap: wrap;
-  z-index: 10;
+  color: white;
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--branco);
 }
 
 .logo img {
@@ -73,83 +123,31 @@ body {
 
 .logo h1 {
   font-size: 1.5rem;
-  color: var(--branco);
+  color: white;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 nav ul li a {
-  color: var(--branco);
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: var(--laranja);
+  color: orange;
 }
 
 .icon {
   width: 16px;
   margin-right: 5px;
   vertical-align: middle;
-}
-
-/* Conteúdo do banner */
-.video-banner__content {
-  text-align: center;
-  color: white;
-  padding-bottom: 60px;
-  animation: fadeInUp 1s ease-in-out;
-}
-
-.video-banner__content h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  text-shadow: 0 2px 5px rgba(0,0,0,0.6);
-}
-
-.video-banner__content p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #f0f0f0;
-}
-
-.banner-cta {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.cta-btn {
-  background-color: var(--laranja);
-  color: var(--branco);
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.cta-btn:hover {
-  background-color: #cc5200;
-}
-
-.cta-secondary {
-  background: transparent;
-  border: 2px solid var(--laranja);
-  color: var(--laranja);
-}
-
-.cta-secondary:hover {
-  background: var(--laranja);
-  color: white;
 }
 
 /* Seções */
@@ -161,7 +159,7 @@ section {
 
 section h2 {
   font-size: 2rem;
-  color: var(--preto);
+  color: orange;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -195,7 +193,7 @@ section p {
 }
 
 .card h3 {
-  color: var(--laranja);
+  color: #333;
   margin-bottom: 10px;
 }
 
@@ -228,8 +226,8 @@ section p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 102, 0, 0.85);
-  color: white;
+  background: rgba(255, 165, 0, 0.8);
+  color: black;
   padding: 10px;
   font-weight: bold;
   text-align: center;
@@ -254,7 +252,7 @@ section p {
 }
 
 .avaliacao {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
   max-width: 600px;
@@ -268,11 +266,11 @@ section p {
   color: #666;
 }
 
-/* Botão padrão */
+/* Botão */
 .botao {
   display: inline-block;
-  background-color: var(--laranja);
-  color: white;
+  background-color: orange;
+  color: black;
   padding: 12px 24px;
   text-decoration: none;
   font-weight: bold;
@@ -282,7 +280,7 @@ section p {
 }
 
 .botao:hover {
-  background-color: #cc5200;
+  background-color: #e69500;
 }
 
 /* Formulário */
@@ -303,8 +301,8 @@ form textarea {
 }
 
 form button {
-  background-color: var(--laranja);
-  color: white;
+  background-color: orange;
+  color: black;
   padding: 12px;
   font-size: 1rem;
   border: none;
@@ -314,12 +312,52 @@ form button {
 }
 
 form button:hover {
-  background-color: #cc5200;
+  background-color: #e69500;
+}
+
+/* Subpáginas */
+.projeto-detalhe {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.projeto-detalhe h2 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.projeto-detalhe p {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto 30px auto;
+}
+
+.imagens-projeto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.imagens-projeto img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.imagens-projeto img:hover {
+  transform: scale(1.03);
 }
 
 /* Rodapé */
 footer {
-  background-color: var(--preto);
+  background-color: #000;
   color: white;
   text-align: center;
   padding: 20px;
@@ -329,39 +367,28 @@ footer {
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .banner-header {
-    flex-direction: column;
-    align-items: center;
-  }
-
   nav ul {
     flex-direction: column;
     align-items: center;
   }
 
-  .video-banner__content h2 {
-    font-size: 2rem;
-  }
-
-  .video-banner__content p {
-    font-size: 1rem;
-  }
-
-  .galeria-container,
-  .servicos-container {
+  .logo {
     flex-direction: column;
     align-items: center;
   }
-}
 
-/* Animação */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+  .galeria-container,
+  .servicos-container,
+  .imagens-projeto {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .banner h2 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
   }
 }
